@@ -1,0 +1,42 @@
+name:                koshu-open-data-converter
+version:             0.1.0.0
+synopsis:            Koshucode converters for open data
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              SEINO Katsuhiro
+maintainer:          
+-- copyright:           
+category:            Data
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+executable koshu-from-csv
+  main-is:             koshu-from-csv.hs
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:
+         base                     == 4.*
+       , csv                      == 0.*
+       , koshucode-baala-base     == 0.*
+       , koshucode-baala-core     == 0.*
+       , koshucode-baala-content  == 0.*
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
+
+executable niigata-city-meta-data
+  main-is:             niigata-city-meta-data.hs
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:
+         base                     == 4.*
+       , bytestring               == 0.*
+       , filepath                 == 1.*
+       , text                     == 1.*
+       , xmlhtml                  == 0.*
+       , koshucode-baala-base     == 0.*
+       , koshucode-baala-core     == 0.*
+       , koshucode-baala-content  == 0.*
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
