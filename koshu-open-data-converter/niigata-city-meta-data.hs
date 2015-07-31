@@ -34,24 +34,19 @@ meta path =
     do bs <- B.readFile path
        case X.parseHTML path bs of
          Left  msg -> error msg
-         Right doc -> do K.putLines [ "-*- koshu -*-", "", about path, "" ]
+         Right doc -> do let a = K.writeString $ about path
+                         K.putLines [ "-*- koshu -*-", "", a, "" ]
                          K.putJudges $ map judge $ concatMap select $ X.docContent doc
 
-about :: FilePath -> String
-about path = "about" ++ K.writeDownTerms K.shortEmpty xs where
-    xs :: [(String, K.VContent)]
-    xs = [ term "data" $ K.pText $ Sys.takeBaseName path ]
+about :: FilePath -> K.AboutC
+about path = K.About xs where
+    xs :: [K.Term K.VContent]
+    xs = [ K.term "data" $ K.pText $ Sys.takeBaseName path ]
 
 judge :: MetaDatum -> K.JudgeC
-judge (n, c) = K.affirm "META" [ term "name"    $ K.pText n
-                               , term "content" $ pMaybeText c ]
-
-term :: String -> c -> (String, c)
-term n c = (n, c)
-
-pMaybeText :: (K.CContent c) => String -> c
-pMaybeText "" = K.empty
-pMaybeText s  = K.pText s
+judge (n, c) = K.affirm "META" xs where
+    xs = [ K.term "name"    $ K.pText n
+         , K.term "content" $ K.pMaybeText c ]
 
 
 -- --------------------------------------------  Select
