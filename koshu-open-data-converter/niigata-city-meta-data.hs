@@ -27,26 +27,35 @@ import qualified Koshucode.Baala.Type.Vanilla   as K
 main :: IO ()
 main =
     do args <- Sys.getArgs
-       mapM_ meta args
+       mapM_ metaIO args
 
-meta :: FilePath -> IO ()
-meta path =
+metaIO :: FilePath -> IO ()
+metaIO path =
     do bs <- B.readFile path
        case X.parseHTML path bs of
          Left  msg -> error msg
-         Right doc -> do let a = K.writeString $ about path
+         Right doc -> do let a = K.writeStringWith K.shortEmpty $ about path
+                             html = X.docContent doc
+                             meta = map judgeMeta $ concatMap select html
+                             term = map judgeTerm $ concatMap selectTerm html
                          K.putLines [ "-*- koshu -*-", "", a, "" ]
-                         K.putJudges $ map judge $ concatMap select $ X.docContent doc
+                         K.putJudges $ meta ++ term
 
 about :: FilePath -> K.AboutC
 about path = K.About xs where
     xs :: [K.Term K.VContent]
     xs = [ K.term "data" $ K.pText $ Sys.takeBaseName path ]
 
-judge :: MetaDatum -> K.JudgeC
-judge (n, c) = K.affirm "META" xs where
+judgeMeta :: MetaDatum -> K.JudgeC
+judgeMeta (n, c) = K.affirm "META" xs where
     xs = [ K.term "name"    $ K.pText n
          , K.term "content" $ K.pMaybeText c ]
+
+judgeTerm :: (String, String, String) -> K.JudgeC
+judgeTerm (name, typ, note) = K.affirm "TERM" xs where
+    xs = [ K.term "name" $ K.pMaybeText name
+         , K.term "type" $ K.pMaybeText typ
+         , K.term "note" $ K.pMaybeText note ]
 
 
 -- --------------------------------------------  Select
@@ -112,3 +121,25 @@ selectList2 ul = keepTitle assoc where
     pair (x : xs) = (x, unwords xs)
     pair _        = ("?", "?")
 
+--  <table>
+--    <tr><th>項目名</th><th>型</th><th>備考</th></tr>
+--    <tr><td>/name</td><td>/type</td><td>/note</td></tr>
+--    ...
+--  </table>
+--
+--  という HTML ツリーを、つぎのリストに変換します。
+--
+--  [("/name", "/type", "/note"), ...]
+
+selectTerm :: X.Node -> [(String, String, String)]
+selectTerm html =
+    do table <- X.descendantElementsTag "table" html
+       let (tr1 : trs) = X.childElementsTag "tr" table
+           (th : _)   = X.childElementsTag "th" tr1
+       K.guard $ X.nodeText th == "項目名"
+       tr <- trs
+       case X.childElementsTag "td" tr of
+         [name, typ, note] -> return ( t name, t typ, t note )
+         _ -> []
+    where
+      t = K.trimBoth . nodeString
