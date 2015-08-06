@@ -32,7 +32,8 @@ data Param = Param
 
 initParam :: [Option] -> [String] -> IO Param
 initParam opts args =
-    do hs <- readHeaders opts
+    do K.useUtf8 K.stdout
+       hs <- readHeaders opts
        return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
                       , paramNumber     = OptNumber    `elem` opts
                       , paramHeaders    = hs
