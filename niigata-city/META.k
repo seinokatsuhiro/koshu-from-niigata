@@ -1,10 +1,20 @@
 ** -*- koshu -*-
 **
-**  <版権表示>
-**    このデータセットは以下の著作物を改変して作成しています。
-**    新潟市オープンデータ、新潟市、クリエイティブ・コモンズ・ライセンス 表示 2.1 日本
-**    (CC-BY 2.1 JP) http://creativecommons.org/licenses/by/2.1/jp/
+**  INPUT
+**    <stdin>
+**    calc-meta.k
 **
+**  OUTPUT
+**    <stdout>
+**
+
+=== license
+
+  このデータセットは以下の著作物を改変して作成しています。
+  新潟市オープンデータ、新潟市、クリエイティブ・コモンズ・ライセンス 表示 2.1 日本
+  (CC-BY 2.1 JP) http://creativecommons.org/licenses/by/2.1/jp/
+
+=== rel
 
 |-- META  /data 'od-bandaibashi001  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gazou/od-fukei/od-bandaibashi/od-bandaibashi001.html"
 |-- META  /data 'od-bandaibashi001  /name 'タイトル  /content '萬代橋とチューリップ
@@ -391,777 +401,777 @@
 |-- META  /data 'od-fukushimagata005  /name '撮影時刻  /content '午後0時33分
 
 |-- META  /data 'od-fukushimagata005  /name "言語・文字コード"  /content "日本語・UTF-8"
-|-- META  /data 'od-gis_aed  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_aed.html"
-|-- META  /data 'od-gis_aed  /name 'タイトル  /content "AED（自動体外式除細動器）設置施設"
-|-- META  /data 'od-gis_aed  /name 'タグ  /content '健康
-|-- META  /data 'od-gis_aed  /name 'ファイルサイズ  /content '32KB
+|-- META  /data 'od-gis-aed  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_aed.html"
+|-- META  /data 'od-gis-aed  /name 'タイトル  /content "AED（自動体外式除細動器）設置施設"
+|-- META  /data 'od-gis-aed  /name 'タグ  /content '健康
+|-- META  /data 'od-gis-aed  /name 'ファイルサイズ  /content '32KB
 
-|-- META  /data 'od-gis_aed  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_aed  /name '作成者  /content '保健衛生部保健所保健管理課
-|-- META  /data 'od-gis_aed  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_aed  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_aed  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-aed  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-aed  /name '作成者  /content '保健衛生部保健所保健管理課
+|-- META  /data 'od-gis-aed  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-aed  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-aed  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_aed  /name '最終更新日  /content '2014年11月21日
-|-- META  /data 'od-gis_aed  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_aed  /name '補足
-|-- META  /data 'od-gis_asaichi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_asaichi.html"
-|-- META  /data 'od-gis_asaichi  /name 'タイトル  /content '朝市
+|-- META  /data 'od-gis-aed  /name '最終更新日  /content '2014年11月21日
+|-- META  /data 'od-gis-aed  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-aed  /name '補足
+|-- META  /data 'od-gis-asaichi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_asaichi.html"
+|-- META  /data 'od-gis-asaichi  /name 'タイトル  /content '朝市
 *** 325
 
-|-- META  /data 'od-gis_asaichi  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_asaichi  /name 'ファイルサイズ  /content '6KB
-|-- META  /data 'od-gis_asaichi  /name 'リリース日  /content '2015年3月13日
-|-- META  /data 'od-gis_asaichi  /name '作成者  /content '農林水産部食と花の推進課
-|-- META  /data 'od-gis_asaichi  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-asaichi  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-asaichi  /name 'ファイルサイズ  /content '6KB
+|-- META  /data 'od-gis-asaichi  /name 'リリース日  /content '2015年3月13日
+|-- META  /data 'od-gis-asaichi  /name '作成者  /content '農林水産部食と花の推進課
+|-- META  /data 'od-gis-asaichi  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_asaichi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_asaichi  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_asaichi  /name '最終更新日  /content '2015年2月26日
-|-- META  /data 'od-gis_asaichi  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_asaichi  /name '補足
+|-- META  /data 'od-gis-asaichi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-asaichi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-asaichi  /name '最終更新日  /content '2015年2月26日
+|-- META  /data 'od-gis-asaichi  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-asaichi  /name '補足
 
-|-- META  /data 'od-gis_bus_hakusan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_dokabengo.html"
-|-- META  /data 'od-gis_bus_hakusan  /name 'タイトル  /content '白山公園先回り
-|-- META  /data 'od-gis_bus_hakusan  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_bus_hakusan  /name 'ファイルサイズ  /content '3キロバイト
-|-- META  /data 'od-gis_bus_hakusan  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-bus-hakusan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_dokabengo.html"
+|-- META  /data 'od-gis-bus-hakusan  /name 'タイトル  /content '白山公園先回り
+|-- META  /data 'od-gis-bus-hakusan  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-bus-hakusan  /name 'ファイルサイズ  /content '3キロバイト
+|-- META  /data 'od-gis-bus-hakusan  /name 'リリース日  /content '2015年1月15日
 
-|-- META  /data 'od-gis_bus_hakusan  /name '作成者  /content "観光・国際交流部観光政策課"
-|-- META  /data 'od-gis_bus_hakusan  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_bus_hakusan  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_bus_hakusan  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_bus_hakusan  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-gis-bus-hakusan  /name '作成者  /content "観光・国際交流部観光政策課"
+|-- META  /data 'od-gis-bus-hakusan  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-bus-hakusan  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-bus-hakusan  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-bus-hakusan  /name '最終更新日  /content '2015年4月30日
 
-|-- META  /data 'od-gis_bus_hakusan  /name '組織名  /content '新潟市
-|-- META  /data 'od-gis_chisan_inshok  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_chisan_inshok.html"
-|-- META  /data 'od-gis_chisan_inshok  /name 'タイトル  /content "地産地消推進の店（飲食店）"
-|-- META  /data 'od-gis_chisan_inshok  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_chisan_inshok  /name 'ファイルサイズ  /content '21KB
+|-- META  /data 'od-gis-bus-hakusan  /name '組織名  /content '新潟市
+|-- META  /data 'od-gis-chisan-inshok  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_chisan_inshok.html"
+|-- META  /data 'od-gis-chisan-inshok  /name 'タイトル  /content "地産地消推進の店（飲食店）"
+|-- META  /data 'od-gis-chisan-inshok  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-chisan-inshok  /name 'ファイルサイズ  /content '21KB
 *** 350
 
-|-- META  /data 'od-gis_chisan_inshok  /name 'リリース日  /content '2015年3月13日
-|-- META  /data 'od-gis_chisan_inshok  /name '作成者  /content '農林水産部食と花の推進課
-|-- META  /data 'od-gis_chisan_inshok  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_chisan_inshok  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_chisan_inshok  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-chisan-inshok  /name 'リリース日  /content '2015年3月13日
+|-- META  /data 'od-gis-chisan-inshok  /name '作成者  /content '農林水産部食と花の推進課
+|-- META  /data 'od-gis-chisan-inshok  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-chisan-inshok  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-chisan-inshok  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_chisan_inshok  /name '最終更新日  /content '2015年2月27日
-|-- META  /data 'od-gis_chisan_inshok  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_chisan_inshok  /name '補足
-|-- META  /data 'od-gis_chisan_kouri  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_chisan_kouri.html"
-|-- META  /data 'od-gis_chisan_kouri  /name 'タイトル  /content "地産地消推進の店（小売店）"
+|-- META  /data 'od-gis-chisan-inshok  /name '最終更新日  /content '2015年2月27日
+|-- META  /data 'od-gis-chisan-inshok  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-chisan-inshok  /name '補足
+|-- META  /data 'od-gis-chisan-kouri  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_chisan_kouri.html"
+|-- META  /data 'od-gis-chisan-kouri  /name 'タイトル  /content "地産地消推進の店（小売店）"
 
-|-- META  /data 'od-gis_chisan_kouri  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_chisan_kouri  /name 'ファイルサイズ  /content '9KB
-|-- META  /data 'od-gis_chisan_kouri  /name 'リリース日  /content '2015年3月13日
-|-- META  /data 'od-gis_chisan_kouri  /name '作成者  /content '農林水産部食と花の推進課
-|-- META  /data 'od-gis_chisan_kouri  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-chisan-kouri  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-chisan-kouri  /name 'ファイルサイズ  /content '9KB
+|-- META  /data 'od-gis-chisan-kouri  /name 'リリース日  /content '2015年3月13日
+|-- META  /data 'od-gis-chisan-kouri  /name '作成者  /content '農林水産部食と花の推進課
+|-- META  /data 'od-gis-chisan-kouri  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_chisan_kouri  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_chisan_kouri  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_chisan_kouri  /name '最終更新日  /content '2015年2月27日
-|-- META  /data 'od-gis_chisan_kouri  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_chisan_kouri  /name '補足
+|-- META  /data 'od-gis-chisan-kouri  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-chisan-kouri  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-chisan-kouri  /name '最終更新日  /content '2015年2月27日
+|-- META  /data 'od-gis-chisan-kouri  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-chisan-kouri  /name '補足
 
-|-- META  /data 'od-gis_chugakko  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_chugakko.html"
-|-- META  /data 'od-gis_chugakko  /name 'タイトル  /content '中学校
-|-- META  /data 'od-gis_chugakko  /name 'タグ  /content "子育て、教育"
-|-- META  /data 'od-gis_chugakko  /name 'ファイルサイズ  /content '11KB
-|-- META  /data 'od-gis_chugakko  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-chugakko  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_chugakko.html"
+|-- META  /data 'od-gis-chugakko  /name 'タイトル  /content '中学校
+|-- META  /data 'od-gis-chugakko  /name 'タグ  /content "子育て、教育"
+|-- META  /data 'od-gis-chugakko  /name 'ファイルサイズ  /content '11KB
+|-- META  /data 'od-gis-chugakko  /name 'リリース日  /content '2015年1月30日
 *** 375
 
-|-- META  /data 'od-gis_chugakko  /name '作成者  /content "教育委員会事務局教職員課、教育委員会事務局学校支援課"
-|-- META  /data 'od-gis_chugakko  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_chugakko  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_chugakko  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_chugakko  /name '最終更新日  /content '2015年1月14日
+|-- META  /data 'od-gis-chugakko  /name '作成者  /content "教育委員会事務局教職員課、教育委員会事務局学校支援課"
+|-- META  /data 'od-gis-chugakko  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-chugakko  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-chugakko  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-chugakko  /name '最終更新日  /content '2015年1月14日
 
-|-- META  /data 'od-gis_chugakko  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_chugakko  /name '補足
-|-- META  /data 'od-gis_community  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_community.html"
-|-- META  /data 'od-gis_community  /name 'タイトル  /content '公民館
-|-- META  /data 'od-gis_community  /name 'タグ  /content '生涯学習
+|-- META  /data 'od-gis-chugakko  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-chugakko  /name '補足
+|-- META  /data 'od-gis-community  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_community.html"
+|-- META  /data 'od-gis-community  /name 'タイトル  /content '公民館
+|-- META  /data 'od-gis-community  /name 'タグ  /content '生涯学習
 
-|-- META  /data 'od-gis_community  /name 'ファイルサイズ  /content '11KB
-|-- META  /data 'od-gis_community  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_community  /name '作成者  /content '教育委員会事務局中央公民館
-|-- META  /data 'od-gis_community  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_community  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-community  /name 'ファイルサイズ  /content '11KB
+|-- META  /data 'od-gis-community  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-community  /name '作成者  /content '教育委員会事務局中央公民館
+|-- META  /data 'od-gis-community  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-community  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_community  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_community  /name '最終更新日  /content '2014年11月21日
-|-- META  /data 'od-gis_community  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_community  /name '補足
-|-- META  /data 'od-gis_communitycent  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_communitycent.html"
+|-- META  /data 'od-gis-community  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-community  /name '最終更新日  /content '2014年11月21日
+|-- META  /data 'od-gis-community  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-community  /name '補足
+|-- META  /data 'od-gis-communitycent  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_communitycent.html"
 
-|-- META  /data 'od-gis_communitycent  /name 'タイトル  /content 'コミュニティセンター等
-|-- META  /data 'od-gis_communitycent  /name 'タグ  /content '生涯学習
-|-- META  /data 'od-gis_communitycent  /name 'ファイルサイズ  /content '11KB
-|-- META  /data 'od-gis_communitycent  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_communitycent  /name '作成者  /content "各区地域課、食育・花育センター、江南区産業振興課、秋葉区産業振興課、南区産業振興課、西区農政商工課、西蒲区産業観光課"
+|-- META  /data 'od-gis-communitycent  /name 'タイトル  /content 'コミュニティセンター等
+|-- META  /data 'od-gis-communitycent  /name 'タグ  /content '生涯学習
+|-- META  /data 'od-gis-communitycent  /name 'ファイルサイズ  /content '11KB
+|-- META  /data 'od-gis-communitycent  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-communitycent  /name '作成者  /content "各区地域課、食育・花育センター、江南区産業振興課、秋葉区産業振興課、南区産業振興課、西区農政商工課、西蒲区産業観光課"
 *** 400
 
-|-- META  /data 'od-gis_communitycent  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_communitycent  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_communitycent  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_communitycent  /name '最終更新日  /content '2015年1月17日
-|-- META  /data 'od-gis_communitycent  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-communitycent  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-communitycent  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-communitycent  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-communitycent  /name '最終更新日  /content '2015年1月17日
+|-- META  /data 'od-gis-communitycent  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_communitycent  /name '補足
-|-- META  /data 'od-gis_dobokujimusho  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_dobokujimusho.html"
-|-- META  /data 'od-gis_dobokujimusho  /name 'タイトル  /content "土木事務所・駅周辺整備事務所"
-|-- META  /data 'od-gis_dobokujimusho  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_dobokujimusho  /name 'ファイルサイズ  /content '479bytes
+|-- META  /data 'od-gis-communitycent  /name '補足
+|-- META  /data 'od-gis-dobokujimusho  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_dobokujimusho.html"
+|-- META  /data 'od-gis-dobokujimusho  /name 'タイトル  /content "土木事務所・駅周辺整備事務所"
+|-- META  /data 'od-gis-dobokujimusho  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-dobokujimusho  /name 'ファイルサイズ  /content '479bytes
 
-|-- META  /data 'od-gis_dobokujimusho  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_dobokujimusho  /name '作成者  /content '総務部総務課
-|-- META  /data 'od-gis_dobokujimusho  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_dobokujimusho  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_dobokujimusho  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-dobokujimusho  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-dobokujimusho  /name '作成者  /content '総務部総務課
+|-- META  /data 'od-gis-dobokujimusho  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-dobokujimusho  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-dobokujimusho  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_dobokujimusho  /name '最終更新日  /content '2011年9月7日
-|-- META  /data 'od-gis_dobokujimusho  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_dobokujimusho  /name '補足
-|-- META  /data 'od-gis_eiseikankyo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_eiseikankyo.html"
-|-- META  /data 'od-gis_eiseikankyo  /name 'タイトル  /content '衛生環境研究所
+|-- META  /data 'od-gis-dobokujimusho  /name '最終更新日  /content '2011年9月7日
+|-- META  /data 'od-gis-dobokujimusho  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-dobokujimusho  /name '補足
+|-- META  /data 'od-gis-eiseikankyo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_eiseikankyo.html"
+|-- META  /data 'od-gis-eiseikankyo  /name 'タイトル  /content '衛生環境研究所
 
-|-- META  /data 'od-gis_eiseikankyo  /name 'タグ  /content "健康、福祉"
-|-- META  /data 'od-gis_eiseikankyo  /name 'ファイルサイズ  /content '233bytes
-|-- META  /data 'od-gis_eiseikankyo  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_eiseikankyo  /name '作成者  /content '保健衛生部衛生環境研究所
-|-- META  /data 'od-gis_eiseikankyo  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-eiseikankyo  /name 'タグ  /content "健康、福祉"
+|-- META  /data 'od-gis-eiseikankyo  /name 'ファイルサイズ  /content '233bytes
+|-- META  /data 'od-gis-eiseikankyo  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-eiseikankyo  /name '作成者  /content '保健衛生部衛生環境研究所
+|-- META  /data 'od-gis-eiseikankyo  /name '使用言語  /content '日本語
 *** 425
 
-|-- META  /data 'od-gis_eiseikankyo  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_eiseikankyo  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_eiseikankyo  /name '最終更新日  /content '2011年9月7日
-|-- META  /data 'od-gis_eiseikankyo  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_eiseikankyo  /name '補足
+|-- META  /data 'od-gis-eiseikankyo  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-eiseikankyo  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-eiseikankyo  /name '最終更新日  /content '2011年9月7日
+|-- META  /data 'od-gis-eiseikankyo  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-eiseikankyo  /name '補足
 
-|-- META  /data 'od-gis_farmstand  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_farmstand.html"
-|-- META  /data 'od-gis_farmstand  /name 'タイトル  /content '農産物直売所
-|-- META  /data 'od-gis_farmstand  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_farmstand  /name 'ファイルサイズ  /content '18KB
-|-- META  /data 'od-gis_farmstand  /name 'リリース日  /content '2015年3月13日
+|-- META  /data 'od-gis-farmstand  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_farmstand.html"
+|-- META  /data 'od-gis-farmstand  /name 'タイトル  /content '農産物直売所
+|-- META  /data 'od-gis-farmstand  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-farmstand  /name 'ファイルサイズ  /content '18KB
+|-- META  /data 'od-gis-farmstand  /name 'リリース日  /content '2015年3月13日
 
-|-- META  /data 'od-gis_farmstand  /name '作成者  /content '農林水産部食と花の推進課
-|-- META  /data 'od-gis_farmstand  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_farmstand  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_farmstand  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_farmstand  /name '最終更新日  /content '2015年2月27日
+|-- META  /data 'od-gis-farmstand  /name '作成者  /content '農林水産部食と花の推進課
+|-- META  /data 'od-gis-farmstand  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-farmstand  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-farmstand  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-farmstand  /name '最終更新日  /content '2015年2月27日
 
-|-- META  /data 'od-gis_farmstand  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_farmstand  /name '補足
-|-- META  /data 'od-gis_fishingbase  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_fishingbase.html"
-|-- META  /data 'od-gis_fishingbase  /name 'タイトル  /content '漁業基地
-|-- META  /data 'od-gis_fishingbase  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-farmstand  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-farmstand  /name '補足
+|-- META  /data 'od-gis-fishingbase  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_fishingbase.html"
+|-- META  /data 'od-gis-fishingbase  /name 'タイトル  /content '漁業基地
+|-- META  /data 'od-gis-fishingbase  /name 'タグ  /content 'くらし
 
-|-- META  /data 'od-gis_fishingbase  /name 'ファイルサイズ  /content '798bytes
-|-- META  /data 'od-gis_fishingbase  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_fishingbase  /name '作成者  /content '農林水産部食と花の推進課
-|-- META  /data 'od-gis_fishingbase  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_fishingbase  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-fishingbase  /name 'ファイルサイズ  /content '798bytes
+|-- META  /data 'od-gis-fishingbase  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-fishingbase  /name '作成者  /content '農林水産部食と花の推進課
+|-- META  /data 'od-gis-fishingbase  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-fishingbase  /name '公表者  /content '総務部IT推進課
 *** 450
 
-|-- META  /data 'od-gis_fishingbase  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_fishingbase  /name '最終更新日  /content '2011年9月7日
-|-- META  /data 'od-gis_fishingbase  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_fishingbase  /name '補足
-|-- META  /data 'od-gis_forshogaisha  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_forshogaisha.html"
+|-- META  /data 'od-gis-fishingbase  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-fishingbase  /name '最終更新日  /content '2011年9月7日
+|-- META  /data 'od-gis-fishingbase  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-fishingbase  /name '補足
+|-- META  /data 'od-gis-forshogaisha  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_forshogaisha.html"
 
-|-- META  /data 'od-gis_forshogaisha  /name 'タイトル  /content '障がい者のための施設
-|-- META  /data 'od-gis_forshogaisha  /name 'タグ  /content '福祉
-|-- META  /data 'od-gis_forshogaisha  /name 'ファイルサイズ  /content '12KB
-|-- META  /data 'od-gis_forshogaisha  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_forshogaisha  /name '作成者  /content '福祉部障がい福祉課
+|-- META  /data 'od-gis-forshogaisha  /name 'タイトル  /content '障がい者のための施設
+|-- META  /data 'od-gis-forshogaisha  /name 'タグ  /content '福祉
+|-- META  /data 'od-gis-forshogaisha  /name 'ファイルサイズ  /content '12KB
+|-- META  /data 'od-gis-forshogaisha  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-forshogaisha  /name '作成者  /content '福祉部障がい福祉課
 
-|-- META  /data 'od-gis_forshogaisha  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_forshogaisha  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_forshogaisha  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_forshogaisha  /name '最終更新日  /content '2014年11月25日
-|-- META  /data 'od-gis_forshogaisha  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-forshogaisha  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-forshogaisha  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-forshogaisha  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-forshogaisha  /name '最終更新日  /content '2014年11月25日
+|-- META  /data 'od-gis-forshogaisha  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_forshogaisha  /name '補足
-|-- META  /data 'od-gis_gesuido  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_gesuido.html"
-|-- META  /data 'od-gis_gesuido  /name 'タイトル  /content '下水道施設
-|-- META  /data 'od-gis_gesuido  /name 'タグ  /content '上下水道
-|-- META  /data 'od-gis_gesuido  /name 'ファイルサイズ  /content '11KB
+|-- META  /data 'od-gis-forshogaisha  /name '補足
+|-- META  /data 'od-gis-gesuido  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_gesuido.html"
+|-- META  /data 'od-gis-gesuido  /name 'タイトル  /content '下水道施設
+|-- META  /data 'od-gis-gesuido  /name 'タグ  /content '上下水道
+|-- META  /data 'od-gis-gesuido  /name 'ファイルサイズ  /content '11KB
 
-|-- META  /data 'od-gis_gesuido  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_gesuido  /name '作成者  /content '下水道部下水道管理センター
-|-- META  /data 'od-gis_gesuido  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_gesuido  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_gesuido  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-gesuido  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-gesuido  /name '作成者  /content '下水道部下水道管理センター
+|-- META  /data 'od-gis-gesuido  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-gesuido  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-gesuido  /name '更新頻度  /content '随時
 *** 475
 
-|-- META  /data 'od-gis_gesuido  /name '最終更新日  /content '2015年1月17日
-|-- META  /data 'od-gis_gesuido  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_gesuido  /name '補足
-|-- META  /data 'od-gis_greenandblue  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_greenandblue.html"
-|-- META  /data 'od-gis_greenandblue  /name 'タイトル  /content "グリーン＆ブルーツーリズム"
+|-- META  /data 'od-gis-gesuido  /name '最終更新日  /content '2015年1月17日
+|-- META  /data 'od-gis-gesuido  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-gesuido  /name '補足
+|-- META  /data 'od-gis-greenandblue  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_greenandblue.html"
+|-- META  /data 'od-gis-greenandblue  /name 'タイトル  /content "グリーン＆ブルーツーリズム"
 
-|-- META  /data 'od-gis_greenandblue  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_greenandblue  /name 'ファイルサイズ  /content '24KB
-|-- META  /data 'od-gis_greenandblue  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_greenandblue  /name '作成者  /content "農林水産部食育・花育センター"
-|-- META  /data 'od-gis_greenandblue  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-greenandblue  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-greenandblue  /name 'ファイルサイズ  /content '24KB
+|-- META  /data 'od-gis-greenandblue  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-greenandblue  /name '作成者  /content "農林水産部食育・花育センター"
+|-- META  /data 'od-gis-greenandblue  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_greenandblue  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_greenandblue  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_greenandblue  /name '最終更新日  /content '2014年11月15日
-|-- META  /data 'od-gis_greenandblue  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_greenandblue  /name '補足
+|-- META  /data 'od-gis-greenandblue  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-greenandblue  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-greenandblue  /name '最終更新日  /content '2014年11月15日
+|-- META  /data 'od-gis-greenandblue  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-greenandblue  /name '補足
 
-|-- META  /data 'od-gis_himawari  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_himawari.html"
-|-- META  /data 'od-gis_himawari  /name 'タイトル  /content 'ひまわりクラブ
-|-- META  /data 'od-gis_himawari  /name 'タグ  /content '子育て
-|-- META  /data 'od-gis_himawari  /name 'ファイルサイズ  /content '16KB
-|-- META  /data 'od-gis_himawari  /name 'リリース日  /content '2015年2月24日
+|-- META  /data 'od-gis-himawari  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_himawari.html"
+|-- META  /data 'od-gis-himawari  /name 'タイトル  /content 'ひまわりクラブ
+|-- META  /data 'od-gis-himawari  /name 'タグ  /content '子育て
+|-- META  /data 'od-gis-himawari  /name 'ファイルサイズ  /content '16KB
+|-- META  /data 'od-gis-himawari  /name 'リリース日  /content '2015年2月24日
 
-|-- META  /data 'od-gis_himawari  /name '作成者  /content '福祉部こども未来課
-|-- META  /data 'od-gis_himawari  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_himawari  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_himawari  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_himawari  /name '最終更新日  /content '2015年1月27日
+|-- META  /data 'od-gis-himawari  /name '作成者  /content '福祉部こども未来課
+|-- META  /data 'od-gis-himawari  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-himawari  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-himawari  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-himawari  /name '最終更新日  /content '2015年1月27日
 *** 500
 
-|-- META  /data 'od-gis_himawari  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_himawari  /name '補足
-|-- META  /data 'od-gis_hoikuen  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hoikuen.html"
-|-- META  /data 'od-gis_hoikuen  /name 'タイトル  /content '保育園
-|-- META  /data 'od-gis_hoikuen  /name 'タグ  /content '福祉
+|-- META  /data 'od-gis-himawari  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-himawari  /name '補足
+|-- META  /data 'od-gis-hoikuen  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hoikuen.html"
+|-- META  /data 'od-gis-hoikuen  /name 'タイトル  /content '保育園
+|-- META  /data 'od-gis-hoikuen  /name 'タグ  /content '福祉
 
-|-- META  /data 'od-gis_hoikuen  /name 'ファイルサイズ  /content '22KB
-|-- META  /data 'od-gis_hoikuen  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_hoikuen  /name '作成者  /content '福祉部保育課
-|-- META  /data 'od-gis_hoikuen  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_hoikuen  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-hoikuen  /name 'ファイルサイズ  /content '22KB
+|-- META  /data 'od-gis-hoikuen  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-hoikuen  /name '作成者  /content '福祉部保育課
+|-- META  /data 'od-gis-hoikuen  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-hoikuen  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_hoikuen  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_hoikuen  /name '最終更新日  /content '2014年11月18日
-|-- META  /data 'od-gis_hoikuen  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_hoikuen  /name '補足
-|-- META  /data 'od-gis_hojoten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_hojoten.html"
+|-- META  /data 'od-gis-hoikuen  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-hoikuen  /name '最終更新日  /content '2014年11月18日
+|-- META  /data 'od-gis-hoikuen  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-hoikuen  /name '補足
+|-- META  /data 'od-gis-hojoten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_hojoten.html"
 
-|-- META  /data 'od-gis_hojoten  /name 'タイトル  /content '補助点
-|-- META  /data 'od-gis_hojoten  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_hojoten  /name 'ファイルサイズ  /content '445KB
-|-- META  /data 'od-gis_hojoten  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_hojoten  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-hojoten  /name 'タイトル  /content '補助点
+|-- META  /data 'od-gis-hojoten  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-hojoten  /name 'ファイルサイズ  /content '445KB
+|-- META  /data 'od-gis-hojoten  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-hojoten  /name '作成者  /content '土木部土木総務課
 
-|-- META  /data 'od-gis_hojoten  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_hojoten  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_hojoten  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_hojoten  /name '最終更新日  /content '2014年11月27日
-|-- META  /data 'od-gis_hojoten  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-hojoten  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-hojoten  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-hojoten  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-hojoten  /name '最終更新日  /content '2014年11月27日
+|-- META  /data 'od-gis-hojoten  /name '組織名  /content '新潟市役所
 *** 525
 
-|-- META  /data 'od-gis_hojoten  /name '補足
-|-- META  /data 'od-gis_hokenfukushi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hokenfukushi.html"
-|-- META  /data 'od-gis_hokenfukushi  /name 'タイトル  /content '地域保健福祉センター等
-|-- META  /data 'od-gis_hokenfukushi  /name 'タグ  /content "健康、福祉"
-|-- META  /data 'od-gis_hokenfukushi  /name 'ファイルサイズ  /content '5KB
+|-- META  /data 'od-gis-hojoten  /name '補足
+|-- META  /data 'od-gis-hokenfukushi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hokenfukushi.html"
+|-- META  /data 'od-gis-hokenfukushi  /name 'タイトル  /content '地域保健福祉センター等
+|-- META  /data 'od-gis-hokenfukushi  /name 'タグ  /content "健康、福祉"
+|-- META  /data 'od-gis-hokenfukushi  /name 'ファイルサイズ  /content '5KB
 
-|-- META  /data 'od-gis_hokenfukushi  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_hokenfukushi  /name '作成者  /content "各区健康福祉課、福祉部福祉総務課、南区地域課"
-|-- META  /data 'od-gis_hokenfukushi  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_hokenfukushi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_hokenfukushi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-hokenfukushi  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-hokenfukushi  /name '作成者  /content "各区健康福祉課、福祉部福祉総務課、南区地域課"
+|-- META  /data 'od-gis-hokenfukushi  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-hokenfukushi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-hokenfukushi  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_hokenfukushi  /name '最終更新日  /content '2015年1月17日
-|-- META  /data 'od-gis_hokenfukushi  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_hokenfukushi  /name '補足
-|-- META  /data 'od-gis_hokenjo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hokenjo.html"
-|-- META  /data 'od-gis_hokenjo  /name 'タイトル  /content '保健所
+|-- META  /data 'od-gis-hokenfukushi  /name '最終更新日  /content '2015年1月17日
+|-- META  /data 'od-gis-hokenfukushi  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-hokenfukushi  /name '補足
+|-- META  /data 'od-gis-hokenjo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_hokenjo.html"
+|-- META  /data 'od-gis-hokenjo  /name 'タイトル  /content '保健所
 
-|-- META  /data 'od-gis_hokenjo  /name 'タグ  /content "健康、福祉"
-|-- META  /data 'od-gis_hokenjo  /name 'ファイルサイズ  /content '702bytes
-|-- META  /data 'od-gis_hokenjo  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_hokenjo  /name '作成者  /content "保健衛生部保健所保健管理課、保健衛生部保健所食の安全推進課"
-|-- META  /data 'od-gis_hokenjo  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-hokenjo  /name 'タグ  /content "健康、福祉"
+|-- META  /data 'od-gis-hokenjo  /name 'ファイルサイズ  /content '702bytes
+|-- META  /data 'od-gis-hokenjo  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-hokenjo  /name '作成者  /content "保健衛生部保健所保健管理課、保健衛生部保健所食の安全推進課"
+|-- META  /data 'od-gis-hokenjo  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_hokenjo  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_hokenjo  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_hokenjo  /name '最終更新日  /content '2014年11月12日
-|-- META  /data 'od-gis_hokenjo  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_hokenjo  /name '補足
+|-- META  /data 'od-gis-hokenjo  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-hokenjo  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-hokenjo  /name '最終更新日  /content '2014年11月12日
+|-- META  /data 'od-gis-hokenjo  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-hokenjo  /name '補足
 *** 550
 
-|-- META  /data 'od-gis_inuyashago  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_inuyashago.html"
-|-- META  /data 'od-gis_inuyashago  /name 'タイトル  /content "朱鷺メッセ先回り（犬夜叉号）"
-|-- META  /data 'od-gis_inuyashago  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_inuyashago  /name 'ファイルサイズ  /content '3KB
-|-- META  /data 'od-gis_inuyashago  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-inuyashago  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_inuyashago.html"
+|-- META  /data 'od-gis-inuyashago  /name 'タイトル  /content "朱鷺メッセ先回り（犬夜叉号）"
+|-- META  /data 'od-gis-inuyashago  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-inuyashago  /name 'ファイルサイズ  /content '3KB
+|-- META  /data 'od-gis-inuyashago  /name 'リリース日  /content '2015年1月15日
 
-|-- META  /data 'od-gis_inuyashago  /name '作成者  /content "観光・国際交流部観光政策課"
-|-- META  /data 'od-gis_inuyashago  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_inuyashago  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_inuyashago  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_inuyashago  /name '最終更新日  /content '2014年12月22日
+|-- META  /data 'od-gis-inuyashago  /name '作成者  /content "観光・国際交流部観光政策課"
+|-- META  /data 'od-gis-inuyashago  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-inuyashago  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-inuyashago  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-inuyashago  /name '最終更新日  /content '2014年12月22日
 
-|-- META  /data 'od-gis_inuyashago  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_inuyashago  /name '補足
-|-- META  /data 'od-gis_iseki  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_iseki.html"
-|-- META  /data 'od-gis_iseki  /name 'タイトル  /content '遺跡
-|-- META  /data 'od-gis_iseki  /name 'タグ  /content '文化
+|-- META  /data 'od-gis-inuyashago  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-inuyashago  /name '補足
+|-- META  /data 'od-gis-iseki  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_iseki.html"
+|-- META  /data 'od-gis-iseki  /name 'タイトル  /content '遺跡
+|-- META  /data 'od-gis-iseki  /name 'タグ  /content '文化
 
-|-- META  /data 'od-gis_iseki  /name 'ファイルサイズ  /content '281KB
-|-- META  /data 'od-gis_iseki  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_iseki  /name '作成者  /content '文化スポーツ部歴史文化課
-|-- META  /data 'od-gis_iseki  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_iseki  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-iseki  /name 'ファイルサイズ  /content '281KB
+|-- META  /data 'od-gis-iseki  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-iseki  /name '作成者  /content '文化スポーツ部歴史文化課
+|-- META  /data 'od-gis-iseki  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-iseki  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_iseki  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_iseki  /name '最終更新日  /content '2014年11月14日
-|-- META  /data 'od-gis_iseki  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_iseki  /name '補足
-|-- META  /data 'od-gis_jidocenter  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_jidocenter.html"
+|-- META  /data 'od-gis-iseki  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-iseki  /name '最終更新日  /content '2014年11月14日
+|-- META  /data 'od-gis-iseki  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-iseki  /name '補足
+|-- META  /data 'od-gis-jidocenter  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_jidocenter.html"
 *** 575
 
-|-- META  /data 'od-gis_jidocenter  /name 'タイトル  /content '児童センター等
-|-- META  /data 'od-gis_jidocenter  /name 'タグ  /content '子育て
-|-- META  /data 'od-gis_jidocenter  /name 'ファイルサイズ  /content '4KB
-|-- META  /data 'od-gis_jidocenter  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_jidocenter  /name '作成者  /content '福祉部こども未来課
+|-- META  /data 'od-gis-jidocenter  /name 'タイトル  /content '児童センター等
+|-- META  /data 'od-gis-jidocenter  /name 'タグ  /content '子育て
+|-- META  /data 'od-gis-jidocenter  /name 'ファイルサイズ  /content '4KB
+|-- META  /data 'od-gis-jidocenter  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-jidocenter  /name '作成者  /content '福祉部こども未来課
 
-|-- META  /data 'od-gis_jidocenter  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_jidocenter  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_jidocenter  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_jidocenter  /name '最終更新日  /content '2014年12月30日
-|-- META  /data 'od-gis_jidocenter  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-jidocenter  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-jidocenter  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-jidocenter  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-jidocenter  /name '最終更新日  /content '2014年12月30日
+|-- META  /data 'od-gis-jidocenter  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_jidocenter  /name '補足
-|-- META  /data 'od-gis_kendo_hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.html"
-|-- META  /data 'od-gis_kendo_hashi  /name 'タイトル  /content '県道上の橋梁
-|-- META  /data 'od-gis_kendo_hashi  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_kendo_hashi  /name 'ファイルサイズ  /content '54KB
+|-- META  /data 'od-gis-jidocenter  /name '補足
+|-- META  /data 'od-gis-kendo-hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.html"
+|-- META  /data 'od-gis-kendo-hashi  /name 'タイトル  /content '県道上の橋梁
+|-- META  /data 'od-gis-kendo-hashi  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-kendo-hashi  /name 'ファイルサイズ  /content '54KB
 
-|-- META  /data 'od-gis_kendo_hashi  /name 'リリース日  /content '2015年2月24日
-|-- META  /data 'od-gis_kendo_hashi  /name '作成者  /content '土木部土木総務課
-|-- META  /data 'od-gis_kendo_hashi  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_kendo_hashi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_kendo_hashi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-kendo-hashi  /name 'リリース日  /content '2015年2月24日
+|-- META  /data 'od-gis-kendo-hashi  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-kendo-hashi  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-kendo-hashi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-kendo-hashi  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_kendo_hashi  /name '最終更新日  /content '2015年2月14日
-|-- META  /data 'od-gis_kendo_hashi  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_kendo_hashi  /name '補足
-|-- META  /data 'od-gis_kenko_ben  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_ben.html"
-|-- META  /data 'od-gis_kenko_ben  /name 'タイトル  /content "健康づくり支援店（弁当類またはそうざい類の販売）"
+|-- META  /data 'od-gis-kendo-hashi  /name '最終更新日  /content '2015年2月14日
+|-- META  /data 'od-gis-kendo-hashi  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-kendo-hashi  /name '補足
+|-- META  /data 'od-gis-kenko-ben  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_ben.html"
+|-- META  /data 'od-gis-kenko-ben  /name 'タイトル  /content "健康づくり支援店（弁当類またはそうざい類の販売）"
 *** 600
 
-|-- META  /data 'od-gis_kenko_ben  /name 'タグ  /content '健康
-|-- META  /data 'od-gis_kenko_ben  /name 'ファイルサイズ  /content '30KB
-|-- META  /data 'od-gis_kenko_ben  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_kenko_ben  /name '作成者  /content '保健衛生部保健所健康増進課
-|-- META  /data 'od-gis_kenko_ben  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-kenko-ben  /name 'タグ  /content '健康
+|-- META  /data 'od-gis-kenko-ben  /name 'ファイルサイズ  /content '30KB
+|-- META  /data 'od-gis-kenko-ben  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-kenko-ben  /name '作成者  /content '保健衛生部保健所健康増進課
+|-- META  /data 'od-gis-kenko-ben  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_kenko_ben  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_kenko_ben  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_kenko_ben  /name '最終更新日  /content '2014年11月23日
-|-- META  /data 'od-gis_kenko_ben  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_kenko_ben  /name '補足
+|-- META  /data 'od-gis-kenko-ben  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-kenko-ben  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-kenko-ben  /name '最終更新日  /content '2014年11月23日
+|-- META  /data 'od-gis-kenko-ben  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-kenko-ben  /name '補足
 
-|-- META  /data 'od-gis_kenko_in  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_in.html"
-|-- META  /data 'od-gis_kenko_in  /name 'タイトル  /content "健康づくり支援店（飲食店またはそうざい製造業）"
-|-- META  /data 'od-gis_kenko_in  /name 'タグ  /content '健康
-|-- META  /data 'od-gis_kenko_in  /name 'ファイルサイズ  /content '37KB
-|-- META  /data 'od-gis_kenko_in  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-kenko-in  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_in.html"
+|-- META  /data 'od-gis-kenko-in  /name 'タイトル  /content "健康づくり支援店（飲食店またはそうざい製造業）"
+|-- META  /data 'od-gis-kenko-in  /name 'タグ  /content '健康
+|-- META  /data 'od-gis-kenko-in  /name 'ファイルサイズ  /content '37KB
+|-- META  /data 'od-gis-kenko-in  /name 'リリース日  /content '2014年12月4日
 
-|-- META  /data 'od-gis_kenko_in  /name '作成者  /content '保健衛生部保健所健康増進課
-|-- META  /data 'od-gis_kenko_in  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_kenko_in  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_kenko_in  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_kenko_in  /name '最終更新日  /content '2014年11月23日
+|-- META  /data 'od-gis-kenko-in  /name '作成者  /content '保健衛生部保健所健康増進課
+|-- META  /data 'od-gis-kenko-in  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-kenko-in  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-kenko-in  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-kenko-in  /name '最終更新日  /content '2014年11月23日
 
-|-- META  /data 'od-gis_kenko_in  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_kenko_in  /name '補足
-|-- META  /data 'od-gis_kenko_kyu  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_kyu.html"
-|-- META  /data 'od-gis_kenko_kyu  /name 'タイトル  /content "健康づくり支援店（特定給食施設または特定給食施設以外の施設）"
-|-- META  /data 'od-gis_kenko_kyu  /name 'タグ  /content '健康
+|-- META  /data 'od-gis-kenko-in  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-kenko-in  /name '補足
+|-- META  /data 'od-gis-kenko-kyu  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_kenko_kyu.html"
+|-- META  /data 'od-gis-kenko-kyu  /name 'タイトル  /content "健康づくり支援店（特定給食施設または特定給食施設以外の施設）"
+|-- META  /data 'od-gis-kenko-kyu  /name 'タグ  /content '健康
 *** 625
 
-|-- META  /data 'od-gis_kenko_kyu  /name 'ファイルサイズ  /content '3KB
-|-- META  /data 'od-gis_kenko_kyu  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_kenko_kyu  /name '作成者  /content '保健衛生部保健所健康増進課
-|-- META  /data 'od-gis_kenko_kyu  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_kenko_kyu  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-kenko-kyu  /name 'ファイルサイズ  /content '3KB
+|-- META  /data 'od-gis-kenko-kyu  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-kenko-kyu  /name '作成者  /content '保健衛生部保健所健康増進課
+|-- META  /data 'od-gis-kenko-kyu  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-kenko-kyu  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_kenko_kyu  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_kenko_kyu  /name '最終更新日  /content '2013年10月22日
-|-- META  /data 'od-gis_kenko_kyu  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_kenko_kyu  /name '補足
-|-- META  /data 'od-gis_kokudo_hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.html"
+|-- META  /data 'od-gis-kenko-kyu  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-kenko-kyu  /name '最終更新日  /content '2013年10月22日
+|-- META  /data 'od-gis-kenko-kyu  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-kenko-kyu  /name '補足
+|-- META  /data 'od-gis-kokudo-hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.html"
 
-|-- META  /data 'od-gis_kokudo_hashi  /name 'タイトル  /content '国道上の橋梁
-|-- META  /data 'od-gis_kokudo_hashi  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_kokudo_hashi  /name 'ファイルサイズ  /content '18KB
-|-- META  /data 'od-gis_kokudo_hashi  /name 'リリース日  /content '2015年2月24日
-|-- META  /data 'od-gis_kokudo_hashi  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-kokudo-hashi  /name 'タイトル  /content '国道上の橋梁
+|-- META  /data 'od-gis-kokudo-hashi  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-kokudo-hashi  /name 'ファイルサイズ  /content '18KB
+|-- META  /data 'od-gis-kokudo-hashi  /name 'リリース日  /content '2015年2月24日
+|-- META  /data 'od-gis-kokudo-hashi  /name '作成者  /content '土木部土木総務課
 
-|-- META  /data 'od-gis_kokudo_hashi  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_kokudo_hashi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_kokudo_hashi  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_kokudo_hashi  /name '最終更新日  /content '2015年2月14日
-|-- META  /data 'od-gis_kokudo_hashi  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-kokudo-hashi  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-kokudo-hashi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-kokudo-hashi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-kokudo-hashi  /name '最終更新日  /content '2015年2月14日
+|-- META  /data 'od-gis-kokudo-hashi  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_kokudo_hashi  /name '補足
-|-- META  /data 'od-gis_library  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_library.html"
-|-- META  /data 'od-gis_library  /name 'タイトル  /content '図書館
-|-- META  /data 'od-gis_library  /name 'タグ  /content '生涯学習
-|-- META  /data 'od-gis_library  /name 'ファイルサイズ  /content '6KB
+|-- META  /data 'od-gis-kokudo-hashi  /name '補足
+|-- META  /data 'od-gis-library  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_library.html"
+|-- META  /data 'od-gis-library  /name 'タイトル  /content '図書館
+|-- META  /data 'od-gis-library  /name 'タグ  /content '生涯学習
+|-- META  /data 'od-gis-library  /name 'ファイルサイズ  /content '6KB
 *** 650
 
-|-- META  /data 'od-gis_library  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_library  /name '作成者  /content '教育委員会事務局中央図書館
-|-- META  /data 'od-gis_library  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_library  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_library  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-library  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-library  /name '作成者  /content '教育委員会事務局中央図書館
+|-- META  /data 'od-gis-library  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-library  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-library  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_library  /name '最終更新日  /content '2014年11月16日
-|-- META  /data 'od-gis_library  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_library  /name '補足
-|-- META  /data 'od-gis_okugaihinan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_okugaihinan.html"
-|-- META  /data 'od-gis_okugaihinan  /name 'タイトル  /content '屋外避難場所
+|-- META  /data 'od-gis-library  /name '最終更新日  /content '2014年11月16日
+|-- META  /data 'od-gis-library  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-library  /name '補足
+|-- META  /data 'od-gis-okugaihinan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_okugaihinan.html"
+|-- META  /data 'od-gis-okugaihinan  /name 'タイトル  /content '屋外避難場所
 
-|-- META  /data 'od-gis_okugaihinan  /name 'タグ  /content '防災
-|-- META  /data 'od-gis_okugaihinan  /name 'ファイルサイズ  /content '58KB
-|-- META  /data 'od-gis_okugaihinan  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_okugaihinan  /name '作成者  /content '危機管理防災局防災課
-|-- META  /data 'od-gis_okugaihinan  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-okugaihinan  /name 'タグ  /content '防災
+|-- META  /data 'od-gis-okugaihinan  /name 'ファイルサイズ  /content '58KB
+|-- META  /data 'od-gis-okugaihinan  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-okugaihinan  /name '作成者  /content '危機管理防災局防災課
+|-- META  /data 'od-gis-okugaihinan  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_okugaihinan  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_okugaihinan  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_okugaihinan  /name '最終更新日  /content '2014年11月11日
-|-- META  /data 'od-gis_okugaihinan  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_okugaihinan  /name '補足
+|-- META  /data 'od-gis-okugaihinan  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-okugaihinan  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-okugaihinan  /name '最終更新日  /content '2014年11月11日
+|-- META  /data 'od-gis-okugaihinan  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-okugaihinan  /name '補足
 
-|-- META  /data 'od-gis_okunaihinanjo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_okunaihinanjo.html"
-|-- META  /data 'od-gis_okunaihinanjo  /name 'タイトル  /content '屋内避難所
-|-- META  /data 'od-gis_okunaihinanjo  /name 'タグ  /content '防災
-|-- META  /data 'od-gis_okunaihinanjo  /name 'ファイルサイズ  /content '172KB
-|-- META  /data 'od-gis_okunaihinanjo  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-okunaihinanjo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_okunaihinanjo.html"
+|-- META  /data 'od-gis-okunaihinanjo  /name 'タイトル  /content '屋内避難所
+|-- META  /data 'od-gis-okunaihinanjo  /name 'タグ  /content '防災
+|-- META  /data 'od-gis-okunaihinanjo  /name 'ファイルサイズ  /content '172KB
+|-- META  /data 'od-gis-okunaihinanjo  /name 'リリース日  /content '2015年1月15日
 *** 675
 
-|-- META  /data 'od-gis_okunaihinanjo  /name '作成者  /content '危機管理防災局防災課
-|-- META  /data 'od-gis_okunaihinanjo  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_okunaihinanjo  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_okunaihinanjo  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_okunaihinanjo  /name '最終更新日  /content '2015年1月5日
+|-- META  /data 'od-gis-okunaihinanjo  /name '作成者  /content '危機管理防災局防災課
+|-- META  /data 'od-gis-okunaihinanjo  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-okunaihinanjo  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-okunaihinanjo  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-okunaihinanjo  /name '最終更新日  /content '2015年1月5日
 
-|-- META  /data 'od-gis_okunaihinanjo  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_okunaihinanjo  /name '補足
-|-- META  /data 'od-gis_onseninst  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_onseninst.html"
-|-- META  /data 'od-gis_onseninst  /name 'タイトル  /content '温泉利用を許可した施設
-|-- META  /data 'od-gis_onseninst  /name 'タグ  /content "観光、健康"
+|-- META  /data 'od-gis-okunaihinanjo  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-okunaihinanjo  /name '補足
+|-- META  /data 'od-gis-onseninst  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_onseninst.html"
+|-- META  /data 'od-gis-onseninst  /name 'タイトル  /content '温泉利用を許可した施設
+|-- META  /data 'od-gis-onseninst  /name 'タグ  /content "観光、健康"
 
-|-- META  /data 'od-gis_onseninst  /name 'ファイルサイズ  /content '4KB
-|-- META  /data 'od-gis_onseninst  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_onseninst  /name '作成者  /content '保健衛生部保健所環境衛生課
-|-- META  /data 'od-gis_onseninst  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_onseninst  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-onseninst  /name 'ファイルサイズ  /content '4KB
+|-- META  /data 'od-gis-onseninst  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-onseninst  /name '作成者  /content '保健衛生部保健所環境衛生課
+|-- META  /data 'od-gis-onseninst  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-onseninst  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_onseninst  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_onseninst  /name '最終更新日  /content '2014年11月13日
-|-- META  /data 'od-gis_onseninst  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_onseninst  /name '補足
-|-- META  /data 'od-gis_park  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_park.html"
+|-- META  /data 'od-gis-onseninst  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-onseninst  /name '最終更新日  /content '2014年11月13日
+|-- META  /data 'od-gis-onseninst  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-onseninst  /name '補足
+|-- META  /data 'od-gis-park  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_park.html"
 
-|-- META  /data 'od-gis_park  /name 'タイトル  /content "公園・緑地"
-|-- META  /data 'od-gis_park  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_park  /name 'ファイルサイズ  /content '142KB
-|-- META  /data 'od-gis_park  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_park  /name '作成者  /content '土木部公園水辺課
+|-- META  /data 'od-gis-park  /name 'タイトル  /content "公園・緑地"
+|-- META  /data 'od-gis-park  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-park  /name 'ファイルサイズ  /content '142KB
+|-- META  /data 'od-gis-park  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-park  /name '作成者  /content '土木部公園水辺課
 *** 700
 
-|-- META  /data 'od-gis_park  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_park  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_park  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_park  /name '最終更新日  /content '2014年11月17日
-|-- META  /data 'od-gis_park  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-park  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-park  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-park  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-park  /name '最終更新日  /content '2014年11月17日
+|-- META  /data 'od-gis-park  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_park  /name '補足
-|-- META  /data 'od-gis_pkbicycles  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_pkbicycles.html"
-|-- META  /data 'od-gis_pkbicycles  /name 'タイトル  /content '駐輪場
-|-- META  /data 'od-gis_pkbicycles  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_pkbicycles  /name 'ファイルサイズ  /content '10KB
+|-- META  /data 'od-gis-park  /name '補足
+|-- META  /data 'od-gis-pkbicycles  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_pkbicycles.html"
+|-- META  /data 'od-gis-pkbicycles  /name 'タイトル  /content '駐輪場
+|-- META  /data 'od-gis-pkbicycles  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-pkbicycles  /name 'ファイルサイズ  /content '10KB
 
-|-- META  /data 'od-gis_pkbicycles  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_pkbicycles  /name '作成者  /content '土木部土木総務課
-|-- META  /data 'od-gis_pkbicycles  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_pkbicycles  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_pkbicycles  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-pkbicycles  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-pkbicycles  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-pkbicycles  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-pkbicycles  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-pkbicycles  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_pkbicycles  /name '最終更新日  /content '2014年11月14日
-|-- META  /data 'od-gis_pkbicycles  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_pkbicycles  /name '補足
-|-- META  /data 'od-gis_rentcycle  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_rentcycle.html"
-|-- META  /data 'od-gis_rentcycle  /name 'タイトル  /content "レンタサイクル（新潟地区）"
+|-- META  /data 'od-gis-pkbicycles  /name '最終更新日  /content '2014年11月14日
+|-- META  /data 'od-gis-pkbicycles  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-pkbicycles  /name '補足
+|-- META  /data 'od-gis-rentcycle  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_rentcycle.html"
+|-- META  /data 'od-gis-rentcycle  /name 'タイトル  /content "レンタサイクル（新潟地区）"
 
-|-- META  /data 'od-gis_rentcycle  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_rentcycle  /name 'ファイルサイズ  /content '6KB
-|-- META  /data 'od-gis_rentcycle  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_rentcycle  /name '作成者  /content '中央区建設課
-|-- META  /data 'od-gis_rentcycle  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-rentcycle  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-rentcycle  /name 'ファイルサイズ  /content '6KB
+|-- META  /data 'od-gis-rentcycle  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-rentcycle  /name '作成者  /content '中央区建設課
+|-- META  /data 'od-gis-rentcycle  /name '使用言語  /content '日本語
 *** 725
 
-|-- META  /data 'od-gis_rentcycle  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_rentcycle  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_rentcycle  /name '最終更新日  /content '2014年11月15日
-|-- META  /data 'od-gis_rentcycle  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_rentcycle  /name '補足
+|-- META  /data 'od-gis-rentcycle  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-rentcycle  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-rentcycle  /name '最終更新日  /content '2014年11月15日
+|-- META  /data 'od-gis-rentcycle  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-rentcycle  /name '補足
 
-|-- META  /data 'od-gis_sankakuten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_sankakuten.html"
-|-- META  /data 'od-gis_sankakuten  /name 'タイトル  /content '街区三角点
-|-- META  /data 'od-gis_sankakuten  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_sankakuten  /name 'ファイルサイズ  /content '32KB
-|-- META  /data 'od-gis_sankakuten  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-sankakuten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_sankakuten.html"
+|-- META  /data 'od-gis-sankakuten  /name 'タイトル  /content '街区三角点
+|-- META  /data 'od-gis-sankakuten  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-sankakuten  /name 'ファイルサイズ  /content '32KB
+|-- META  /data 'od-gis-sankakuten  /name 'リリース日  /content '2015年1月15日
 
-|-- META  /data 'od-gis_sankakuten  /name '作成者  /content '土木部土木総務課
-|-- META  /data 'od-gis_sankakuten  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_sankakuten  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_sankakuten  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_sankakuten  /name '最終更新日  /content '2014年11月27日
+|-- META  /data 'od-gis-sankakuten  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-sankakuten  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-sankakuten  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-sankakuten  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-sankakuten  /name '最終更新日  /content '2014年11月27日
 
-|-- META  /data 'od-gis_sankakuten  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_sankakuten  /name '補足
-|-- META  /data 'od-gis_sankakuten_np  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_sankakuten_np.html"
-|-- META  /data 'od-gis_sankakuten_np  /name 'タイトル  /content "街区三角点（節点）"
-|-- META  /data 'od-gis_sankakuten_np  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-sankakuten  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-sankakuten  /name '補足
+|-- META  /data 'od-gis-sankakuten-np  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_sankakuten_np.html"
+|-- META  /data 'od-gis-sankakuten-np  /name 'タイトル  /content "街区三角点（節点）"
+|-- META  /data 'od-gis-sankakuten-np  /name 'タグ  /content '道路
 
-|-- META  /data 'od-gis_sankakuten_np  /name 'ファイルサイズ  /content '14KB
-|-- META  /data 'od-gis_sankakuten_np  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_sankakuten_np  /name '作成者  /content '土木部土木総務課
-|-- META  /data 'od-gis_sankakuten_np  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_sankakuten_np  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-sankakuten-np  /name 'ファイルサイズ  /content '14KB
+|-- META  /data 'od-gis-sankakuten-np  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-sankakuten-np  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-sankakuten-np  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-sankakuten-np  /name '公表者  /content '総務部IT推進課
 *** 750
 
-|-- META  /data 'od-gis_sankakuten_np  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_sankakuten_np  /name '最終更新日  /content '2014年11月27日
-|-- META  /data 'od-gis_sankakuten_np  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_sankakuten_np  /name '補足
-|-- META  /data 'od-gis_shido_hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_shido_hashi.html"
+|-- META  /data 'od-gis-sankakuten-np  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-sankakuten-np  /name '最終更新日  /content '2014年11月27日
+|-- META  /data 'od-gis-sankakuten-np  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-sankakuten-np  /name '補足
+|-- META  /data 'od-gis-shido-hashi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_shido_hashi.html"
 
-|-- META  /data 'od-gis_shido_hashi  /name 'タイトル  /content '市道上の橋梁
-|-- META  /data 'od-gis_shido_hashi  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_shido_hashi  /name 'ファイルサイズ  /content '492KB
-|-- META  /data 'od-gis_shido_hashi  /name 'リリース日  /content '2015年2月24日
-|-- META  /data 'od-gis_shido_hashi  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-shido-hashi  /name 'タイトル  /content '市道上の橋梁
+|-- META  /data 'od-gis-shido-hashi  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-shido-hashi  /name 'ファイルサイズ  /content '492KB
+|-- META  /data 'od-gis-shido-hashi  /name 'リリース日  /content '2015年2月24日
+|-- META  /data 'od-gis-shido-hashi  /name '作成者  /content '土木部土木総務課
 
-|-- META  /data 'od-gis_shido_hashi  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shido_hashi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shido_hashi  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shido_hashi  /name '最終更新日  /content '2015年2月14日
-|-- META  /data 'od-gis_shido_hashi  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shido-hashi  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shido-hashi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shido-hashi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shido-hashi  /name '最終更新日  /content '2015年2月14日
+|-- META  /data 'od-gis-shido-hashi  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_shido_hashi  /name '補足
-|-- META  /data 'od-gis_shieijutaku  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shieijutaku.html"
-|-- META  /data 'od-gis_shieijutaku  /name 'タイトル  /content '市営住宅など
-|-- META  /data 'od-gis_shieijutaku  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_shieijutaku  /name 'ファイルサイズ  /content '25KB
+|-- META  /data 'od-gis-shido-hashi  /name '補足
+|-- META  /data 'od-gis-shieijutaku  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shieijutaku.html"
+|-- META  /data 'od-gis-shieijutaku  /name 'タイトル  /content '市営住宅など
+|-- META  /data 'od-gis-shieijutaku  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-shieijutaku  /name 'ファイルサイズ  /content '25KB
 
-|-- META  /data 'od-gis_shieijutaku  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_shieijutaku  /name '作成者  /content '建築部住環境政策課
-|-- META  /data 'od-gis_shieijutaku  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shieijutaku  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shieijutaku  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shieijutaku  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-shieijutaku  /name '作成者  /content '建築部住環境政策課
+|-- META  /data 'od-gis-shieijutaku  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shieijutaku  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shieijutaku  /name '更新頻度  /content '随時
 *** 775
 
-|-- META  /data 'od-gis_shieijutaku  /name '最終更新日  /content '2014年12月30日
-|-- META  /data 'od-gis_shieijutaku  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shieijutaku  /name '補足
-|-- META  /data 'od-gis_shiminkaikan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_shiminkaikan.html"
-|-- META  /data 'od-gis_shiminkaikan  /name 'タイトル  /content '市民会館等
+|-- META  /data 'od-gis-shieijutaku  /name '最終更新日  /content '2014年12月30日
+|-- META  /data 'od-gis-shieijutaku  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shieijutaku  /name '補足
+|-- META  /data 'od-gis-shiminkaikan  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_shiminkaikan.html"
+|-- META  /data 'od-gis-shiminkaikan  /name 'タイトル  /content '市民会館等
 
-|-- META  /data 'od-gis_shiminkaikan  /name 'タグ  /content '生涯学習
-|-- META  /data 'od-gis_shiminkaikan  /name 'ファイルサイズ  /content '5KB
-|-- META  /data 'od-gis_shiminkaikan  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_shiminkaikan  /name '作成者  /content "各区地域課、市民生活部男女共同参画課、文化スポーツ部文化政策課、江南区産業振興課、南区産業振興課、教育委員会事務局生涯学習課、教育委員会事務局生涯学習センター、教育委員会事務局白根地区公民館、教育委員会事務局西川地区公民館、教育委員会事務局西川図書館"
-|-- META  /data 'od-gis_shiminkaikan  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shiminkaikan  /name 'タグ  /content '生涯学習
+|-- META  /data 'od-gis-shiminkaikan  /name 'ファイルサイズ  /content '5KB
+|-- META  /data 'od-gis-shiminkaikan  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-shiminkaikan  /name '作成者  /content "各区地域課、市民生活部男女共同参画課、文化スポーツ部文化政策課、江南区産業振興課、南区産業振興課、教育委員会事務局生涯学習課、教育委員会事務局生涯学習センター、教育委員会事務局白根地区公民館、教育委員会事務局西川地区公民館、教育委員会事務局西川図書館"
+|-- META  /data 'od-gis-shiminkaikan  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_shiminkaikan  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shiminkaikan  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shiminkaikan  /name '最終更新日  /content '2015年1月30日
-|-- META  /data 'od-gis_shiminkaikan  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shiminkaikan  /name '補足
+|-- META  /data 'od-gis-shiminkaikan  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shiminkaikan  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shiminkaikan  /name '最終更新日  /content '2015年1月30日
+|-- META  /data 'od-gis-shiminkaikan  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shiminkaikan  /name '補足
 
-|-- META  /data 'od-gis_shiminnoen  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_shiminnoen.html"
-|-- META  /data 'od-gis_shiminnoen  /name 'タイトル  /content '市民農園
-|-- META  /data 'od-gis_shiminnoen  /name 'タグ  /content '観光
-|-- META  /data 'od-gis_shiminnoen  /name 'ファイルサイズ  /content '3KB
-|-- META  /data 'od-gis_shiminnoen  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-shiminnoen  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_shiminnoen.html"
+|-- META  /data 'od-gis-shiminnoen  /name 'タイトル  /content '市民農園
+|-- META  /data 'od-gis-shiminnoen  /name 'タグ  /content '観光
+|-- META  /data 'od-gis-shiminnoen  /name 'ファイルサイズ  /content '3KB
+|-- META  /data 'od-gis-shiminnoen  /name 'リリース日  /content '2014年12月4日
 
-|-- META  /data 'od-gis_shiminnoen  /name '作成者  /content "農林水産部食育・花育センター"
-|-- META  /data 'od-gis_shiminnoen  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shiminnoen  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shiminnoen  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shiminnoen  /name '最終更新日  /content '2014年11月15日
+|-- META  /data 'od-gis-shiminnoen  /name '作成者  /content "農林水産部食育・花育センター"
+|-- META  /data 'od-gis-shiminnoen  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shiminnoen  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shiminnoen  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shiminnoen  /name '最終更新日  /content '2014年11月15日
 *** 800
 
-|-- META  /data 'od-gis_shiminnoen  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shiminnoen  /name '補足
-|-- META  /data 'od-gis_shiyakusho  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shiyakusho.html"
-|-- META  /data 'od-gis_shiyakusho  /name 'タイトル  /content "市役所・区役所・出張所等"
-|-- META  /data 'od-gis_shiyakusho  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-shiminnoen  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shiminnoen  /name '補足
+|-- META  /data 'od-gis-shiyakusho  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shiyakusho.html"
+|-- META  /data 'od-gis-shiyakusho  /name 'タイトル  /content "市役所・区役所・出張所等"
+|-- META  /data 'od-gis-shiyakusho  /name 'タグ  /content 'くらし
 
-|-- META  /data 'od-gis_shiyakusho  /name 'ファイルサイズ  /content '4KB
-|-- META  /data 'od-gis_shiyakusho  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_shiyakusho  /name '作成者  /content '総務部総務課
-|-- META  /data 'od-gis_shiyakusho  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shiyakusho  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shiyakusho  /name 'ファイルサイズ  /content '4KB
+|-- META  /data 'od-gis-shiyakusho  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-shiyakusho  /name '作成者  /content '総務部総務課
+|-- META  /data 'od-gis-shiyakusho  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shiyakusho  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_shiyakusho  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shiyakusho  /name '最終更新日  /content '2014年3月19日
-|-- META  /data 'od-gis_shiyakusho  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shiyakusho  /name '補足
-|-- META  /data 'od-gis_shobo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shobo.html"
+|-- META  /data 'od-gis-shiyakusho  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shiyakusho  /name '最終更新日  /content '2014年3月19日
+|-- META  /data 'od-gis-shiyakusho  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shiyakusho  /name '補足
+|-- META  /data 'od-gis-shobo  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_shobo.html"
 
-|-- META  /data 'od-gis_shobo  /name 'タイトル  /content '消防施設
-|-- META  /data 'od-gis_shobo  /name 'タグ  /content "くらし、防災"
-|-- META  /data 'od-gis_shobo  /name 'ファイルサイズ  /content '5KB
-|-- META  /data 'od-gis_shobo  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_shobo  /name '作成者  /content '消防局総務課
+|-- META  /data 'od-gis-shobo  /name 'タイトル  /content '消防施設
+|-- META  /data 'od-gis-shobo  /name 'タグ  /content "くらし、防災"
+|-- META  /data 'od-gis-shobo  /name 'ファイルサイズ  /content '5KB
+|-- META  /data 'od-gis-shobo  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-shobo  /name '作成者  /content '消防局総務課
 
-|-- META  /data 'od-gis_shobo  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shobo  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shobo  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shobo  /name '最終更新日  /content '2014年10月3日
-|-- META  /data 'od-gis_shobo  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shobo  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shobo  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shobo  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shobo  /name '最終更新日  /content '2014年10月3日
+|-- META  /data 'od-gis-shobo  /name '組織名  /content '新潟市役所
 *** 825
 
-|-- META  /data 'od-gis_shobo  /name '補足
-|-- META  /data 'od-gis_shogakko  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_shogakko.html"
-|-- META  /data 'od-gis_shogakko  /name 'タイトル  /content '小学校
-|-- META  /data 'od-gis_shogakko  /name 'タグ  /content "子育て、教育"
-|-- META  /data 'od-gis_shogakko  /name 'ファイルサイズ  /content '20KB
+|-- META  /data 'od-gis-shobo  /name '補足
+|-- META  /data 'od-gis-shogakko  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_shogakko.html"
+|-- META  /data 'od-gis-shogakko  /name 'タイトル  /content '小学校
+|-- META  /data 'od-gis-shogakko  /name 'タグ  /content "子育て、教育"
+|-- META  /data 'od-gis-shogakko  /name 'ファイルサイズ  /content '20KB
 
-|-- META  /data 'od-gis_shogakko  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_shogakko  /name '作成者  /content '教育委員会事務局教職員課
-|-- META  /data 'od-gis_shogakko  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_shogakko  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shogakko  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shogakko  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-shogakko  /name '作成者  /content '教育委員会事務局教職員課
+|-- META  /data 'od-gis-shogakko  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shogakko  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shogakko  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_shogakko  /name '最終更新日  /content '2015年1月9日
-|-- META  /data 'od-gis_shogakko  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shogakko  /name '補足
-|-- META  /data 'od-gis_shokuniku  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_shokuniku.html"
-|-- META  /data 'od-gis_shokuniku  /name 'タイトル  /content '食肉衛生検査所
+|-- META  /data 'od-gis-shogakko  /name '最終更新日  /content '2015年1月9日
+|-- META  /data 'od-gis-shogakko  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shogakko  /name '補足
+|-- META  /data 'od-gis-shokuniku  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kenkofukushi/od-gis_shokuniku.html"
+|-- META  /data 'od-gis-shokuniku  /name 'タイトル  /content '食肉衛生検査所
 
-|-- META  /data 'od-gis_shokuniku  /name 'タグ  /content "健康、福祉"
-|-- META  /data 'od-gis_shokuniku  /name 'ファイルサイズ  /content '312bytes
-|-- META  /data 'od-gis_shokuniku  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_shokuniku  /name '作成者  /content '保健衛生部食肉衛生検査所
-|-- META  /data 'od-gis_shokuniku  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-shokuniku  /name 'タグ  /content "健康、福祉"
+|-- META  /data 'od-gis-shokuniku  /name 'ファイルサイズ  /content '312bytes
+|-- META  /data 'od-gis-shokuniku  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-shokuniku  /name '作成者  /content '保健衛生部食肉衛生検査所
+|-- META  /data 'od-gis-shokuniku  /name '使用言語  /content '日本語
 
-|-- META  /data 'od-gis_shokuniku  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_shokuniku  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_shokuniku  /name '最終更新日  /content '2014年11月23日
-|-- META  /data 'od-gis_shokuniku  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_shokuniku  /name '補足
+|-- META  /data 'od-gis-shokuniku  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-shokuniku  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-shokuniku  /name '最終更新日  /content '2014年11月23日
+|-- META  /data 'od-gis-shokuniku  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-shokuniku  /name '補足
 *** 850
 
-|-- META  /data 'od-gis_sports  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_sports.html"
-|-- META  /data 'od-gis_sports  /name 'タイトル  /content 'スポーツ施設
-|-- META  /data 'od-gis_sports  /name 'タグ  /content 'スポーツ
-|-- META  /data 'od-gis_sports  /name 'ファイルサイズ  /content '34KB
-|-- META  /data 'od-gis_sports  /name 'リリース日  /content '2015年2月24日
+|-- META  /data 'od-gis-sports  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_sports.html"
+|-- META  /data 'od-gis-sports  /name 'タイトル  /content 'スポーツ施設
+|-- META  /data 'od-gis-sports  /name 'タグ  /content 'スポーツ
+|-- META  /data 'od-gis-sports  /name 'ファイルサイズ  /content '34KB
+|-- META  /data 'od-gis-sports  /name 'リリース日  /content '2015年2月24日
 
-|-- META  /data 'od-gis_sports  /name '作成者  /content "文化スポーツ部スポーツ振興課、環境部廃棄物政策課、東区建設課、中央区建設課、江南区建設課、南区産業振興課"
-|-- META  /data 'od-gis_sports  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_sports  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_sports  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_sports  /name '最終更新日  /content '2015年2月18日
+|-- META  /data 'od-gis-sports  /name '作成者  /content "文化スポーツ部スポーツ振興課、環境部廃棄物政策課、東区建設課、中央区建設課、江南区建設課、南区産業振興課"
+|-- META  /data 'od-gis-sports  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-sports  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-sports  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-sports  /name '最終更新日  /content '2015年2月18日
 
-|-- META  /data 'od-gis_sports  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_sports  /name '補足
-|-- META  /data 'od-gis_takakuten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_takakuten.html"
-|-- META  /data 'od-gis_takakuten  /name 'タイトル  /content '街区多角点
-|-- META  /data 'od-gis_takakuten  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-sports  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-sports  /name '補足
+|-- META  /data 'od-gis-takakuten  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_takakuten.html"
+|-- META  /data 'od-gis-takakuten  /name 'タイトル  /content '街区多角点
+|-- META  /data 'od-gis-takakuten  /name 'タグ  /content '道路
 
-|-- META  /data 'od-gis_takakuten  /name 'ファイルサイズ  /content '159KB
-|-- META  /data 'od-gis_takakuten  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_takakuten  /name '作成者  /content '土木部土木総務課
-|-- META  /data 'od-gis_takakuten  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_takakuten  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-takakuten  /name 'ファイルサイズ  /content '159KB
+|-- META  /data 'od-gis-takakuten  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-takakuten  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-takakuten  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-takakuten  /name '公表者  /content '総務部IT推進課
 
-|-- META  /data 'od-gis_takakuten  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_takakuten  /name '最終更新日  /content '2014年11月27日
-|-- META  /data 'od-gis_takakuten  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_takakuten  /name '補足
-|-- META  /data 'od-gis_takakuten_np  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_takakuten_np.html"
+|-- META  /data 'od-gis-takakuten  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-takakuten  /name '最終更新日  /content '2014年11月27日
+|-- META  /data 'od-gis-takakuten  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-takakuten  /name '補足
+|-- META  /data 'od-gis-takakuten-np  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_takakuten_np.html"
 *** 875
 
-|-- META  /data 'od-gis_takakuten_np  /name 'タイトル  /content "街区多角点（節点）"
-|-- META  /data 'od-gis_takakuten_np  /name 'タグ  /content '道路
-|-- META  /data 'od-gis_takakuten_np  /name 'ファイルサイズ  /content '165KB
-|-- META  /data 'od-gis_takakuten_np  /name 'リリース日  /content '2015年1月15日
-|-- META  /data 'od-gis_takakuten_np  /name '作成者  /content '土木部土木総務課
+|-- META  /data 'od-gis-takakuten-np  /name 'タイトル  /content "街区多角点（節点）"
+|-- META  /data 'od-gis-takakuten-np  /name 'タグ  /content '道路
+|-- META  /data 'od-gis-takakuten-np  /name 'ファイルサイズ  /content '165KB
+|-- META  /data 'od-gis-takakuten-np  /name 'リリース日  /content '2015年1月15日
+|-- META  /data 'od-gis-takakuten-np  /name '作成者  /content '土木部土木総務課
 
-|-- META  /data 'od-gis_takakuten_np  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_takakuten_np  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_takakuten_np  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_takakuten_np  /name '最終更新日  /content '2014年11月27日
-|-- META  /data 'od-gis_takakuten_np  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-takakuten-np  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-takakuten-np  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-takakuten-np  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-takakuten-np  /name '最終更新日  /content '2014年11月27日
+|-- META  /data 'od-gis-takakuten-np  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_takakuten_np  /name '補足
-|-- META  /data 'od-gis_waterworksins  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_waterworksins.html"
-|-- META  /data 'od-gis_waterworksins  /name 'タイトル  /content '上水道施設
-|-- META  /data 'od-gis_waterworksins  /name 'タグ  /content '上下水道
-|-- META  /data 'od-gis_waterworksins  /name 'ファイルサイズ  /content '4KB
+|-- META  /data 'od-gis-takakuten-np  /name '補足
+|-- META  /data 'od-gis-waterworksins  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_dourosuido/od-gis_waterworksins.html"
+|-- META  /data 'od-gis-waterworksins  /name 'タイトル  /content '上水道施設
+|-- META  /data 'od-gis-waterworksins  /name 'タグ  /content '上下水道
+|-- META  /data 'od-gis-waterworksins  /name 'ファイルサイズ  /content '4KB
 
-|-- META  /data 'od-gis_waterworksins  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_waterworksins  /name '作成者  /content '水道局総務部総務課
-|-- META  /data 'od-gis_waterworksins  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_waterworksins  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_waterworksins  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-waterworksins  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-waterworksins  /name '作成者  /content '水道局総務部総務課
+|-- META  /data 'od-gis-waterworksins  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-waterworksins  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-waterworksins  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_waterworksins  /name '最終更新日  /content '2014年11月14日
-|-- META  /data 'od-gis_waterworksins  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_waterworksins  /name '補足
-|-- META  /data 'od-gis_wifi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_wi-fi.html"
-|-- META  /data 'od-gis_wifi  /name 'タイトル  /content '公衆Wi-Fi設置公共施設
+|-- META  /data 'od-gis-waterworksins  /name '最終更新日  /content '2014年11月14日
+|-- META  /data 'od-gis-waterworksins  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-waterworksins  /name '補足
+|-- META  /data 'od-gis-wifi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_wi-fi.html"
+|-- META  /data 'od-gis-wifi  /name 'タイトル  /content '公衆Wi-Fi設置公共施設
 *** 900
 
-|-- META  /data 'od-gis_wifi  /name 'タグ  /content "くらし、観光、スポーツ"
-|-- META  /data 'od-gis_wifi  /name 'ファイルサイズ  /content '7キロバイト
-|-- META  /data 'od-gis_wifi  /name 'リリース日  /content '2015年4月30日
-|-- META  /data 'od-gis_wifi  /name '作成者  /content '総務部IT推進課
-|-- META  /data 'od-gis_wifi  /name '使用言語  /content "日本語・UTF-8"
+|-- META  /data 'od-gis-wifi  /name 'タグ  /content "くらし、観光、スポーツ"
+|-- META  /data 'od-gis-wifi  /name 'ファイルサイズ  /content '7キロバイト
+|-- META  /data 'od-gis-wifi  /name 'リリース日  /content '2015年4月30日
+|-- META  /data 'od-gis-wifi  /name '作成者  /content '総務部IT推進課
+|-- META  /data 'od-gis-wifi  /name '使用言語  /content "日本語・UTF-8"
 
-|-- META  /data 'od-gis_wifi  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_wifi  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_wifi  /name '最終更新日  /content '2015年4月30日
-|-- META  /data 'od-gis_wifi  /name '組織名  /content '新潟市
-|-- META  /data 'od-gis_wtf  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_wtf.html"
+|-- META  /data 'od-gis-wifi  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-wifi  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-wifi  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-gis-wifi  /name '組織名  /content '新潟市
+|-- META  /data 'od-gis-wtf  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_wtf.html"
 
-|-- META  /data 'od-gis_wtf  /name 'タイトル  /content '廃棄物処理施設
-|-- META  /data 'od-gis_wtf  /name 'タグ  /content 'くらし
-|-- META  /data 'od-gis_wtf  /name 'ファイルサイズ  /content '4KB
-|-- META  /data 'od-gis_wtf  /name 'リリース日  /content '2014年12月4日
-|-- META  /data 'od-gis_wtf  /name '作成者  /content "環境部廃棄物対策課,環境部廃棄物施設課"
+|-- META  /data 'od-gis-wtf  /name 'タイトル  /content '廃棄物処理施設
+|-- META  /data 'od-gis-wtf  /name 'タグ  /content 'くらし
+|-- META  /data 'od-gis-wtf  /name 'ファイルサイズ  /content '4KB
+|-- META  /data 'od-gis-wtf  /name 'リリース日  /content '2014年12月4日
+|-- META  /data 'od-gis-wtf  /name '作成者  /content "環境部廃棄物対策課,環境部廃棄物施設課"
 
-|-- META  /data 'od-gis_wtf  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_wtf  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_wtf  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis_wtf  /name '最終更新日  /content '2014年11月23日
-|-- META  /data 'od-gis_wtf  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-wtf  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-wtf  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-wtf  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-wtf  /name '最終更新日  /content '2014年11月23日
+|-- META  /data 'od-gis-wtf  /name '組織名  /content '新潟市役所
 
-|-- META  /data 'od-gis_wtf  /name '補足
-|-- META  /data 'od-gis_yochien  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_yochien.html"
-|-- META  /data 'od-gis_yochien  /name 'タイトル  /content '幼稚園
-|-- META  /data 'od-gis_yochien  /name 'タグ  /content "子育て、教育"
-|-- META  /data 'od-gis_yochien  /name 'ファイルサイズ  /content '8KB
+|-- META  /data 'od-gis-wtf  /name '補足
+|-- META  /data 'od-gis-yochien  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kosodate/od-gis_yochien.html"
+|-- META  /data 'od-gis-yochien  /name 'タイトル  /content '幼稚園
+|-- META  /data 'od-gis-yochien  /name 'タグ  /content "子育て、教育"
+|-- META  /data 'od-gis-yochien  /name 'ファイルサイズ  /content '8KB
 *** 925
 
-|-- META  /data 'od-gis_yochien  /name 'リリース日  /content '2015年1月30日
-|-- META  /data 'od-gis_yochien  /name '作成者  /content "教育委員会事務局教職員課、福祉部こども未来課"
-|-- META  /data 'od-gis_yochien  /name '使用言語  /content '日本語
-|-- META  /data 'od-gis_yochien  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-gis_yochien  /name '更新頻度  /content '随時
+|-- META  /data 'od-gis-yochien  /name 'リリース日  /content '2015年1月30日
+|-- META  /data 'od-gis-yochien  /name '作成者  /content "教育委員会事務局教職員課、福祉部こども未来課"
+|-- META  /data 'od-gis-yochien  /name '使用言語  /content '日本語
+|-- META  /data 'od-gis-yochien  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-gis-yochien  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-gis_yochien  /name '最終更新日  /content '2015年1月14日
-|-- META  /data 'od-gis_yochien  /name '組織名  /content '新潟市役所
-|-- META  /data 'od-gis_yochien  /name '補足
+|-- META  /data 'od-gis-yochien  /name '最終更新日  /content '2015年1月14日
+|-- META  /data 'od-gis-yochien  /name '組織名  /content '新潟市役所
+|-- META  /data 'od-gis-yochien  /name '補足
 |-- META  /data 'od-h17kokuchonenrei  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-toukei/od-kokucho/od-h17kokuchou/od-h17kokuchonenrei.html"
 |-- META  /data 'od-h17kokuchonenrei  /name 'タイトル  /content "【平成17年国勢調査】区別男女別年齢別人口"
 
@@ -1326,35 +1336,35 @@
 |-- META  /data 'od-h27  /name '補足2  /content "最新版は、平成27年6月30日現在の数値です。"
 |-- META  /data 'od-h27  /name '補足3  /content "本ファイルには、世帯数の掲載はありません。"
 
-|-- META  /data 'od-juki_syoumei_mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-juki_syoumei_mado.html"
-|-- META  /data 'od-juki_syoumei_mado  /name 'タイトル  /content "住民記録・戸籍系証明発行窓口一覧"
-|-- META  /data 'od-juki_syoumei_mado  /name 'タグ  /content "くらし、手続き"
-|-- META  /data 'od-juki_syoumei_mado  /name 'ファイルサイズ  /content '12キロバイト
-|-- META  /data 'od-juki_syoumei_mado  /name 'ライセンス  /content "CC-BY（表示）"
+|-- META  /data 'od-juki-syoumei-mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-juki_syoumei_mado.html"
+|-- META  /data 'od-juki-syoumei-mado  /name 'タイトル  /content "住民記録・戸籍系証明発行窓口一覧"
+|-- META  /data 'od-juki-syoumei-mado  /name 'タグ  /content "くらし、手続き"
+|-- META  /data 'od-juki-syoumei-mado  /name 'ファイルサイズ  /content '12キロバイト
+|-- META  /data 'od-juki-syoumei-mado  /name 'ライセンス  /content "CC-BY（表示）"
 
-|-- META  /data 'od-juki_syoumei_mado  /name 'リリース日  /content '2015年4月30日
-|-- META  /data 'od-juki_syoumei_mado  /name '作成者  /content '市民生活部市民生活課
-|-- META  /data 'od-juki_syoumei_mado  /name '使用言語  /content "日本語・UTF-8"
-|-- META  /data 'od-juki_syoumei_mado  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-juki_syoumei_mado  /name '更新頻度  /content '随時
+|-- META  /data 'od-juki-syoumei-mado  /name 'リリース日  /content '2015年4月30日
+|-- META  /data 'od-juki-syoumei-mado  /name '作成者  /content '市民生活部市民生活課
+|-- META  /data 'od-juki-syoumei-mado  /name '使用言語  /content "日本語・UTF-8"
+|-- META  /data 'od-juki-syoumei-mado  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-juki-syoumei-mado  /name '更新頻度  /content '随時
 *** 1075
 
-|-- META  /data 'od-juki_syoumei_mado  /name '最終更新日  /content '2015年4月30日
-|-- META  /data 'od-juki_syoumei_mado  /name '組織名  /content '新潟市
-|-- META  /data 'od-juki_todoke_mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-juki_todoke_mado.html"
-|-- META  /data 'od-juki_todoke_mado  /name 'タイトル  /content "住民記録・戸籍系届出窓口一覧"
-|-- META  /data 'od-juki_todoke_mado  /name 'タグ  /content "くらし、手続き"
+|-- META  /data 'od-juki-syoumei-mado  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-juki-syoumei-mado  /name '組織名  /content '新潟市
+|-- META  /data 'od-juki-todoke-mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-juki_todoke_mado.html"
+|-- META  /data 'od-juki-todoke-mado  /name 'タイトル  /content "住民記録・戸籍系届出窓口一覧"
+|-- META  /data 'od-juki-todoke-mado  /name 'タグ  /content "くらし、手続き"
 
-|-- META  /data 'od-juki_todoke_mado  /name 'ファイルサイズ  /content '12キロバイト
-|-- META  /data 'od-juki_todoke_mado  /name 'ライセンス  /content "CC-BY（表示）"
-|-- META  /data 'od-juki_todoke_mado  /name 'リリース日  /content '2015年4月30日
-|-- META  /data 'od-juki_todoke_mado  /name '作成者  /content '市民生活部市民生活課
-|-- META  /data 'od-juki_todoke_mado  /name '使用言語  /content "日本語・UTF-8"
+|-- META  /data 'od-juki-todoke-mado  /name 'ファイルサイズ  /content '12キロバイト
+|-- META  /data 'od-juki-todoke-mado  /name 'ライセンス  /content "CC-BY（表示）"
+|-- META  /data 'od-juki-todoke-mado  /name 'リリース日  /content '2015年4月30日
+|-- META  /data 'od-juki-todoke-mado  /name '作成者  /content '市民生活部市民生活課
+|-- META  /data 'od-juki-todoke-mado  /name '使用言語  /content "日本語・UTF-8"
 
-|-- META  /data 'od-juki_todoke_mado  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-juki_todoke_mado  /name '更新頻度  /content '随時
-|-- META  /data 'od-juki_todoke_mado  /name '最終更新日  /content '2015年4月30日
-|-- META  /data 'od-juki_todoke_mado  /name '組織名  /content '新潟市
+|-- META  /data 'od-juki-todoke-mado  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-juki-todoke-mado  /name '更新頻度  /content '随時
+|-- META  /data 'od-juki-todoke-mado  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-juki-todoke-mado  /name '組織名  /content '新潟市
 |-- META  /data 'od-koutsu001  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gazou/od-fukei/od-koutsu/od-koutsu001.html"
 
 |-- META  /data 'od-koutsu001  /name 'タイトル  /content 'ときめき橋
@@ -2126,25 +2136,633 @@
 |-- META  /data 'od-yuuhi004  /name '実効画像サイズ  /content "幅4313×高さ2850（ピクセル）"
 |-- META  /data 'od-yuuhi004  /name "言語・文字コード"  /content "日本語・UTF-8"
 
-|-- META  /data 'od-zei_syoumei_mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-zei_syoumei_mado.html"
-|-- META  /data 'od-zei_syoumei_mado  /name 'タイトル  /content '税系証明発行窓口一覧
-|-- META  /data 'od-zei_syoumei_mado  /name 'タグ  /content "くらし、手続き"
-|-- META  /data 'od-zei_syoumei_mado  /name 'ファイルサイズ  /content '12キロバイト
-|-- META  /data 'od-zei_syoumei_mado  /name 'ライセンス  /content "CC-BY（表示）"
+|-- META  /data 'od-zei-syoumei-mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-zei_syoumei_mado.html"
+|-- META  /data 'od-zei-syoumei-mado  /name 'タイトル  /content '税系証明発行窓口一覧
+|-- META  /data 'od-zei-syoumei-mado  /name 'タグ  /content "くらし、手続き"
+|-- META  /data 'od-zei-syoumei-mado  /name 'ファイルサイズ  /content '12キロバイト
+|-- META  /data 'od-zei-syoumei-mado  /name 'ライセンス  /content "CC-BY（表示）"
 
-|-- META  /data 'od-zei_syoumei_mado  /name 'リリース日  /content '2015年4月30日
-|-- META  /data 'od-zei_syoumei_mado  /name '作成者  /content '市税事務所市民税課
-|-- META  /data 'od-zei_syoumei_mado  /name '使用言語  /content "日本語・UTF-8"
-|-- META  /data 'od-zei_syoumei_mado  /name '公表者  /content '総務部IT推進課
-|-- META  /data 'od-zei_syoumei_mado  /name '更新頻度  /content '随時
+|-- META  /data 'od-zei-syoumei-mado  /name 'リリース日  /content '2015年4月30日
+|-- META  /data 'od-zei-syoumei-mado  /name '作成者  /content '市税事務所市民税課
+|-- META  /data 'od-zei-syoumei-mado  /name '使用言語  /content "日本語・UTF-8"
+|-- META  /data 'od-zei-syoumei-mado  /name '公表者  /content '総務部IT推進課
+|-- META  /data 'od-zei-syoumei-mado  /name '更新頻度  /content '随時
 
-|-- META  /data 'od-zei_syoumei_mado  /name '最終更新日  /content '2015年4月30日
-|-- META  /data 'od-zei_syoumei_mado  /name '組織名  /content '新潟市
+|-- META  /data 'od-zei-syoumei-mado  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-zei-syoumei-mado  /name '組織名  /content '新潟市
 
 *** 1722 judges
+
+|-- TERM  /data 'od-gis_aed  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_aed  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_aed  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_aed  /name '施設名  /type '文字列
+|-- TERM  /data 'od-gis_asaichi  /name 'HPアドレス  /type '文字列
+
+|-- TERM  /data 'od-gis_asaichi  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_asaichi  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_asaichi  /name '主な販売品目  /type '文字列
+|-- TERM  /data 'od-gis_asaichi  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_asaichi  /name '設置場所  /type '文字列
+
+|-- TERM  /data 'od-gis_asaichi  /name '連絡先  /type '文字列
+|-- TERM  /data 'od-gis_asaichi  /name "開設期間／曜日／時間"  /type '文字列
+|-- TERM  /data 'od-gis_bus_hakusan  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_bus_hakusan  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_bus_hakusan  /name 'コース名  /type '文字列
+
+|-- TERM  /data 'od-gis_bus_hakusan  /name 'バス停名  /type '文字列
+|-- TERM  /data 'od-gis_bus_hakusan  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_bus_hakusan  /name '最寄の名所  /type '文字列
+|-- TERM  /data 'od-gis_chisan_inshok  /name 'URL  /type '文字列
+|-- TERM  /data 'od-gis_chisan_inshok  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_chisan_inshok  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_chisan_inshok  /name '店舗名  /type '文字列
+|-- TERM  /data 'od-gis_chisan_inshok  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_chisan_kouri  /name 'URL  /type '文字列
+|-- TERM  /data 'od-gis_chisan_kouri  /name 'X座標  /type '数値
+*** 25
+
+|-- TERM  /data 'od-gis_chisan_kouri  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_chisan_kouri  /name '店舗名  /type '文字列
+|-- TERM  /data 'od-gis_chisan_kouri  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_chugakko  /name 'FAX  /type '文字列
+|-- TERM  /data 'od-gis_chugakko  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_chugakko  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_chugakko  /name '学校名  /type '文字列
+|-- TERM  /data 'od-gis_chugakko  /name '学番  /type '数値
+|-- TERM  /data 'od-gis_chugakko  /name '学級数  /type '数値
+|-- TERM  /data 'od-gis_chugakko  /name '所在地  /type '文字列
+
+|-- TERM  /data 'od-gis_chugakko  /name '注意事項  /type '文字列
+|-- TERM  /data 'od-gis_chugakko  /name '生徒数  /type '数値
+|-- TERM  /data 'od-gis_chugakko  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-gis_chugakko  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_community  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_community  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_community  /name 'ホール定員  /type '数値
+|-- TERM  /data 'od-gis_community  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_community  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_community  /name '地区  /type '文字列
+
+|-- TERM  /data 'od-gis_community  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_community  /name "敷地面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_community  /name '施設内容  /type '文字列
+|-- TERM  /data 'od-gis_community  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_community  /name '講座室  /type '数値
+*** 50
+
+|-- TERM  /data 'od-gis_community  /name "開設年月(設置年月)"  /type '文字列
+|-- TERM  /data 'od-gis_community  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_communitycent  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_communitycent  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_communitycent  /name '住所  /type '文字列
+
+|-- TERM  /data 'od-gis_communitycent  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_communitycent  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_communitycent  /name "延床面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_communitycent  /name "敷地面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_communitycent  /name "構造・複合施設等"  /type '文字列
+
+|-- TERM  /data 'od-gis_communitycent  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_communitycent  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_dobokujimusho  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_dobokujimusho  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_dobokujimusho  /name '住所  /type '文字列
+
+|-- TERM  /data 'od-gis_dobokujimusho  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_dobokujimusho  /name '施設名  /type '文字列
+|-- TERM  /data 'od-gis_dobokujimusho  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-gis_dobokujimusho  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_eiseikankyo  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_eiseikankyo  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_eiseikankyo  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_eiseikankyo  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_eiseikankyo  /name "延床面積(平方メートル)"  /type '文字列
+|-- TERM  /data 'od-gis_eiseikankyo  /name "構造・複合施設等"  /type '文字列
+*** 75
+
+|-- TERM  /data 'od-gis_eiseikankyo  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_eiseikankyo  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name 'HPアドレス  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_farmstand  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_farmstand  /name '主な販売品目  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name '設置場所  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name '連絡先  /type '文字列
+|-- TERM  /data 'od-gis_farmstand  /name "開設期間／曜日／時間"  /type '文字列
+
+|-- TERM  /data 'od-gis_fishingbase  /name 'HPアドレス  /type '文字列
+|-- TERM  /data 'od-gis_fishingbase  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_fishingbase  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_fishingbase  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_fishingbase  /name '設置場所  /type '文字列
+
+|-- TERM  /data 'od-gis_fishingbase  /name '連絡先  /type '文字列
+|-- TERM  /data 'od-gis_forshogaisha  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_forshogaisha  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_forshogaisha  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_forshogaisha  /name '名称  /type '文字列
+
+|-- TERM  /data 'od-gis_forshogaisha  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_gesuido  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_gesuido  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name '備考  /type '文字列
+*** 100
+
+|-- TERM  /data 'od-gis_gesuido  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name "延床面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_gesuido  /name "敷地面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_gesuido  /name '施設の種類  /type '文字列
+
+|-- TERM  /data 'od-gis_gesuido  /name '管理  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_gesuido  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_greenandblue  /name 'HPアドレス  /type '文字列
+|-- TERM  /data 'od-gis_greenandblue  /name 'No  /type '数値
+
+|-- TERM  /data 'od-gis_greenandblue  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_greenandblue  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_greenandblue  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_greenandblue  /name '区  /type '文字列
+|-- TERM  /data 'od-gis_greenandblue  /name '施設等固有名称  /type '文字列
+
+|-- TERM  /data 'od-gis_greenandblue  /name '種  /type '文字列
+|-- TERM  /data 'od-gis_himawari  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_himawari  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_himawari  /name 'クラブ住所  /type '文字列
+|-- TERM  /data 'od-gis_himawari  /name 'クラブ名  /type '文字列
+
+|-- TERM  /data 'od-gis_himawari  /name 'クラブ郵便  /type '文字列
+|-- TERM  /data 'od-gis_himawari  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_hoikuen  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_hoikuen  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_hoikuen  /name '住所  /type '文字列
+*** 125
+
+|-- TERM  /data 'od-gis_hoikuen  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_hoikuen  /name '園コード  /type '文字列
+|-- TERM  /data 'od-gis_hoikuen  /name '定員  /type '数値
+|-- TERM  /data 'od-gis_hoikuen  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_hoikuen  /name "敷地面積(平方メートル)"  /type '数値
+
+|-- TERM  /data 'od-gis_hoikuen  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_hoikuen  /name "許可(開設)年月"  /type '文字列
+|-- TERM  /data 'od-gis_hoikuen  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_hojoten  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_hojoten  /name "X座標（属性）"  /type '数値
+
+|-- TERM  /data 'od-gis_hojoten  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_hojoten  /name "Y座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_hojoten  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_hojoten  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_hojoten  /name '標高  /type '数値
+
+|-- TERM  /data 'od-gis_hojoten  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_hokenfukushi  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_hokenfukushi  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_hokenfukushi  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_hokenfukushi  /name '備考  /type '文字列
+
+|-- TERM  /data 'od-gis_hokenfukushi  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_hokenfukushi  /name "延床面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_hokenfukushi  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_hokenfukushi  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_hokenfukushi  /name '電話番号  /type '文字列
+*** 150
+
+|-- TERM  /data 'od-gis_hokenjo  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_hokenjo  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_hokenjo  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_hokenjo  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_hokenjo  /name "延床面積(平方メートル)"  /type '数値
+
+|-- TERM  /data 'od-gis_hokenjo  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_hokenjo  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_hokenjo  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_inuyashago  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_inuyashago  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_inuyashago  /name 'コース名  /type '文字列
+|-- TERM  /data 'od-gis_inuyashago  /name 'バス停名  /type '文字列
+|-- TERM  /data 'od-gis_inuyashago  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_inuyashago  /name '最寄の名所  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_iseki  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_iseki  /name 'ふりがな  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name '時代  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name '県遺跡番号  /type '文字列
+
+|-- TERM  /data 'od-gis_iseki  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name '遺跡一覧表へ  /type '文字列
+|-- TERM  /data 'od-gis_iseki  /name '遺跡名  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_jidocenter  /name 'Y座標  /type '数値
+*** 175
+
+|-- TERM  /data 'od-gis_jidocenter  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_jidocenter  /name '施設内容  /type '文字列
+
+|-- TERM  /data 'od-gis_jidocenter  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_jidocenter  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_kendo_hashi  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_kendo_hashi  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_kendo_hashi  /name '写真リンク  /type '文字列
+|-- TERM  /data 'od-gis_kendo_hashi  /name '地域機関  /type '文字列
+|-- TERM  /data 'od-gis_kendo_hashi  /name '橋梁コード  /type '文字列
+|-- TERM  /data 'od-gis_kendo_hashi  /name '橋梁名  /type '文字列
+|-- TERM  /data 'od-gis_kendo_hashi  /name '橋長  /type '数値
+
+|-- TERM  /data 'od-gis_kendo_hashi  /name '総幅員  /type '数値
+|-- TERM  /data 'od-gis_kenko_ben  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_kenko_ben  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_kenko_ben  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_kenko_ben  /name '健康に配慮したサービスの提供  /type '文字列
+
+|-- TERM  /data 'od-gis_kenko_ben  /name '健康に配慮したメニューの提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_ben  /name '健康に配慮した空間の提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_ben  /name '店名  /type '文字列
+|-- TERM  /data 'od-gis_kenko_ben  /name '栄養情報の提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_ben  /name '電話番号  /type '文字列
+*** 200
+
+|-- TERM  /data 'od-gis_kenko_in  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_kenko_in  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_kenko_in  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_kenko_in  /name '健康に配慮したサービスの提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_in  /name '健康に配慮したメニューの提供  /type '文字列
+
+|-- TERM  /data 'od-gis_kenko_in  /name '健康に配慮した空間の提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_in  /name '店名  /type '文字列
+|-- TERM  /data 'od-gis_kenko_in  /name '栄養情報の提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_in  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_kenko_kyu  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_kenko_kyu  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name '健康に配慮したサービスの提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name '健康に配慮したメニューの提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name '健康に配慮した空間の提供  /type '文字列
+
+|-- TERM  /data 'od-gis_kenko_kyu  /name '店名  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name '栄養情報の提供  /type '文字列
+|-- TERM  /data 'od-gis_kenko_kyu  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_kokudo_hashi  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_kokudo_hashi  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '写真リンク  /type '文字列
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '地域機関  /type '文字列
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '橋梁コード  /type '文字列
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '橋梁名  /type '文字列
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '橋長  /type '数値
+*** 225
+
+|-- TERM  /data 'od-gis_kokudo_hashi  /name '総幅員  /type '数値
+|-- TERM  /data 'od-gis_library  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_library  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_library  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_library  /name '名称  /type '文字列
+
+|-- TERM  /data 'od-gis_library  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_library  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_library  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_library  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_library  /name '電話番号  /type '文字列
+
+|-- TERM  /data 'od-gis_okugaihinan  /name 'FAX  /type '文字列
+|-- TERM  /data 'od-gis_okugaihinan  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_okugaihinan  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_okugaihinan  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_okugaihinan  /name "屋内・屋外"  /type '文字列
+
+|-- TERM  /data 'od-gis_okugaihinan  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_okugaihinan  /name '避難場所  /type '文字列
+|-- TERM  /data 'od-gis_okugaihinan  /name '避難場所情報  /type '文字列
+|-- TERM  /data 'od-gis_okugaihinan  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name 'FAX  /type '文字列
+
+|-- TERM  /data 'od-gis_okunaihinanjo  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_okunaihinanjo  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '区名  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '地区名  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '定員  /type '数値
+*** 250
+
+|-- TERM  /data 'od-gis_okunaihinanjo  /name "屋内・屋外"  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '施設コード  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '施設名  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '避難場所情報  /type '文字列
+
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '避難所番号  /type '文字列
+|-- TERM  /data 'od-gis_okunaihinanjo  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_onseninst  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_onseninst  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_onseninst  /name '住所  /type '文字列
+
+|-- TERM  /data 'od-gis_onseninst  /name '施設名称  /type '文字列
+|-- TERM  /data 'od-gis_onseninst  /name '泉質名  /type '文字列
+|-- TERM  /data 'od-gis_onseninst  /name "源泉名(通称)"  /type '文字列
+|-- TERM  /data 'od-gis_onseninst  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-gis_onseninst  /name '電話番号  /type '文字列
+
+|-- TERM  /data 'od-gis_park  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_park  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_park  /name '公園名  /type '文字列
+|-- TERM  /data 'od-gis_park  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_park  /name "面積（平方メートル）"  /type '数値
+
+|-- TERM  /data 'od-gis_pkbicycles  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_pkbicycles  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_pkbicycles  /name '位置  /type '文字列
+|-- TERM  /data 'od-gis_pkbicycles  /name '利用料  /type '文字列
+|-- TERM  /data 'od-gis_pkbicycles  /name '利用時間  /type '文字列
+*** 275
+
+|-- TERM  /data 'od-gis_pkbicycles  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_pkbicycles  /name '対象車種  /type '文字列
+|-- TERM  /data 'od-gis_pkbicycles  /name '番号  /type '数値
+|-- TERM  /data 'od-gis_rentcycle  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_rentcycle  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_rentcycle  /name 'ステーション名  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name 'レンタサイクルHPアドレス  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name 'レンタサイクル利用協力金  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name 'レンタサイクル運営時間  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name '休日  /type '文字列
+
+|-- TERM  /data 'od-gis_rentcycle  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name '貸出場所  /type '文字列
+|-- TERM  /data 'od-gis_rentcycle  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten  /name "B（緯度）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name "L（経度）"  /type '数値
+
+|-- TERM  /data 'od-gis_sankakuten  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name "X座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name "Y座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name 'ジオイド高  /type '数値
+
+|-- TERM  /data 'od-gis_sankakuten  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten  /name '標高  /type '数値
+|-- TERM  /data 'od-gis_sankakuten  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten  /name '縮尺係数  /type '数値
+*** 300
+
+|-- TERM  /data 'od-gis_sankakuten_np  /name "B（緯度）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name "L（経度）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name "X座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_sankakuten_np  /name "Y座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name 'ジオイド高  /type '数値
+|-- TERM  /data 'od-gis_sankakuten_np  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten_np  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten_np  /name '標高  /type '数値
+
+|-- TERM  /data 'od-gis_sankakuten_np  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_sankakuten_np  /name '縮尺係数  /type '数値
+|-- TERM  /data 'od-gis_shido_hashi  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shido_hashi  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shido_hashi  /name '写真リンク  /type '文字列
+
+|-- TERM  /data 'od-gis_shido_hashi  /name '地域機関  /type '文字列
+|-- TERM  /data 'od-gis_shido_hashi  /name '橋梁コード  /type '文字列
+|-- TERM  /data 'od-gis_shido_hashi  /name '橋梁名  /type '文字列
+|-- TERM  /data 'od-gis_shido_hashi  /name '橋長  /type '数値
+|-- TERM  /data 'od-gis_shido_hashi  /name '総幅員  /type '数値
+
+|-- TERM  /data 'od-gis_shieijutaku  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shieijutaku  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shieijutaku  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shieijutaku  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_shieijutaku  /name '建設年度  /type '文字列
+*** 325
+
+|-- TERM  /data 'od-gis_shieijutaku  /name '棟名  /type '文字列
+|-- TERM  /data 'od-gis_shieijutaku  /name '規模等  /type '文字列
+|-- TERM  /data 'od-gis_shieijutaku  /name '設置主体  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shiminkaikan  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_shiminkaikan  /name 'ホール定員  /type '数値
+|-- TERM  /data 'od-gis_shiminkaikan  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name "延床面積（平方メートル）"  /type '数値
+
+|-- TERM  /data 'od-gis_shiminkaikan  /name "敷地面積（平方メートル）"  /type '数値
+|-- TERM  /data 'od-gis_shiminkaikan  /name '施設内容  /type '数値
+|-- TERM  /data 'od-gis_shiminkaikan  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_shiminkaikan  /name '電話番号  /type '文字列
+
+|-- TERM  /data 'od-gis_shiminnoen  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shiminnoen  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shiminnoen  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shiminnoen  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_shiminnoen  /name '区画  /type '数値
+
+|-- TERM  /data 'od-gis_shiminnoen  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_shiminnoen  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_shiminnoen  /name "敷地面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_shiminnoen  /name '設置主体  /type '文字列
+|-- TERM  /data 'od-gis_shiminnoen  /name '開設年月  /type '文字列
+*** 350
+
+|-- TERM  /data 'od-gis_shiminnoen  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_shiyakusho  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shiyakusho  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shiyakusho  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shiyakusho  /name '備考  /type '文字列
+
+|-- TERM  /data 'od-gis_shiyakusho  /name '施設名  /type '文字列
+|-- TERM  /data 'od-gis_shiyakusho  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-gis_shiyakusho  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_shobo  /name 'Y座標  /type '数値
+
+|-- TERM  /data 'od-gis_shobo  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_shobo  /name "敷地面積(平方メートル)"  /type '数値
+
+|-- TERM  /data 'od-gis_shobo  /name "構造・複合施設等"  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_shobo  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name 'FAX  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_shogakko  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shogakko  /name '児童数  /type '数値
+|-- TERM  /data 'od-gis_shogakko  /name '学校名  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name '学番  /type '数値
+|-- TERM  /data 'od-gis_shogakko  /name '学級数  /type '数値
+*** 375
+
+|-- TERM  /data 'od-gis_shogakko  /name '所在地  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name '注意事項  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-gis_shogakko  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_shokuniku  /name 'X座標  /type '数値
+
+|-- TERM  /data 'od-gis_shokuniku  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_shokuniku  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_shokuniku  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_shokuniku  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_shokuniku  /name "構造・複合施設等"  /type '文字列
+
+|-- TERM  /data 'od-gis_shokuniku  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_shokuniku  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_sports  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_sports  /name 'ナイター  /type '文字列
+
+|-- TERM  /data 'od-gis_sports  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name '料金  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name '施設概要  /type '文字列
+
+|-- TERM  /data 'od-gis_sports  /name '開設年  /type '文字列
+|-- TERM  /data 'od-gis_sports  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_takakuten  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_takakuten  /name "X座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_takakuten  /name 'Y座標  /type '数値
+*** 400
+
+|-- TERM  /data 'od-gis_takakuten  /name "Y座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_takakuten  /name 'ジオイド高  /type '数値
+|-- TERM  /data 'od-gis_takakuten  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_takakuten  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_takakuten  /name '標高  /type '数値
+
+|-- TERM  /data 'od-gis_takakuten  /name '種別  /type '文字列
+|-- TERM  /data 'od-gis_takakuten_np  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_takakuten_np  /name "X座標（属性）"  /type '数値
+|-- TERM  /data 'od-gis_takakuten_np  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_takakuten_np  /name "Y座標（属性）"  /type '数値
+
+|-- TERM  /data 'od-gis_takakuten_np  /name 'ジオイド高  /type '数値
+|-- TERM  /data 'od-gis_takakuten_np  /name '備考  /type '文字列
+|-- TERM  /data 'od-gis_takakuten_np  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_takakuten_np  /name '標高  /type '数値
+|-- TERM  /data 'od-gis_takakuten_np  /name '種別  /type '文字列
+
+|-- TERM  /data 'od-gis_waterworksins  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_waterworksins  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_waterworksins  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_waterworksins  /name '名称  /type '文字列
+|-- TERM  /data 'od-gis_waterworksins  /name '地区  /type '文字列
+
+|-- TERM  /data 'od-gis_waterworksins  /name '施設内容  /type '文字列
+|-- TERM  /data 'od-gis_waterworksins  /name '開設年月  /type '文字列
+|-- TERM  /data 'od-gis_waterworksins  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name 'SSID  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name 'X座標  /type '数値
+*** 425
+
+|-- TERM  /data 'od-gis_wifi  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_wifi  /name 'サービス名  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '利用可能場所  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '利用料  /type '文字列
+
+|-- TERM  /data 'od-gis_wifi  /name '施設名  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '無料利用の上限時間  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name "無線LAN規格（IEEE802.11）"  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '運用時間帯  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '郵便番号  /type '文字列
+
+|-- TERM  /data 'od-gis_wifi  /name '電源利用可否  /type '文字列
+|-- TERM  /data 'od-gis_wtf  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_wtf  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_wtf  /name '住所  /type '文字列
+|-- TERM  /data 'od-gis_wtf  /name '名称  /type '文字列
+
+|-- TERM  /data 'od-gis_wtf  /name '地区  /type '文字列
+|-- TERM  /data 'od-gis_wtf  /name "延床面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_wtf  /name "敷地面積(平方メートル)"  /type '数値
+|-- TERM  /data 'od-gis_wtf  /name '施設内容  /type '文字列
+|-- TERM  /data 'od-gis_wtf  /name '開設年月  /type '文字列
+
+|-- TERM  /data 'od-gis_wtf  /name '電話番号  /type '文字列
+|-- TERM  /data 'od-gis_yochien  /name 'No  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name 'X座標  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name 'Y座標  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name '住所地  /type '文字列
+*** 450
+
+|-- TERM  /data 'od-gis_yochien  /name '園児数  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name '学校名  /type '文字列
+|-- TERM  /data 'od-gis_yochien  /name '学校番号  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name '定員  /type '数値
+|-- TERM  /data 'od-gis_yochien  /name '注意事項  /type '文字列
+
+|-- TERM  /data 'od-gis_yochien  /name '設置者  /type '文字列
+|-- TERM  /data 'od-gis_yochien  /name '電話  /type '文字列
+|-- TERM  /data 'od-juki_syoumei_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-juki_syoumei_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-juki_syoumei_mado  /name '住所  /type '文字列
+
+|-- TERM  /data 'od-juki_syoumei_mado  /name '備考  /type '文字列
+|-- TERM  /data 'od-juki_syoumei_mado  /name '区名  /type '文字列
+|-- TERM  /data 'od-juki_syoumei_mado  /name '取扱有無  /type '文字列  /note "交付物種類毎に項目あり（21項目）"
+|-- TERM  /data 'od-juki_syoumei_mado  /name '施設名  /type '文字列
+|-- TERM  /data 'od-juki_syoumei_mado  /name '窓口種別  /type '文字列
+
+|-- TERM  /data 'od-juki_syoumei_mado  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-juki_todoke_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-juki_todoke_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-juki_todoke_mado  /name '住所  /type '文字列
+|-- TERM  /data 'od-juki_todoke_mado  /name '備考  /type '文字列
+
+|-- TERM  /data 'od-juki_todoke_mado  /name '区名  /type '文字列
+|-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（住民異動関係）"  /type '文字列  /note "届出種類毎に項目あり（10項目）"
+|-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（印鑑登録関係）"  /type '文字列  /note "届出種類毎に項目あり（6項目）"
+|-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（戸籍届関係）"  /type '文字列  /note "届出種類毎に項目あり（9項目）"
+|-- TERM  /data 'od-juki_todoke_mado  /name '施設名  /type '文字列
+*** 475
+
+|-- TERM  /data 'od-juki_todoke_mado  /name '窓口種別  /type '文字列
+|-- TERM  /data 'od-juki_todoke_mado  /name '郵便番号  /type '文字列
+|-- TERM  /data 'od-zei_syoumei_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-zei_syoumei_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
+|-- TERM  /data 'od-zei_syoumei_mado  /name '住所  /type '文字列
+
+|-- TERM  /data 'od-zei_syoumei_mado  /name '備考  /type '文字列
+|-- TERM  /data 'od-zei_syoumei_mado  /name '区名  /type '文字列
+|-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（市民税関係）"  /type '文字列  /note "交付物種類毎に項目あり（2項目）"
+|-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（納税関係）"  /type '文字列  /note "交付物種類毎に項目あり（9項目）"
+|-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（資産税関係）"  /type '文字列  /note "交付物種類毎に項目あり（10項目）"
+
+|-- TERM  /data 'od-zei_syoumei_mado  /name '施設名  /type '文字列
+|-- TERM  /data 'od-zei_syoumei_mado  /name '窓口種別  /type '文字列
+|-- TERM  /data 'od-zei_syoumei_mado  /name '郵便番号  /type '文字列
+
+*** 488 judges
 
 **
 **  SUMMARY
 **    1722 judges on META
-**    1722 judges in total
+**     488 judges on TERM
+**    2210 judges in total
 **
