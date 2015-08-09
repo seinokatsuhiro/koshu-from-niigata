@@ -156,9 +156,9 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 39  /path "opendata-gis/od-gis_kurashibosai/od-gis_shiyakusho.files/od_gis_137_shiyakusho_etc.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 39  /path "opendata-gis/od-gis_kurashibosai/od-gis_shobo.files/od_gis_81_shobo.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 22  /path "opendata-gis/od-gis_kurashibosai/od-gis_wtf.files/od_gis_101_wtf.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 49  /path "opendata-tetsuduki/od-juki_syoumei_mado.files/od-juki_syoumei_mado.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 49  /path "opendata-tetsuduki/od-juki_todoke_mado.files/od-juki_todoke_mado.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 51  /path "opendata-tetsuduki/od-zei_syoumei_mado.files/od-zei_syoumei_mado.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 49  /path "opendata-tetsuduki/od-juki_syoumei_mado.files/od-juki_syoumei_mado.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 49  /path "opendata-tetsuduki/od-juki_todoke_mado.files/od-juki_todoke_mado.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 51  /path "opendata-tetsuduki/od-zei_syoumei_mado.files/od-zei_syoumei_mado.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h25.files/2013090niigata-nenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h25.files/2013091kita-nenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h25.files/2013092higashi-nenrei.csv"
@@ -403,7 +403,7 @@
 
 **
 **  件数
-**    convert  2
-**    skip     386
+**    convert  5
+**    skip     383
 **    合計     388
 **
