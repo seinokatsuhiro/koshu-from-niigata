@@ -98,9 +98,9 @@ convert_incr () {
 
 convert_koshu () {
     if [ -e "$1" ]; then
-        koshu-from-csv --omit-first --header LICENSE `cat $1`
+        koshu-from-csv --omit-first --license LICENSE `cat $1`
     else
-        koshu-from-csv --omit-first --header LICENSE
+        koshu-from-csv --omit-first --license LICENSE
     fi
 }
 

@@ -27,24 +27,34 @@ data Param = Param
     { paramOmitFirst  :: Bool
     , paramNumber     :: Bool
     , paramHeaders    :: [String]
+    , paramLicenses   :: [String]
     , paramJudgeType  :: JudgeType
     } deriving (Show, Eq, Ord)
 
 initParam :: [Option] -> [String] -> IO Param
 initParam opts args =
     do K.useUtf8 K.stdout
-       hs <- readHeaders opts
+       hs <- readHeaders  opts
+       ls <- readLicenses opts
        return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
                       , paramNumber     = OptNumber    `elem` opts
                       , paramHeaders    = hs
+                      , paramLicenses   = ls
                       , paramJudgeType  = parseJudgeType args
                       }
 
 readHeaders :: [Option] -> IO [String]
-readHeaders opts =
-    case K.mapMaybe optHeader opts of
+readHeaders = readFileFor optHeader
+
+readLicenses :: [Option] -> IO [String]
+readLicenses = readFileFor optLicense
+
+readFileFor :: (Option -> Maybe String) -> [Option] -> IO [String]
+readFileFor select opts =
+    case K.mapMaybe select opts of
       []     -> return []
-      files  -> mapM readFile files
+      files  -> do contents <- mapM readFile files
+                   return $ concatMap lines contents
 
 parseJudgeType :: [String] -> JudgeType
 parseJudgeType [] = ("CSV", map show $ ints 1)
@@ -61,18 +71,24 @@ data Option
     | OptVersion
     | OptOmitFirst
     | OptNumber
-    | OptHeader String
+    | OptHeader  String
+    | OptLicense String
       deriving (Show, Eq, Ord)
 
 optHeader :: Option -> Maybe String
-optHeader (OptHeader s) = Just s
-optHeader (_)           = Nothing
+optHeader (OptHeader s)   = Just s
+optHeader (_)             = Nothing
+
+optLicense :: Option -> Maybe String
+optLicense (OptLicense s) = Just s
+optLicense (_)            = Nothing
 
 option :: [Opt.OptDescr Option]
 option =
-    [ Opt.Option "1" ["omit-first"] (Opt.NoArg OptOmitFirst)      "Omit first line"
-    , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)         "Add numbering term"
-    , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader "FILE") "Include header file" ]
+    [ Opt.Option "1" ["omit-first"] (Opt.NoArg OptOmitFirst)       "Omit first line"
+    , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)          "Add numbering term"
+    , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader "FILE")  "Include header file"
+    , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file" ]
 
 
 -- --------------------------------------------  Main
@@ -93,7 +109,7 @@ fromCSV p s =
     case CSV.parseCSV "<stdin>" s of
       Left a    -> error $ show a
       Right csv -> let js = map textJudge $ number $ omitFirst (paramOmitFirst p) csv
-                   in unlines $ appendHeader (paramHeaders p) js
+                   in unlines $ appendHeader (paramHeaders p) (paramLicenses p) js
     where
       textJudge = K.writeDownJudge K.shortEmpty . judge n (paramJudgeType p)
       n = paramNumber p
@@ -106,10 +122,25 @@ omitFirst omit csv
     | omit       = tail2 csv
     | otherwise  = csv
 
-appendHeader :: [String] -> K.Map [String]
-appendHeader hs body = ["** -*- koshu -*-"] ++ hs' ++ [""] ++ body where
-    hs'  = map K.commentLine $ concatMap ls hs
-    ls h = "" : lines h
+appendHeader :: [String] -> [String] ->  K.Map [String]
+appendHeader header license body = body' where
+    body'     = ["** -*- koshu -*-"] ++ header' ++ [""] ++ shorten license' ++ body
+    header'   = map K.commentLine $ concatMap ls header
+    ls h      = "" : lines h
+    pad s     = "  " ++ s
+    license'  | null license = []
+              | otherwise    = ["=== license", ""]
+                               ++ map pad license
+                               ++ ["", "=== rel", ""]
+
+shorten :: K.Map [String]
+shorten (x1 : x2 : xs)
+    | null x1' && null x2' = shorten (x2' : xs)
+    | otherwise            = x1 : shorten (x2 : xs)
+    where x1' = K.trimLeft x1
+          x2' = K.trimLeft x2
+shorten (x1 : xs) = x1 : shorten xs
+shorten [] = []
 
 judge :: Bool -> JudgeType -> NumRecord -> K.JudgeC
 judge number (pat, ns) (num, cs)
