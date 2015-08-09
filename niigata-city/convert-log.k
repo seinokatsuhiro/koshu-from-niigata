@@ -370,11 +370,11 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201504kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201505kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201506kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2011suikeijinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2012suikeijinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2013suikeijinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2014suikeijinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2015suikeijinkou.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2011suikeijinkou.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2012suikeijinkou.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2013suikeijinkou.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2014suikeijinkou.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2015suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 45  /path "opendata-toukei/od-kankyo/od-mizukankyo/od-mizu.files/H25suishitsu.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H18co2.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H19co2.csv"
@@ -403,7 +403,7 @@
 
 **
 **  件数
-**    convert  5
-**    skip     383
+**    convert  10
+**    skip     378
 **    合計     388
 **
