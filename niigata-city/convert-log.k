@@ -392,8 +392,8 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 42  /path "opendata-toukei/od-kankyo/od-ondanka/od-energy.files/pvshisetsu.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 7  /path "opendata-toukei/od-kankyo/od-ondanka/od-energy.files/sonota.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 33  /path "opendata-toukei/od-kankyo/od-otokankyo/od-oto.files/H25oto.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 98  /path "opendata-toukei/od-kankyo/od-shizenkankyo/od-bird.files/sagatabird.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 83  /path "opendata-toukei/od-kankyo/od-shizenkankyo/od-bird.files/toyanobird.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 98  /path "opendata-toukei/od-kankyo/od-shizenkankyo/od-bird.files/sagatabird.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 83  /path "opendata-toukei/od-kankyo/od-shizenkankyo/od-bird.files/toyanobird.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 104  /path "opendata-toukei/od-kokucho/od-h17kokuchou/od-h17kokuchonenrei.files/H17kokuchonenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-kokucho/od-h17kokuchou/od-h17kokuchosetai.files/H17kokuchosetai.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 20  /path "opendata-toukei/od-kokucho/od-h17kokuchou/od-h17kokuchosyugyo.files/H17kokuchosyugyo.csv"
@@ -403,7 +403,7 @@
 
 **
 **  件数
-**    convert  10
-**    skip     378
+**    convert  12
+**    skip     376
 **    合計     388
 **
