@@ -1,0 +1,113 @@
+** -*- koshu -*-
+**
+**  新潟市オープンデータを甲州記法へ変換したファイルの一覧です。
+**  このファイルは 'convert-gazou.sh' によって生成されました。
+**
+
+=== license
+
+  このデータセットは以下の著作物を改変して作成しています。
+  新潟市オープンデータ、新潟市、クリエイティブ・コモンズ・ライセンス 表示 2.1 日本
+  (CC-BY 2.1 JP) http://creativecommons.org/licenses/by/2.1/jp/
+
+=== rel
+
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi001.files/bandaibashi001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi002.files/bandaibashi002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi003.files/bandaibashi003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi004.files/bandaibashi004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi005.files/bandaibashi005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-bandaibashi/od-bandaibashi006.files/bandaibashi006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen001.files/denen001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen002.files/denen002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen003.files/denen003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen004.files/denen004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen005.files/denen005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen006.files/denen006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen007.files/denen007meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen008.files/denen008meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-denen/od-denen009.files/denen009meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-fukushimagata/od-fukushimagata001.files/fukushimagata001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-fukushimagata/od-fukushimagata002.files/fukushimagata002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-fukushimagata/od-fukushimagata003.files/fukushimagata003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-fukushimagata/od-fukushimagata004.files/fukushimagata004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-fukushimagata/od-fukushimagata005.files/fukushimagata005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-sakata/od-sakata001.files/sakata001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-sakata/od-sakata002.files/sakata002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-toyanogata/od-toyanogata001.files/toyanogata001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-toyanogata/od-toyanogata002.files/toyanogata002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-uwasekigata/od-uwasekigata001.files/uwasekigata001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kata/od-uwasekigata/od-uwasekigata002.files/uwasekigata002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-koutsu/od-koutsu001.files/koutsu001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-koutsu/od-koutsu002.files/koutsu002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-koutsu/od-koutsu003.files/koutsu003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kuusatsu/od-kuusatsu001.files/kuusatsu001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kuusatsu/od-kuusatsu002.files/kuusatsu002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-kuusatsu/od-kuusatsu003.files/kuusatsu003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami001.files/machinami001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami002.files/machinami002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami003.files/machinami003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami004.files/machinami004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami005.files/machinami005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-machinami/od-machinami006.files/machinami006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato001.files/minato001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato002.files/minato002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato003.files/minato003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato004.files/minato004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato005.files/minato005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-minato/od-minato006.files/minato006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-nihonkai/od-nihonkai001.files/nihonkai001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-nihonkai/od-nihonkai002.files/nihonkai002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-nihonkai/od-nihonkai003.files/nihonkai003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-nihonkai/od-nihonkai004.files/nihonkai004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-nihonkai/od-nihonkai006.files/nihonkai006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river001.files/river001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river002.files/river002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river003.files/river003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river004.files/river004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river005.files/river005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river006.files/river006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river007.files/river007meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river008.files/river008meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-river/od-river009.files/river009meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-flower/od-flower001.files/flower001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-flower/od-flower002.files/flower002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-flower/od-flower003.files/flower003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-flower/od-flower004.files/flower004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-food/od-food001.files/food001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-shokutohana/od-food/od-food002.files/food002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-yuuhi/od-yuuhi001.files/yuuhi001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-yuuhi/od-yuuhi002.files/yuuhi002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-yuuhi/od-yuuhi003.files/yuuhi003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-fukei/od-yuuhi/od-yuuhi004.files/yuuhi004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-enkikan/od-enkikan001.files/enkikan001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-enkikan/od-enkikan003.files/enkikan003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-enkikan/od-enkikan004.files/enkikan004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-enkikan/od-enkikan005.files/enkikan005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyusaitouke/od-kyusaitouke001.files/kyusaitouke001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyusaitouke/od-kyusaitouke002.files/kyusaitouke002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyusaitouke/od-kyusaitouke003.files/kyusaitouke003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyuzeikan/od-kyuzeikan001.files/kyuzeikan001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyuzeikan/od-kyuzeikan002.files/kyuzeikan002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyuzeikan/od-kyuzeikan003.files/kyuzeikan003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-kyuzeikan/od-kyuzeikan004.files/kyuzeikan004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia001.files/minatopia001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia002.files/minatopia002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia003.files/minatopia003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia004.files/minatopia004meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia005.files/minatopia005meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia006.files/minatopia006meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-bunkashisetsu/od-minatopia/od-minatopia007.files/minatopia007meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-chosha/od-chosha001.files/chosha001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-chosha/od-chosha002.files/chosha002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-chosha/od-chosha003.files/chosha003meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-leisure_park/od-shokuhana/od-shokuhana001.files/shokuhana001meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-leisure_park/od-shokuhana/od-shokuhana002.files/shokuhana002meta.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 2  /path "od-shisetsu/od-leisure_park/od-shokuhana/od-shokuhana003.files/shokuhana003meta.csv"
+
+**
+**  件数
+**    convert  92
+**    skip     0
+**    合計     92
+**
