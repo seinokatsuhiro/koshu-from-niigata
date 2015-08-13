@@ -34,20 +34,16 @@ data Param = Param
 initParam :: [Option] -> [String] -> IO Param
 initParam opts args =
     do K.useUtf8 K.stdout
-       hs <- readHeaders  opts
-       ls <- readLicenses opts
+       hs <- readFileFor optHeader  opts
+       js <- readFileFor optJudge   opts
+       ls <- readFileFor optLicense opts
+       let as = K.omit null $ map K.trimBoth $ args ++ js
        return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
                       , paramNumber     = OptNumber    `elem` opts
                       , paramHeaders    = hs
                       , paramLicenses   = ls
-                      , paramJudgeType  = parseJudgeType args
+                      , paramJudgeType  = parseJudgeType as
                       }
-
-readHeaders :: [Option] -> IO [String]
-readHeaders = readFileFor optHeader
-
-readLicenses :: [Option] -> IO [String]
-readLicenses = readFileFor optLicense
 
 readFileFor :: (Option -> Maybe String) -> [Option] -> IO [String]
 readFileFor select opts =
@@ -72,12 +68,17 @@ data Option
     | OptOmitFirst
     | OptNumber
     | OptHeader  String
+    | OptJudge   String
     | OptLicense String
       deriving (Show, Eq, Ord)
 
 optHeader :: Option -> Maybe String
 optHeader (OptHeader s)   = Just s
 optHeader (_)             = Nothing
+
+optJudge :: Option -> Maybe String
+optJudge (OptJudge s) = Just s
+optJudge (_)          = Nothing
 
 optLicense :: Option -> Maybe String
 optLicense (OptLicense s) = Just s
@@ -87,7 +88,8 @@ option :: [Opt.OptDescr Option]
 option =
     [ Opt.Option "1" ["omit-first"] (Opt.NoArg OptOmitFirst)       "Omit first line"
     , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)          "Add numbering term"
-    , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader "FILE")  "Include header file"
+    , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader  "FILE") "Include header file"
+    , Opt.Option ""  ["judge"]      (Opt.ReqArg OptJudge   "FILE") "Judgement file"
     , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file" ]
 
 
