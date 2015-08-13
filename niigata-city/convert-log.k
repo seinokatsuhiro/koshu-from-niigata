@@ -123,7 +123,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 26  /path "opendata-gis/od-gis_kankobunspo/od-gis_rentcycle.files/od_gis_76_rentcycle.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 17  /path "opendata-gis/od-gis_kankobunspo/od-gis_shiminnoen.files/od_gis_71_shiminnoen.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 98  /path "opendata-gis/od-gis_kankobunspo/od-gis_sports.files/od_gis_56_sports.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 37  /path "opendata-gis/od-gis_kankobunspo/od-gis_wifi.files/od-gis_wi-fi.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 52  /path "opendata-gis/od-gis_kankobunspo/od-gis_wifi.files/od-gis_wi-fi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 397  /path "opendata-gis/od-gis_kenkofukushi/od-gis_aed.files/od_gis_151_aed.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2  /path "opendata-gis/od-gis_kenkofukushi/od-gis_eiseikankyo.files/od_gis_110_eiseikankyo.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-gis/od-gis_kenkofukushi/od-gis_forshogaisha.files/od_gis_106_forshogaishashisetsu.csv"
@@ -348,6 +348,15 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015066minami-nenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015067nishi-nenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015068nishikan-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015070niigata-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015071kita-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015072higashi-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015073chuuou-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015074kounan-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015075akiha-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015076minami-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015077nishi-nenrei.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/od-h27.files/2015078nishikan-nenrei.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201309kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201310kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201311kujinkou.csv"
@@ -370,6 +379,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201504kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201505kujinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201506kujinkou.csv"
+|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201507kujinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2011suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2012suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2013suikeijinkou.csv"
@@ -404,6 +414,6 @@
 **
 **  件数
 **    convert  12
-**    skip     376
-**    合計     388
+**    skip     386
+**    合計     398
 **
