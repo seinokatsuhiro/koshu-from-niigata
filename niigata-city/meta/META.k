@@ -2,7 +2,7 @@
 **
 **  INPUT
 **    <stdin>
-**    calc-meta.k
+**    meta-calc.k
 **
 **  OUTPUT
 **    <stdout>
@@ -1129,18 +1129,18 @@
 |-- META  /data 'od-gis-waterworksins  /name '組織名  /content '新潟市役所
 |-- META  /data 'od-gis-waterworksins  /name '補足
 |-- META  /data 'od-gis-wifi  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kankobunspo/od-gis_wi-fi.html"
-|-- META  /data 'od-gis-wifi  /name 'タイトル  /content '公衆Wi-Fi設置公共施設
+|-- META  /data 'od-gis-wifi  /name 'タイトル  /content '公衆無線LAN設置公共施設
 *** 900
 
 |-- META  /data 'od-gis-wifi  /name 'タグ  /content "くらし、観光、スポーツ"
-|-- META  /data 'od-gis-wifi  /name 'ファイルサイズ  /content '7キロバイト
+|-- META  /data 'od-gis-wifi  /name 'ファイルサイズ  /content '18キロバイト
 |-- META  /data 'od-gis-wifi  /name 'リリース日  /content '2015年4月30日
 |-- META  /data 'od-gis-wifi  /name '作成者  /content '総務部IT推進課
 |-- META  /data 'od-gis-wifi  /name '使用言語  /content "日本語・UTF-8"
 
 |-- META  /data 'od-gis-wifi  /name '公表者  /content '総務部IT推進課
 |-- META  /data 'od-gis-wifi  /name '更新頻度  /content '随時
-|-- META  /data 'od-gis-wifi  /name '最終更新日  /content '2015年4月30日
+|-- META  /data 'od-gis-wifi  /name '最終更新日  /content '2015年7月22日
 |-- META  /data 'od-gis-wifi  /name '組織名  /content '新潟市
 |-- META  /data 'od-gis-wtf  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gis/od-gis_kurashibosai/od-gis_wtf.html"
 
@@ -1331,9 +1331,9 @@
 |-- META  /data 'od-h27  /name '公表組織名  /content '新潟市
 
 |-- META  /data 'od-h27  /name '更新頻度  /content '毎月
-|-- META  /data 'od-h27  /name '最終更新日  /content '2015年7月8日
+|-- META  /data 'od-h27  /name '最終更新日  /content '2015年8月6日
 |-- META  /data 'od-h27  /name '補足1  /content "本ファイルは、住民基本台帳に基づく人口です。"
-|-- META  /data 'od-h27  /name '補足2  /content "最新版は、平成27年6月30日現在の数値です。"
+|-- META  /data 'od-h27  /name '補足2  /content "最新版は、平成27年7月31日現在の数値です。"
 |-- META  /data 'od-h27  /name '補足3  /content "本ファイルには、世帯数の掲載はありません。"
 
 |-- META  /data 'od-juki-syoumei-mado  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-tetsuduki/od-juki_syoumei_mado.html"
@@ -1418,9 +1418,9 @@
 |-- META  /data 'od-kubetsujyuki  /name '公表組織名  /content '新潟市
 
 |-- META  /data 'od-kubetsujyuki  /name '更新頻度  /content '毎月
-|-- META  /data 'od-kubetsujyuki  /name '最終更新日  /content '2015年7月8日
+|-- META  /data 'od-kubetsujyuki  /name '最終更新日  /content '2015年8月6日
 |-- META  /data 'od-kubetsujyuki  /name '補足1  /content "本ファイルは、住民基本台帳に基づく人口及び世帯数です。"
-|-- META  /data 'od-kubetsujyuki  /name '補足2  /content "最新版は、平成27年6月31日現在の数値です。"
+|-- META  /data 'od-kubetsujyuki  /name '補足2  /content "最新版は、平成27年7月31日現在の数値です。"
 |-- META  /data 'od-kubetsujyuki  /name '補足3  /content "本ファイルには、年齢別数値の掲載はありません。"
 
 |-- META  /data 'od-kubetsujyuki  /name '補足4  /content "数値には、転出予定者を含んでおりません。"
@@ -2046,10 +2046,10 @@
 |-- META  /data 'od-suikeijinkou  /name '使用言語  /content "日本語・UTF-8"
 |-- META  /data 'od-suikeijinkou  /name '公表組織名  /content '新潟市
 |-- META  /data 'od-suikeijinkou  /name '更新頻度  /content '毎月
-|-- META  /data 'od-suikeijinkou  /name '最終更新日  /content '2015年7月8日
+|-- META  /data 'od-suikeijinkou  /name '最終更新日  /content '2015年8月6日
 |-- META  /data 'od-suikeijinkou  /name '補足1  /content "本ファイルは、平成22年10月1日現在の国勢調査結果を基に、出生・死亡・転入・転出等を加減した現在の推計人口です。"
 
-|-- META  /data 'od-suikeijinkou  /name '補足2  /content "最新版は、平成27年6月1日現在の数値です。"
+|-- META  /data 'od-suikeijinkou  /name '補足2  /content "最新版は、平成27年7月1日現在の数値です。"
 |-- META  /data 'od-suikeijinkou  /name '補足3  /content "本ファイルには、年齢別数値の掲載はありません。"
 |-- META  /data 'od-toyanogata001  /name 'URL  /content "http://www.city.niigata.lg.jp/shisei/seisaku/it/open-data/opendata-gazou/od-fukei/od-kata/od-toyanogata/od-toyanogata001.html"
 |-- META  /data 'od-toyanogata001  /name 'タイトル  /content '鳥屋野潟と朝日
@@ -2682,87 +2682,88 @@
 
 |-- TERM  /data 'od-gis_wifi  /name 'Y座標  /type '数値
 |-- TERM  /data 'od-gis_wifi  /name 'サービス名  /type '文字列
+|-- TERM  /data 'od-gis_wifi  /name '休業日  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '住所  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '利用可能場所  /type '文字列
-|-- TERM  /data 'od-gis_wifi  /name '利用料  /type '文字列
 
+|-- TERM  /data 'od-gis_wifi  /name '利用料  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '施設名  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '無料利用の上限時間  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name "無線LAN規格（IEEE802.11）"  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '運用時間帯  /type '文字列
-|-- TERM  /data 'od-gis_wifi  /name '郵便番号  /type '文字列
 
+|-- TERM  /data 'od-gis_wifi  /name '郵便番号  /type '文字列
 |-- TERM  /data 'od-gis_wifi  /name '電源利用可否  /type '文字列
 |-- TERM  /data 'od-gis_wtf  /name 'X座標  /type '数値
 |-- TERM  /data 'od-gis_wtf  /name 'Y座標  /type '数値
 |-- TERM  /data 'od-gis_wtf  /name '住所  /type '文字列
-|-- TERM  /data 'od-gis_wtf  /name '名称  /type '文字列
 
+|-- TERM  /data 'od-gis_wtf  /name '名称  /type '文字列
 |-- TERM  /data 'od-gis_wtf  /name '地区  /type '文字列
 |-- TERM  /data 'od-gis_wtf  /name "延床面積(平方メートル)"  /type '数値
 |-- TERM  /data 'od-gis_wtf  /name "敷地面積(平方メートル)"  /type '数値
 |-- TERM  /data 'od-gis_wtf  /name '施設内容  /type '文字列
-|-- TERM  /data 'od-gis_wtf  /name '開設年月  /type '文字列
 
+|-- TERM  /data 'od-gis_wtf  /name '開設年月  /type '文字列
 |-- TERM  /data 'od-gis_wtf  /name '電話番号  /type '文字列
 |-- TERM  /data 'od-gis_yochien  /name 'No  /type '数値
 |-- TERM  /data 'od-gis_yochien  /name 'X座標  /type '数値
 |-- TERM  /data 'od-gis_yochien  /name 'Y座標  /type '数値
-|-- TERM  /data 'od-gis_yochien  /name '住所地  /type '文字列
 *** 450
 
+|-- TERM  /data 'od-gis_yochien  /name '住所地  /type '文字列
 |-- TERM  /data 'od-gis_yochien  /name '園児数  /type '数値
 |-- TERM  /data 'od-gis_yochien  /name '学校名  /type '文字列
 |-- TERM  /data 'od-gis_yochien  /name '学校番号  /type '数値
 |-- TERM  /data 'od-gis_yochien  /name '定員  /type '数値
-|-- TERM  /data 'od-gis_yochien  /name '注意事項  /type '文字列
 
+|-- TERM  /data 'od-gis_yochien  /name '注意事項  /type '文字列
 |-- TERM  /data 'od-gis_yochien  /name '設置者  /type '文字列
 |-- TERM  /data 'od-gis_yochien  /name '電話  /type '文字列
 |-- TERM  /data 'od-juki_syoumei_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
 |-- TERM  /data 'od-juki_syoumei_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
-|-- TERM  /data 'od-juki_syoumei_mado  /name '住所  /type '文字列
 
+|-- TERM  /data 'od-juki_syoumei_mado  /name '住所  /type '文字列
 |-- TERM  /data 'od-juki_syoumei_mado  /name '備考  /type '文字列
 |-- TERM  /data 'od-juki_syoumei_mado  /name '区名  /type '文字列
 |-- TERM  /data 'od-juki_syoumei_mado  /name '取扱有無  /type '文字列  /note "交付物種類毎に項目あり（21項目）"
 |-- TERM  /data 'od-juki_syoumei_mado  /name '施設名  /type '文字列
-|-- TERM  /data 'od-juki_syoumei_mado  /name '窓口種別  /type '文字列
 
+|-- TERM  /data 'od-juki_syoumei_mado  /name '窓口種別  /type '文字列
 |-- TERM  /data 'od-juki_syoumei_mado  /name '郵便番号  /type '文字列
 |-- TERM  /data 'od-juki_todoke_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
 |-- TERM  /data 'od-juki_todoke_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
 |-- TERM  /data 'od-juki_todoke_mado  /name '住所  /type '文字列
-|-- TERM  /data 'od-juki_todoke_mado  /name '備考  /type '文字列
 
+|-- TERM  /data 'od-juki_todoke_mado  /name '備考  /type '文字列
 |-- TERM  /data 'od-juki_todoke_mado  /name '区名  /type '文字列
 |-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（住民異動関係）"  /type '文字列  /note "届出種類毎に項目あり（10項目）"
 |-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（印鑑登録関係）"  /type '文字列  /note "届出種類毎に項目あり（6項目）"
 |-- TERM  /data 'od-juki_todoke_mado  /name "取扱有無（戸籍届関係）"  /type '文字列  /note "届出種類毎に項目あり（9項目）"
-|-- TERM  /data 'od-juki_todoke_mado  /name '施設名  /type '文字列
 *** 475
 
+|-- TERM  /data 'od-juki_todoke_mado  /name '施設名  /type '文字列
 |-- TERM  /data 'od-juki_todoke_mado  /name '窓口種別  /type '文字列
 |-- TERM  /data 'od-juki_todoke_mado  /name '郵便番号  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name 'X座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
 |-- TERM  /data 'od-zei_syoumei_mado  /name 'Y座標  /type '数値  /note "日本測地系2000 平面直角座標系（第8系）"
-|-- TERM  /data 'od-zei_syoumei_mado  /name '住所  /type '文字列
 
+|-- TERM  /data 'od-zei_syoumei_mado  /name '住所  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name '備考  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name '区名  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（市民税関係）"  /type '文字列  /note "交付物種類毎に項目あり（2項目）"
 |-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（納税関係）"  /type '文字列  /note "交付物種類毎に項目あり（9項目）"
-|-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（資産税関係）"  /type '文字列  /note "交付物種類毎に項目あり（10項目）"
 
+|-- TERM  /data 'od-zei_syoumei_mado  /name "取扱有無（資産税関係）"  /type '文字列  /note "交付物種類毎に項目あり（10項目）"
 |-- TERM  /data 'od-zei_syoumei_mado  /name '施設名  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name '窓口種別  /type '文字列
 |-- TERM  /data 'od-zei_syoumei_mado  /name '郵便番号  /type '文字列
 
-*** 488 judges
+*** 489 judges
 
 **
 **  SUMMARY
 **    1722 judges on META
-**     488 judges on TERM
-**    2210 judges in total
+**     489 judges on TERM
+**    2211 judges in total
 **
