@@ -1,10 +1,2 @@
-2014084kounan-nenrei.csv
-2014090niigata-nenrei.csv
-2014091kita-nenrei.csv
-2014092higashi-nenrei.csv
-2014094kounan-nenrei.csv
-2014095akiha-nenrei.csv
-2014096minami-nenrei.csv
-2014097nishi-nenrei.csv
-2014098nishikan-nenrei.csv
+open-data/opendata-gazou/
 datacatalog.csv
