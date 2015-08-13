@@ -17,6 +17,9 @@
 #  断続ファイルがあれば、koshu-from-csv を使って、DATA.csv を甲州記法へ変換します。
 #  変換結果は、$convert_output/DATA.k に出力されます。
 
+convert_program=convert.sh
+  # このスクリプトの名前。
+
 convert_root=www.city.niigata.lg.jp/shisei/seisaku/it/open-data
   # オープンデータ DATA.csv の保存先。
   # 新潟市のウェブサイトから wget-data.sh でダウンロードしたディレクトリ。
@@ -28,6 +31,9 @@ convert_judge=convert-judge
 convert_output=convert-koshu
   # 変換結果 DATA.k の出力先ディレクトリ。
 
+convert_log=convert-log.k
+  # 変換結果のログファイル
+
 
 # ********************************************  変換処理の本体
 
@@ -35,7 +41,7 @@ convert_body () {
     echo "** -*- koshu -*-"
     echo "**"
     echo "**  新潟市オープンデータを甲州記法へ変換したファイルの一覧です。"
-    echo "**  このファイルは 'convert.sh' によって生成されました。"
+    echo "**  このファイルは '$convert_program' によって生成されました。"
     echo "**"
     echo
     echo "=== license"
@@ -98,7 +104,7 @@ convert_incr () {
 
 convert_koshu () {
     if [ -e "$1" ]; then
-        koshu-from-csv --omit-first --license LICENSE `cat $1`
+        koshu-from-csv --omit-first --license LICENSE --judge $1
     else
         koshu-from-csv --omit-first --license LICENSE
     fi
@@ -114,12 +120,12 @@ convert_log () {
 # ********************************************  メイン
 
 if [ ! -e $convert_output ]; then
-    mkdir $convert_output
+    mkdir -p $convert_output
 fi
 
 convert_cut_root () {
     sed "s:$convert_root/::"
 }
 
-convert_body | convert_cut_root | tee convert-log.k
+convert_body | convert_cut_root | tee $convert_log
 
