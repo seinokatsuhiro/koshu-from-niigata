@@ -67,29 +67,6 @@
 |-- CONVERT-LOG  /process 'convert  /csv-lines 49  /path "opendata-tetsuduki/od-juki_syoumei_mado.files/od-juki_syoumei_mado.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 49  /path "opendata-tetsuduki/od-juki_todoke_mado.files/od-juki_todoke_mado.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 51  /path "opendata-tetsuduki/od-zei_syoumei_mado.files/od-zei_syoumei_mado.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201309kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201310kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201311kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201312kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201401kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201402kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201403kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201404kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201405kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201406kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201407kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201408kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201409kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201410kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201411kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201412kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201501kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201502kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201503kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201504kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201505kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201506kujinkou.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 10  /path "opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/201507kujinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2011suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2012suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2013suikeijinkou.csv"
@@ -124,6 +101,6 @@
 **
 **  件数
 **    convert  12
-**    skip     96
-**    合計     108
+**    skip     73
+**    合計     85
 **
