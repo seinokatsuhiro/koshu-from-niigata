@@ -2,3 +2,4 @@ datacatalog.csv
 open-data/opendata-gazou/
 open-data/opendata-toukei/od-jinkou/od-jyukijinkou/od-ku_danjo_nenrei/
 open-data/opendata-toukei/od-jinkou/od-jyukijinkou/od-kubetsujyuki.files/
+open-data/opendata-toukei/od-kankyo/od-ondanka/od-co2.files/

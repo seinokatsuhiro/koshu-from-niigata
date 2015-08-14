@@ -73,12 +73,6 @@
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2014suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 13  /path "opendata-toukei/od-jinkou/od-suikeijinkou.files/2015suikeijinkou.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 45  /path "opendata-toukei/od-kankyo/od-mizukankyo/od-mizu.files/H25suishitsu.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H18co2.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H19co2.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H20co2.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H21co2.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H22co2.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 8  /path "opendata-toukei/od-kankyo/od-ondanka/od-co2.files/H23co2.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 12  /path "opendata-toukei/od-kankyo/od-ondanka/od-energy.files/biomass.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 12  /path "opendata-toukei/od-kankyo/od-ondanka/od-energy.files/EVshisetsu.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2  /path "opendata-toukei/od-kankyo/od-ondanka/od-energy.files/gesuiodei.csv"
@@ -101,6 +95,6 @@
 **
 **  件数
 **    convert  12
-**    skip     73
-**    合計     85
+**    skip     67
+**    合計     79
 **
