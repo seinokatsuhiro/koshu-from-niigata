@@ -9,15 +9,11 @@
 #    ./convert.sh
 #
 
+. convert-sub.sh
 
 # ********************************************  ファイル
 
-#  $convert_root に含まれる DATA.csv を対象として、
-#  その CSV ファイルに対応する判断ファイル $convert_judge/DATA.judge を検索し、
-#  断続ファイルがあれば、koshu-from-csv を使って、DATA.csv を甲州記法へ変換します。
-#  変換結果は、$convert_output/DATA.k に出力されます。
-
-convert_program=convert.sh
+convert_program=convert
   # このスクリプトの名前。
 
 convert_root=www.city.niigata.lg.jp/shisei/seisaku/it/open-data
@@ -25,19 +21,8 @@ convert_root=www.city.niigata.lg.jp/shisei/seisaku/it/open-data
   # 新潟市のウェブサイトから wget-data.sh でダウンロードしたディレクトリ。
   # DATA.csv に含まれるアンダースコア (_) はハイフン (-) へ置き換えられます。
 
-convert_judge=convert-judge
-  # 各 DATA.csv に対応する判断の型 DATA.judge を格納するディレクトリ。
-
-convert_output=convert-koshu
-  # 変換結果 DATA.k の出力先ディレクトリ。
-
-convert_log=convert-log.k
-  # 変換結果のログファイル
-
 
 # ********************************************  変換処理の本体
-
-. convert-sub.sh
 
 convert_loop () {
     for loop_csv in `convert_csv_list | grep -v -f convert-ignore.txt`; do
@@ -69,8 +54,7 @@ convert_loop () {
 
 # ********************************************  メイン
 
-if [ ! -e $convert_output ]; then
-    mkdir -p $convert_output
-fi
+convert_prepare_dir $convert_output
+convert_prepare_dir $convert_logdir
 
 convert_body | convert_log_save

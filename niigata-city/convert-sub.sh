@@ -8,6 +8,37 @@
 #    convert_body を実行してください。
 #
 
+
+# ********************************************  変数
+
+#  $convert_root に含まれる DATA.csv を対象として、
+#  その CSV ファイルに対応する判断ファイル $convert_judge/DATA.judge を検索し、
+#  断続ファイルがあれば、koshu-from-csv を使って、DATA.csv を甲州記法へ変換します。
+#  変換結果は、$convert_output/DATA.k に出力されます。
+
+convert_program=UNKNOWN
+  # このスクリプトの名前。
+
+convert_root=www.city.niigata.lg.jp
+  # オープンデータ DATA.csv の保存先。
+  # 新潟市のウェブサイトから wget-data.sh でダウンロードしたディレクトリ。
+  # DATA.csv に含まれるアンダースコア (_) はハイフン (-) へ置き換えられます。
+
+convert_judge=convert-judge
+  # 各 DATA.csv に対応する判断の型 DATA.judge を格納するディレクトリ。
+
+convert_output=convert-koshu
+  # 変換結果 DATA.k の出力先ディレクトリ。
+
+convert_logdir=convert-log
+  # 変換結果のログデータの保存先ディレクトリ。
+
+convert_log=convert-log.k
+  # 変換結果のログファイル。
+
+
+# ********************************************  サブルーチン
+
 convert_body () {
     convert_convert=0
     convert_skip=0
@@ -22,7 +53,7 @@ convert_head () {
     echo "** -*- koshu -*-"
     echo "**"
     echo "**  新潟市オープンデータを甲州記法へ変換したファイルの一覧です。"
-    echo "**  このファイルは '$convert_program' によって生成されました。"
+    echo "**  このファイルは '$convert_program.sh' によって生成されました。"
     echo "**"
     echo
     echo "=== license"
@@ -52,7 +83,7 @@ convert_log () {
 }
 
 convert_log_save () {
-    convert_cut_root | tee $convert_log
+    convert_cut_root | tee convert-log/$convert_log
 }
 
 convert_csv_list () {
@@ -75,3 +106,8 @@ convert_koshu () {
     fi
 }
 
+convert_prepare_dir () {
+    if [ ! -e "$1" ]; then
+        mkdir -p "$1"
+    fi
+}
