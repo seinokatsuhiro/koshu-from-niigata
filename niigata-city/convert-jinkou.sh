@@ -28,30 +28,7 @@ convert_log=${convert_program}-log.k
 # ********************************************  変換処理の本体
 
 convert_loop () {
-    for loop_csv in `convert_csv_list`; do
-        loop_base=`basename $loop_csv .csv | tr _ -`
-        loop_koshu=$loop_base.k
-        loop_judge=$convert_judge/jinkou.judge
-
-        if [ -e "$loop_judge" ]; then
-            # convert
-            convert_convert=`convert_incr $convert_convert`
-            convert_koshu "$loop_judge" < $loop_csv > $convert_output/$loop_koshu
-
-            if [ $? = 0 ]; then
-                convert_log convert "$loop_csv"
-            else
-                echo "ABORT $loop_csv"
-                exit 2
-            fi
-
-        else
-            # skip
-            convert_skip=`convert_incr $convert_skip`
-            convert_log skip "$loop_csv"
-        fi
-
-    done
+    convert_by $convert_judge/jinkou.judge
 }
 
 

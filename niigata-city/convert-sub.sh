@@ -19,7 +19,7 @@
 convert_program=UNKNOWN
   # このスクリプトの名前。
 
-convert_root=www.city.niigata.lg.jp
+convert_root=www.city.niigata.lg.jp/shisei/seisaku/it/open-data
   # オープンデータ DATA.csv の保存先。
   # 新潟市のウェブサイトから wget-data.sh でダウンロードしたディレクトリ。
   # DATA.csv に含まれるアンダースコア (_) はハイフン (-) へ置き換えられます。
@@ -74,6 +74,33 @@ convert_summary () {
     echo "**    skip     $convert_skip"
     echo "**    合計     $convert_total"
     echo "**"
+}
+
+convert_by () {
+    for loop_csv in `convert_csv_list`; do
+        loop_base=`basename $loop_csv .csv | tr _ -`
+        loop_koshu=$loop_base.k
+        loop_judge=$1
+
+        if [ -e "$loop_judge" ]; then
+            # convert
+            convert_convert=`convert_incr $convert_convert`
+            convert_koshu "$loop_judge" < $loop_csv > $convert_output/$loop_koshu
+
+            if [ $? = 0 ]; then
+                convert_log convert "$loop_csv"
+            else
+                echo "ABORT $loop_csv"
+                exit 2
+            fi
+
+        else
+            # skip
+            convert_skip=`convert_incr $convert_skip`
+            convert_log skip "$loop_csv"
+        fi
+
+    done
 }
 
 convert_log () {
