@@ -37,38 +37,10 @@ convert_log=convert-log.k
 
 # ********************************************  変換処理の本体
 
-convert_body () {
-    echo "** -*- koshu -*-"
-    echo "**"
-    echo "**  新潟市オープンデータを甲州記法へ変換したファイルの一覧です。"
-    echo "**  このファイルは '$convert_program' によって生成されました。"
-    echo "**"
-    echo
-    echo "=== license"
-    echo
-    echo "  このデータセットは以下の著作物を改変して作成しています。"
-    echo "  新潟市オープンデータ、新潟市、クリエイティブ・コモンズ・ライセンス 表示 2.1 日本"
-    echo "  (CC-BY 2.1 JP) http://creativecommons.org/licenses/by/2.1/jp/"
-    echo
-    echo "=== rel"
-    echo
-
-    convert_convert=0
-    convert_skip=0
-    convert_loop
-    convert_total=`expr $convert_convert + $convert_skip`
-
-    echo
-    echo "**"
-    echo "**  件数"
-    echo "**    convert  $convert_convert"
-    echo "**    skip     $convert_skip"
-    echo "**    合計     $convert_total"
-    echo "**"
-}
+. convert-sub.sh
 
 convert_loop () {
-    for loop_csv in `convert_csv_list`; do
+    for loop_csv in `convert_csv_list | grep -v -f convert-ignore.txt`; do
         loop_base=`basename $loop_csv .csv | tr _ -`
         loop_koshu=$loop_base.k
         loop_judge=$convert_judge/$loop_base.judge
@@ -94,28 +66,6 @@ convert_loop () {
     done
 }
 
-convert_csv_list () {
-    find $convert_root -name '*.csv' | grep -v -f convert-ignore.txt
-}
-
-convert_incr () {
-    expr $1 + 1
-}
-
-convert_koshu () {
-    if [ -e "$1" ]; then
-        koshu-from-csv --omit-first --license LICENSE --judge $1
-    else
-        koshu-from-csv --omit-first --license LICENSE
-    fi
-}
-
-convert_log () {
-    convert_line=`wc -l < "$2"`
-    convert_line=`echo $convert_line`
-    echo "|-- CONVERT-LOG  /process '$1  /csv-lines $convert_line  /path \"$2\""
-}
-
 
 # ********************************************  メイン
 
@@ -123,9 +73,4 @@ if [ ! -e $convert_output ]; then
     mkdir -p $convert_output
 fi
 
-convert_cut_root () {
-    sed "s:$convert_root/::"
-}
-
-convert_body | convert_cut_root | tee $convert_log
-
+convert_body | convert_log_save
