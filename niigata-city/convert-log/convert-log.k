@@ -31,7 +31,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 26  /path "opendata-gis/od-gis_kankobunspo/od-gis_rentcycle.files/od_gis_76_rentcycle.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 17  /path "opendata-gis/od-gis_kankobunspo/od-gis_shiminnoen.files/od_gis_71_shiminnoen.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 98  /path "opendata-gis/od-gis_kankobunspo/od-gis_sports.files/od_gis_56_sports.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 52  /path "opendata-gis/od-gis_kankobunspo/od-gis_wifi.files/od-gis_wi-fi.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 52  /path "opendata-gis/od-gis_kankobunspo/od-gis_wifi.files/od-gis_wi-fi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 397  /path "opendata-gis/od-gis_kenkofukushi/od-gis_aed.files/od_gis_151_aed.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2  /path "opendata-gis/od-gis_kenkofukushi/od-gis_eiseikankyo.files/od_gis_110_eiseikankyo.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-gis/od-gis_kenkofukushi/od-gis_forshogaisha.files/od_gis_106_forshogaishashisetsu.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  12
-**    skip     67
+**    convert  13
+**    skip     66
 **    合計     79
 **
