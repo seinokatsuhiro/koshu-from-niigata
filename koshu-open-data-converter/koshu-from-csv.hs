@@ -3,10 +3,10 @@
 --    Convert CSV to Koshucode
 --
 --  USAGE
---    koshu-from-csv PAT /N /N ... < FILE.csv
---      # convert to |-- PAT /# /N /N ...
 --    koshu-from-csv < FILE.csv
---      # convert to |-- CSV /# /1 /2 ...
+--      # convert to |-- CSV /1 /2 ...
+--    koshu-from-csv PAT /N /N ... < FILE.csv
+--      # convert to |-- PAT /N /N ...
 --
 
 {-# OPTIONS_GHC -Wall #-}
@@ -26,6 +26,7 @@ import qualified Koshucode.Baala.Type.Vanilla   as K
 data Param = Param
     { paramOmitFirst  :: Bool
     , paramNumber     :: Bool
+    , paramTrim       :: (Bool, Bool)
     , paramHeaders    :: [String]
     , paramLicenses   :: [String]
     , paramJudgeType  :: JudgeType
@@ -40,10 +41,15 @@ initParam opts args =
        let as = K.omit null $ map K.trimBoth $ args ++ js
        return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
                       , paramNumber     = OptNumber    `elem` opts
+                      , paramTrim       = trim
                       , paramHeaders    = hs
                       , paramLicenses   = ls
-                      , paramJudgeType  = parseJudgeType as
-                      }
+                      , paramJudgeType  = parseJudgeType as }
+    where
+      trim = case K.unique $ K.catMaybes $ map optTrim opts of
+               [lr] -> lr
+               []   -> (False, False)
+               _    -> error "Ambiguous trimming"
 
 readFileFor :: (Option -> Maybe String) -> [Option] -> IO [String]
 readFileFor select opts =
@@ -63,14 +69,19 @@ parseJudgeType (pat : ns) = (pat, map name ns) where
 -- --------------------------------------------  Option
 
 data Option
-    = OptHelp
-    | OptVersion
-    | OptOmitFirst
-    | OptNumber
-    | OptHeader  String
-    | OptJudge   String
-    | OptLicense String
+    = OptHelp                   -- ^ Show help
+    | OptVersion                -- ^ Show version number
+    | OptOmitFirst              -- ^ Omit first line from CSV daat
+    | OptNumber                 -- ^ Add numbering term
+    | OptHeader  String         -- ^ Header file
+    | OptJudge   String         -- ^ Judgement file
+    | OptLicense String         -- ^ License file
+    | OptTrim    Bool Bool      -- ^ Triming spaces left or right
       deriving (Show, Eq, Ord)
+
+optTrim :: Option -> Maybe (Bool, Bool)
+optTrim (OptTrim left right) = Just (left, right)
+optTrim _                    = Nothing
 
 optHeader :: Option -> Maybe String
 optHeader (OptHeader s)   = Just s
@@ -90,7 +101,11 @@ option =
     , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)          "Add numbering term"
     , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader  "FILE") "Include header file"
     , Opt.Option ""  ["judge"]      (Opt.ReqArg OptJudge   "FILE") "Judgement file"
-    , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file" ]
+    , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file"
+    , Opt.Option ""  ["trim", "trim-both"]
+                                    (Opt.NoArg $ OptTrim True True) "Trim spaces left and right"
+    , Opt.Option ""  ["trim-left"]  (Opt.NoArg $ OptTrim True False) "Trim spaces left side"
+    , Opt.Option ""  ["trim-right"] (Opt.NoArg $ OptTrim False True) "Trim spaces right side" ]
 
 
 -- --------------------------------------------  Main
@@ -110,7 +125,7 @@ fromCSV :: Param -> K.Map String
 fromCSV p s =
     case CSV.parseCSV "<stdin>" s of
       Left a    -> error $ show a
-      Right csv -> let js = map textJudge $ number $ omitFirst (paramOmitFirst p) csv
+      Right csv -> let js = map textJudge $ number $ trim $ omitFirst (paramOmitFirst p) csv
                    in unlines $ appendHeader (paramHeaders p) (paramLicenses p) js
     where
       textJudge = K.writeDownJudge K.shortEmpty . judge n (paramJudgeType p)
@@ -118,6 +133,13 @@ fromCSV p s =
 
       number :: [CSV.Record] -> [NumRecord]
       number = zip (ints 1) . K.omit (== [""])
+
+      trim :: K.Map [CSV.Record]
+      trim = case paramTrim p of
+               (False, False) -> id
+               (True, False)  -> K.map2 K.trimLeft
+               (False, True)  -> K.map2 K.trimRight
+               (True, True)   -> K.map2 K.trimBoth 
 
 omitFirst :: Bool -> K.Map [CSV.Record]
 omitFirst omit csv
