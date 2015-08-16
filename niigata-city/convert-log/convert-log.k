@@ -55,7 +55,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 154  /path "opendata-gis/od-gis_kurashibosai/od-gis_chisan_inshok.files/od_gis_153_chisan_inshoku.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 70  /path "opendata-gis/od-gis_kurashibosai/od-gis_chisan_kouri.files/od_gis_152_chisan_kouri.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 4  /path "opendata-gis/od-gis_kurashibosai/od-gis_dobokujimusho.files/od_gis_123_dobokujimusho_etc.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 79  /path "opendata-gis/od-gis_kurashibosai/od-gis_farmstand.files/od_gis_115_farmstand.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 79  /path "opendata-gis/od-gis_kurashibosai/od-gis_farmstand.files/od_gis_115_farmstand.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 6  /path "opendata-gis/od-gis_kurashibosai/od-gis_fishingbase.files/od_gis_116_fishingbase.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 220  /path "opendata-gis/od-gis_kurashibosai/od-gis_okugaihinan.files/od_gis_83_okugaihinanbasho.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 368  /path "opendata-gis/od-gis_kurashibosai/od-gis_okunaihinanjo.files/od_gis_82_okunaihinanjo.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  14
-**    skip     65
+**    convert  15
+**    skip     64
 **    合計     79
 **
