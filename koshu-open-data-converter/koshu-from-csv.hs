@@ -27,6 +27,7 @@ data Param = Param
     { paramOmitFirst  :: Bool
     , paramNumber     :: Bool
     , paramTrim       :: (Bool, Bool)
+    , paramInput       :: [FilePath]
     , paramHeaders    :: [String]
     , paramLicenses   :: [String]
     , paramJudgeType  :: JudgeType
@@ -42,6 +43,7 @@ initParam opts args =
        return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
                       , paramNumber     = OptNumber    `elem` opts
                       , paramTrim       = trim
+                      , paramInput       = K.catMaybes $ map optInput opts
                       , paramHeaders    = hs
                       , paramLicenses   = ls
                       , paramJudgeType  = parseJudgeType as }
@@ -73,6 +75,7 @@ data Option
     | OptVersion                -- ^ Show version number
     | OptOmitFirst              -- ^ Omit first line from CSV daat
     | OptNumber                 -- ^ Add numbering term
+    | OptInput   String         -- ^ CSV file
     | OptHeader  String         -- ^ Header file
     | OptJudge   String         -- ^ Judgement file
     | OptLicense String         -- ^ License file
@@ -83,13 +86,17 @@ optTrim :: Option -> Maybe (Bool, Bool)
 optTrim (OptTrim left right) = Just (left, right)
 optTrim _                    = Nothing
 
+optInput :: Option -> Maybe String
+optInput (OptInput s)     = Just s
+optInput (_)              = Nothing
+
 optHeader :: Option -> Maybe String
 optHeader (OptHeader s)   = Just s
 optHeader (_)             = Nothing
 
 optJudge :: Option -> Maybe String
-optJudge (OptJudge s) = Just s
-optJudge (_)          = Nothing
+optJudge (OptJudge s)     = Just s
+optJudge (_)              = Nothing
 
 optLicense :: Option -> Maybe String
 optLicense (OptLicense s) = Just s
@@ -99,6 +106,7 @@ option :: [Opt.OptDescr Option]
 option =
     [ Opt.Option "1" ["omit-first"] (Opt.NoArg OptOmitFirst)       "Omit first line"
     , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)          "Add numbering term"
+    , Opt.Option ""  ["input"]      (Opt.ReqArg OptInput   "FILE") "CSV file"
     , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader  "FILE") "Include header file"
     , Opt.Option ""  ["judge"]      (Opt.ReqArg OptJudge   "FILE") "Judgement file"
     , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file"
@@ -118,8 +126,16 @@ main = do args <- Sys.getArgs
           case Opt.getOpt Opt.Permute option args of
             (opts, args', []) 
                 -> do p <- initParam opts args'
-                      interact $ fromCSV p
+                      edit (fromCSV p) $ paramInput p
             (_, _, errs) -> error $ show errs
+
+edit :: K.Map String -> [FilePath] -> IO ()
+edit f [] = interact f
+edit f ps = editFile f `mapM_` ps
+
+editFile :: K.Map String -> FilePath -> IO ()
+editFile f path = do content <- readFile path
+                     putStr $ f content
 
 fromCSV :: Param -> K.Map String
 fromCSV p s =
