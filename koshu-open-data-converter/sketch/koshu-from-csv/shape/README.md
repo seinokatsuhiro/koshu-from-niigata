@@ -1,22 +1,12 @@
 # I/O List
 
-- [./from.sh](#fromsh)
-- ./from.sh [box.csv](#boxcsv)
-- ./from.sh [column.csv](#columncsv)
-- ./from.sh [comma.csv](#commacsv)
-- ./from.sh [empty.csv](#emptycsv)
-- ./from.sh [line.csv](#linecsv)
-- ./from.sh [square.csv](#squarecsv)
-- ./from.sh [triangle.csv](#trianglecsv)
-
-
-
-## [./from.sh](./from.sh)
-
-```
-#!/bin/sh
-koshu-from-csv < $1
-```
+- koshu-from-csv --input [box.csv](#boxcsv)
+- koshu-from-csv --input [column.csv](#columncsv)
+- koshu-from-csv --input [comma.csv](#commacsv)
+- koshu-from-csv --input [empty.csv](#emptycsv)
+- koshu-from-csv --input [line.csv](#linecsv)
+- koshu-from-csv --input [square.csv](#squarecsv)
+- koshu-from-csv --input [triangle.csv](#trianglecsv)
 
 
 
@@ -28,7 +18,7 @@ dd,,ee
 ff,gg,hh
 ```
 
-Command `./from.sh box.csv` produces:
+Command `koshu-from-csv --input box.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -48,7 +38,7 @@ bb
 cc
 ```
 
-Command `./from.sh column.csv` produces:
+Command `koshu-from-csv --input column.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -68,7 +58,7 @@ Command `./from.sh column.csv` produces:
 ,,,
 ```
 
-Command `./from.sh comma.csv` produces:
+Command `koshu-from-csv --input comma.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -85,7 +75,7 @@ Command `./from.sh comma.csv` produces:
 ```
 ```
 
-Command `./from.sh empty.csv` produces:
+Command `koshu-from-csv --input empty.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -100,7 +90,7 @@ Command `./from.sh empty.csv` produces:
 aa,bb,cc
 ```
 
-Command `./from.sh line.csv` produces:
+Command `koshu-from-csv --input line.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -118,7 +108,7 @@ dd,ee,ff
 gg,hh,ii
 ```
 
-Command `./from.sh square.csv` produces:
+Command `koshu-from-csv --input square.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -138,7 +128,7 @@ dd,ee
 ff
 ```
 
-Command `./from.sh triangle.csv` produces:
+Command `koshu-from-csv --input triangle.csv` produces:
 
 ```
 ** -*- koshu -*-
@@ -155,5 +145,5 @@ Command `./from.sh triangle.csv` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -r -g -x csv ./from.sh
+koshu-inout.sh -r -g -x csv koshu-from-csv --input
 ```
