@@ -22,14 +22,19 @@ import qualified Koshucode.Baala.Type.Vanilla   as K
 
 main :: IO ()
 main = do putStrLn "-*- koshu -*-"
-          putStrLn ""
-          ps <- recursivePathList "."
-          js <- mapM judgeIO $ map undot ps
-          K.putJudges js
+          body 0 ["."]
 
-undot :: K.Map String
-undot ('.' : '/' : s) = s
-undot s               = s
+body :: Int -> [FilePath] -> IO ()
+body n paths =
+    do paths' <- dirExpand paths
+       case paths' of
+         p:ps -> do K.when (n `mod` 10 == 0) $ putStrLn ""
+                    j <- judgeIO p
+                    K.putJudge j
+                    body (n + 1) ps
+
+         []   -> do putStrLn ""
+                    putStrLn $ "*** " ++ show n ++ " judges"
 
 judgeIO :: FilePath -> IO K.JudgeC
 judgeIO path =
@@ -48,19 +53,22 @@ judge path (Posix.COff size) (Posix.CTime time) = K.affirm "FILE" xs
            , K.term "size" $ K.pInteger $ fromIntegral size
            , K.term "path" $ K.pText path ]
 
-recursivePathList :: FilePath -> IO [FilePath]
-recursivePathList dir =
-    do names <- Dir.getDirectoryContents dir
-       let properNames = filter (`notElem` [".", ".."]) names
-       paths <- mapM rec properNames
-       return $ concat paths
-    where
-      rec name =
-          do let path = dir Dir.</> name
-             isDirectory <- Dir.doesDirectoryExist path
-             case isDirectory of
-               True  -> recursivePathList path
-               False -> return [path]
+dirExpand :: [FilePath] -> IO [FilePath]
+dirExpand [] = return []
+dirExpand pps@(p:ps) =
+    do dir <- Dir.doesDirectoryExist p
+       case dir of
+         False -> return pps
+         True  -> do ns <- dirFiles p
+                     dirExpand $ (p // ns) ++ ps
+    where "." // ns = ns
+          dir // ns = map (dir Dir.</>) ns
+
+dirFiles :: FilePath -> IO [FilePath]
+dirFiles path =
+    do ns <- Dir.getDirectoryContents path
+       let ns' = K.omit (`elem` [".", ".."]) ns
+       return ns'
 
 timeFromUnix :: (Integral n) => n -> K.Ab K.Time
 timeFromUnix time =
