@@ -10,17 +10,23 @@
 
 module Main (main) where
 
-import qualified Data.Time.Calendar             as Cal
-import qualified Data.Time.LocalTime            as Time
-import qualified Foreign.C.Types                as Posix
-import qualified System.Posix.Types             as Posix
-import qualified System.PosixCompat.Files       as Posix
-import qualified System.FilePath                as Dir
-import qualified System.Directory               as Dir
-import qualified Koshucode.Baala.Base           as K
-import qualified Koshucode.Baala.Core           as K
-import qualified Koshucode.Baala.Type.Vanilla   as K
-import qualified SimpleOption                   as Opt
+import qualified Data.Time.Calendar              as Cal
+import qualified Data.Time.LocalTime             as Time
+import qualified Foreign.C.Types                 as Posix
+import qualified System.Posix.Types              as Posix
+import qualified System.PosixCompat.Files        as Posix
+import qualified System.FilePath                 as Dir
+import qualified System.Directory                as Dir
+import qualified Koshucode.Baala.Base            as K
+import qualified Koshucode.Baala.Core            as K
+import qualified Koshucode.Baala.Type.Vanilla    as K
+import qualified SimpleOption                    as Opt
+
+import qualified Data.Version                    as Ver
+import qualified Paths_koshu_open_data_converter as Ver
+
+versionString :: String
+versionString = "koshu-file-" ++ Ver.showVersion Ver.version
 
 
 -- --------------------------------------------  Parameter
@@ -31,6 +37,8 @@ data Param = Param
     , paramDir       :: Bool
     , paramRec       :: Bool
     , paramStart     :: [String]
+    , paramHelp      :: Bool
+    , paramVersion   :: Bool
     } deriving (Show, Eq, Ord)
 
 initParam :: Opt.StringResult -> IO Param
@@ -38,13 +46,15 @@ initParam (Left errs) = error $ unwords errs
 initParam (Right (opts, args)) =
     do zone   <- Time.getCurrentTimeZone
        start' <- if null args
-                 then dirFiles "."
-                 else return args
+                 then dirFiles "."  -- current directory
+                 else return args   -- given files/dirs
        return $ Param { paramTimeZone = zone
                       , paramFile     = file'
                       , paramDir      = dir'
                       , paramRec      = getFlag "rec"
-                      , paramStart    = start' }
+                      , paramStart    = start'
+                      , paramHelp     = getFlag "help"
+                      , paramVersion  = getFlag "version" }
     where
       getFlag = Opt.getFlag opts
 
@@ -55,6 +65,19 @@ initParam (Right (opts, args)) =
       file                = getFlag "file"
       dir                 = getFlag "dir"
       noFileDir           = not file && not dir
+
+usageHeader :: [String]
+usageHeader =
+    [ "DESCRIPTION"
+    , "  List files or directories in Koshucode"
+    , ""
+    , "USAGE"
+    , "  koshu-file [OPTION ...]"
+    , "    * List current directory"
+    , "  koshu-file FILE/DIR ... [OPTION ...]"
+    , "    * List FILE/DIR ..."
+    , ""
+    ]
 
 options :: [Opt.StringOptionDescr]
 options =
@@ -69,54 +92,59 @@ options =
 -- --------------------------------------------  main
 
 main :: IO ()
-main = do cmd    <- Opt.parseCommand options
-          param  <- initParam cmd
-          putStrLn "-*- koshu -*-"
-          let unk = map Unknown $ paramStart param
-          body param 0 unk
+main = do cmd  <- Opt.parseCommand options
+          pa   <- initParam cmd
+          body pa
 
-body :: Param -> Int -> [FileDir] -> IO ()
-body param = loop where
-    loop n paths =
-        do paths' <- dirExpand (paramRec param) paths
-           case paths' of
-             p : ps | skip p    -> body param n ps
-                    | otherwise -> do K.when (n `mod` 10 == 0) $ putStrLn ""
-                                      j <- judgeIO param p
-                                      K.putJudge j
-                                      body param (n + 1) ps
-             [] -> do putStrLn ""
-                      putStrLn $ "*** " ++ show n ++ " judges"
+body :: Param -> IO ()
+body pa@Param { paramHelp = help, paramVersion = version }
+    | help       = Opt.usage usageHeader options
+    | version    = putStrLn versionString
+    | otherwise  = do putStrLn "-*- koshu -*-"
+                      let unk = map Unknown $ paramStart pa
+                      loop 0 unk
+    where
+      loop :: Int -> [FileDir] -> IO ()
+      loop n paths =
+          do paths' <- dirExpand (paramRec pa) paths
+             case paths' of
+               p : ps | skip p    -> loop n ps
+                      | otherwise -> do K.when (n `mod` 10 == 0) $ putStrLn ""
+                                        j <- judgeIO pa p
+                                        K.putJudge j
+                                        loop (n + 1) ps
+               [] -> do putStrLn ""
+                        putStrLn $ "*** " ++ show n ++ " judges"
 
-    both   = file && dir
-    file   = paramFile param
-    dir    = paramDir  param
-    skip p | both              = False
-           | file && isFile p  = False
-           | file              = True
-           | dir && isDir p    = False
-           | dir               = True
-           | otherwise         = True
+      both   = file && dir
+      file   = paramFile pa
+      dir    = paramDir  pa
+      skip p | both              = False
+             | file && isFile p  = False
+             | file              = True
+             | dir && isDir p    = False
+             | dir               = True
+             | otherwise         = True
 
 judgeIO :: Param -> FileDir -> IO K.JudgeC
-judgeIO param (File path stat) = return j where
-    j = judgeFile param path
+judgeIO pa (File path stat) = return j where
+    j = judgeFile pa path
         (Posix.fileSize stat)
         (Posix.modificationTime stat)
-judgeIO param (Dir path stat n) = return j where
-    j = judgeDir param path n
+judgeIO pa (Dir path stat n) = return j where
+    j = judgeDir pa path n
         (Posix.modificationTime stat)
 judgeIO _ (Unknown path) = error $ "Unknown path: " ++ path
 
 judgeFile :: Param -> FilePath -> Posix.COff -> Posix.CTime -> K.JudgeC
-judgeFile param path (Posix.COff size) time = K.affirm "FILE" xs where
-    xs = [ K.term "time" $ timeFrom param time
+judgeFile pa path (Posix.COff size) time = K.affirm "FILE" xs where
+    xs = [ K.term "time" $ timeFrom pa time
          , K.term "size" $ pIntegral size
          , K.term "path" $ K.pText path ]
 
 judgeDir :: Param -> FilePath -> Int -> Posix.CTime -> K.JudgeC
-judgeDir param path n time = K.affirm "DIR" xs where
-    xs = [ K.term "time"  $ timeFrom param time
+judgeDir pa path n time = K.affirm "DIR" xs where
+    xs = [ K.term "time"  $ timeFrom pa time
          , K.term "count" $ K.pInt n
          , K.term "path"  $ K.pText path ]
 
@@ -168,8 +196,8 @@ dirFiles path =
 -- --------------------------------------------  Timestamp
 
 timeFrom :: Param -> Posix.CTime -> K.VContent
-timeFrom param (Posix.CTime time) = tc where
-    zone = Just $ 60 * (Time.timeZoneMinutes $ paramTimeZone param)
+timeFrom pa (Posix.CTime time) = tc where
+    zone = Just $ 60 * (Time.timeZoneMinutes $ paramTimeZone pa)
     tc = case timeFromUnix time zone of
            Left _  -> K.empty
            Right t -> K.pTime t

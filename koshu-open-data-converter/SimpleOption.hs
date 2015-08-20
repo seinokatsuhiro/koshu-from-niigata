@@ -5,7 +5,7 @@ module SimpleOption
    SimpleOption (..),
    StringOptionDescr, StringOption,
    flag, opt, req,
-   help, version,
+   help, version, usage,
 
    -- * Processing
    ParseResult, StringResult,
@@ -45,6 +45,11 @@ help = flag "h" ["help"] "Show help message"
 
 version :: StringOptionDescr
 version = flag "V" ["version"] "Show version number"
+
+usage :: [String] -> [Opt.OptDescr a] -> IO ()
+usage text opts =
+    do putStr $ Opt.usageInfo (unlines text ++ "OPTION") opts
+       putStrLn ""
 
 
 -- --------------------------------------------  Processing
