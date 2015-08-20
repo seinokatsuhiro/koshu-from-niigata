@@ -26,28 +26,35 @@ import qualified SimpleOption                   as Opt
 -- --------------------------------------------  Parameter
 
 data Param = Param
-    { paramTimeZone :: Time.TimeZone
-    , paramFile     :: Bool
-    , paramDir      :: Bool
+    { paramTimeZone  :: Time.TimeZone
+    , paramFile      :: Bool
+    , paramDir       :: Bool
+    , paramRec       :: Bool
+    , paramStart     :: [String]
     } deriving (Show, Eq, Ord)
 
 initParam :: Opt.StringResult -> IO Param
 initParam (Left errs) = error $ unwords errs
-initParam (Right (opts, _)) =
-    do zone <- Time.getCurrentTimeZone
+initParam (Right (opts, args)) =
+    do zone   <- Time.getCurrentTimeZone
+       start' <- if null args
+                 then dirFiles "."
+                 else return args
        return $ Param { paramTimeZone = zone
                       , paramFile     = file'
-                      , paramDir      = dir' }
+                      , paramDir      = dir'
+                      , paramRec      = getFlag "rec"
+                      , paramStart    = start' }
     where
       getFlag = Opt.getFlag opts
 
-      file' | noFileDir  = True
-            | otherwise  = file
-      dir'  | noFileDir  = True
-            | otherwise  = dir
-      file               = getFlag "file"
-      dir                = getFlag "dir"
-      noFileDir          = not file && not dir
+      file'  | noFileDir  = True
+             | otherwise  = file
+      dir'   | noFileDir  = True
+             | otherwise  = dir
+      file                = getFlag "file"
+      dir                 = getFlag "dir"
+      noFileDir           = not file && not dir
 
 options :: [Opt.StringOptionDescr]
 options =
@@ -55,6 +62,7 @@ options =
     , Opt.version
     , Opt.flag ""  ["file"]    "List files"
     , Opt.flag ""  ["dir"]     "List directories"
+    , Opt.flag "r" ["rec"]     "List recursively"
     ]
 
 
@@ -64,12 +72,13 @@ main :: IO ()
 main = do cmd    <- Opt.parseCommand options
           param  <- initParam cmd
           putStrLn "-*- koshu -*-"
-          body param 0 [Unknown "."]
+          let unk = map Unknown $ paramStart param
+          body param 0 unk
 
 body :: Param -> Int -> [FileDir] -> IO ()
 body param = loop where
     loop n paths =
-        do paths' <- dirExpand paths
+        do paths' <- dirExpand (paramRec param) paths
            case paths' of
              p : ps | skip p    -> body param n ps
                     | otherwise -> do K.when (n `mod` 10 == 0) $ putStrLn ""
@@ -134,20 +143,21 @@ isDir _           = False
 "." // ns = ns
 dir // ns = map (dir Dir.</>) ns
 
-dirExpand :: [FileDir] -> IO [FileDir]
-dirExpand (Unknown p : ps) =
+dirExpand :: Bool -> [FileDir] -> IO [FileDir]
+dirExpand rec (Unknown p : ps) =
     do stat <- Posix.getFileStatus p
        case Posix.isDirectory stat of
          False -> return $ File p stat : ps
          True  -> do ns <- dirFiles p
-                     let ns' = p // ns
+                     let ns' | rec       = p // ns
+                             | otherwise = []
                          dir = Dir p stat (length ns)
                          pps = (Unknown `map` ns') ++ ps
                      return $ dir : pps
          -- Input   [Unknown P1, Unknown P2, Unknown P3]
          -- Output  [File P1, Unknown P2, Unknown P3]
          --         [Dir P1, File P4, File P5, Unknown P2, Unknown P3]
-dirExpand ps = return ps
+dirExpand _ ps = return ps
 
 dirFiles :: FilePath -> IO [FilePath]
 dirFiles path =
