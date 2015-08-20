@@ -3,7 +3,7 @@
 --    List file information
 --
 --  USAGE
---    koshu-file
+--    koshu-file [OPTION]
 --
 
 {-# OPTIONS_GHC -Wall #-}
@@ -15,40 +15,15 @@ import qualified Data.Time.LocalTime            as Time
 import qualified Foreign.C.Types                as Posix
 import qualified System.Posix.Types             as Posix
 import qualified System.PosixCompat.Files       as Posix
-import qualified System.Console.GetOpt          as Opt
-import qualified System.Environment             as Sys
 import qualified System.FilePath                as Dir
 import qualified System.Directory               as Dir
 import qualified Koshucode.Baala.Base           as K
 import qualified Koshucode.Baala.Core           as K
 import qualified Koshucode.Baala.Type.Vanilla   as K
+import qualified SimpleOption                   as Opt
 
 
--- --------------------------------------------  Option
-
-data Option
-    = OptHelp
-    | OptVersion
-    | OptFlag String
-      deriving (Show, Eq, Ord)
-
-option :: [Opt.OptDescr Option]
-option =
-    [ Opt.Option "h" ["help"]       (Opt.NoArg OptHelp)       "Show help message"
-    , Opt.Option "V" ["version"]    (Opt.NoArg OptVersion)    "Show version number"
-    , Opt.Option ""  ["file"]       (Opt.NoArg $ OptFlag "file")  "List files"
-    , Opt.Option ""  ["dir"]        (Opt.NoArg $ OptFlag "dir")   "List directories"
-    ]
-
-optFlag :: [Option] -> String -> Bool
-optFlag opts name = or $ map (optFlagCheck name) opts
-
-optFlagCheck :: String -> Option -> Bool
-optFlagCheck name (OptFlag n) = n == name
-optFlagCheck _ _              = False
-
-
--- --------------------------------------------  main
+-- --------------------------------------------  Parameter
 
 data Param = Param
     { paramTimeZone :: Time.TimeZone
@@ -56,31 +31,40 @@ data Param = Param
     , paramDir      :: Bool
     } deriving (Show, Eq, Ord)
 
-initParam :: [Option] -> [String] -> IO Param
-initParam opts _ =
+initParam :: Opt.StringResult -> IO Param
+initParam (Left errs) = error $ unwords errs
+initParam (Right (opts, _)) =
     do zone <- Time.getCurrentTimeZone
        return $ Param { paramTimeZone = zone
                       , paramFile     = file'
                       , paramDir      = dir' }
     where
-      flag  = optFlag opts
+      getFlag = Opt.getFlag opts
 
-      file' | noFileDir = True
-            | otherwise = file
-      dir'  | noFileDir = True
-            | otherwise = dir
-      file              = flag "file"
-      dir               = flag "dir"
-      noFileDir         = not file && not dir
+      file' | noFileDir  = True
+            | otherwise  = file
+      dir'  | noFileDir  = True
+            | otherwise  = dir
+      file               = getFlag "file"
+      dir                = getFlag "dir"
+      noFileDir          = not file && not dir
+
+options :: [Opt.StringOptionDescr]
+options =
+    [ Opt.help
+    , Opt.version
+    , Opt.flag ""  ["file"]    "List files"
+    , Opt.flag ""  ["dir"]     "List directories"
+    ]
+
+
+-- --------------------------------------------  main
 
 main :: IO ()
-main = do args <- Sys.getArgs
-          case Opt.getOpt Opt.Permute option args of
-            (opts, args', [])
-                -> do param <- initParam opts args'
-                      putStrLn "-*- koshu -*-"
-                      body param 0 [Unknown "."]
-            (_, _, errs) -> error $ show errs
+main = do cmd    <- Opt.parseCommand options
+          param  <- initParam cmd
+          putStrLn "-*- koshu -*-"
+          body param 0 [Unknown "."]
 
 body :: Param -> Int -> [FileDir] -> IO ()
 body param = loop where

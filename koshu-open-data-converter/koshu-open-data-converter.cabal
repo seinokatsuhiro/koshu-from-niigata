@@ -14,7 +14,7 @@ cabal-version:       >=1.10
 
 executable koshu-file
   main-is:             koshu-file.hs
-  -- other-modules:       
+  other-modules:       SimpleOption
   -- other-extensions:    
   build-depends:
          base                     == 4.*
