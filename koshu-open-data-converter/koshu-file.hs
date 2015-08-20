@@ -32,13 +32,19 @@ versionString = "koshu-file-" ++ Ver.showVersion Ver.version
 -- --------------------------------------------  Parameter
 
 data Param = Param
-    { paramTimeZone  :: Time.TimeZone
-    , paramFile      :: Bool
-    , paramDir       :: Bool
-    , paramRec       :: Bool
-    , paramStart     :: [String]
-    , paramHelp      :: Bool
-    , paramVersion   :: Bool
+    { paramTimeZone  :: Time.TimeZone  -- Local time zone
+    , paramFile      :: Bool           -- Only files
+    , paramDir       :: Bool           -- Only directories
+    , paramRec       :: Bool           -- Recursive
+    , paramStart     :: [String]       -- Files or directories
+
+    , paramAddBase   :: Bool           -- Add /base term
+    , paramAddExt    :: Bool           -- Add /ext term
+    , paramAddDirs   :: Bool           -- Add /dirs term
+    , paramCutPath   :: Bool           -- Cut /path term
+
+    , paramHelp      :: Bool           -- Show help
+    , paramVersion   :: Bool           -- Show version
     } deriving (Show, Eq, Ord)
 
 initParam :: Opt.StringResult -> IO Param
@@ -53,6 +59,12 @@ initParam (Right (opts, args)) =
                       , paramDir      = dir'
                       , paramRec      = getFlag "rec"
                       , paramStart    = start'
+
+                      , paramAddBase  = getFlag "add-base"
+                      , paramAddExt   = getFlag "add-ext"
+                      , paramAddDirs  = getFlag "add-dirs"
+                      , paramCutPath  = getFlag "cut-path"
+
                       , paramHelp     = getFlag "help"
                       , paramVersion  = getFlag "version" }
     where
@@ -83,9 +95,13 @@ options :: [Opt.StringOptionDescr]
 options =
     [ Opt.help
     , Opt.version
-    , Opt.flag ""  ["file"]    "List files"
-    , Opt.flag ""  ["dir"]     "List directories"
-    , Opt.flag "r" ["rec"]     "List recursively"
+    , Opt.flag ""  ["file"]      "List files"
+    , Opt.flag ""  ["dir"]       "List directories"
+    , Opt.flag "r" ["rec"]       "List recursively"
+    , Opt.flag ""  ["add-base"]  "Add /base term for basename"
+    , Opt.flag ""  ["add-ext"]   "Add /ext term for extension"
+    , Opt.flag ""  ["add-dirs"]  "Add /dirs term for directory list"
+    , Opt.flag ""  ["cut-path"]  "Cut /path term"
     ]
 
 
@@ -137,10 +153,39 @@ judgeIO pa (Dir path stat n) = return j where
 judgeIO _ (Unknown path) = error $ "Unknown path: " ++ path
 
 judgeFile :: Param -> FilePath -> Posix.COff -> Posix.CTime -> K.JudgeC
-judgeFile pa path (Posix.COff size) time = K.affirm "FILE" xs where
-    xs = [ K.term "time" $ timeFrom pa time
-         , K.term "size" $ pIntegral size
-         , K.term "path" $ K.pText path ]
+judgeFile pa filepath (Posix.COff size) time = K.affirm "FILE" xs where
+    xs = stem
+         ++ add (paramAddExt pa) ext
+         ++ add (paramAddBase pa) base
+         ++ add (paramAddDirs pa) dirs
+         ++ cut (paramCutPath pa) path
+
+    stem  = [ K.term "time" $ timeFrom pa time
+            , K.term "size" $ pIntegral size ]
+
+    ext   = K.term "ext" $ K.pMaybeText extname
+    base  = K.term "base" $ K.pText basename
+    dirs  = K.term "dirs" $ K.pList $ map K.pText $ dirsFrom filepath
+    path  = K.term "path" $ K.pText filepath
+
+    basename  = Dir.takeBaseName  filepath
+    extname   = undot $ Dir.takeExtension filepath
+
+    add True  a   = [a]
+    add False _   = []
+
+    cut True  _   = []
+    cut False a   = [a]
+
+dirsFrom :: FilePath -> [FilePath]
+dirsFrom = cutFirst "" . K.divideBy Dir.isPathSeparator . undot . Dir.takeDirectory
+
+undot :: K.Map String
+undot = cutFirst '.'
+
+cutFirst :: (Eq a) => a -> K.Map [a]
+cutFirst k (x:xs) | x == k  = xs
+cutFirst _ xs               = xs
 
 judgeDir :: Param -> FilePath -> Int -> Posix.CTime -> K.JudgeC
 judgeDir pa path n time = K.affirm "DIR" xs where
