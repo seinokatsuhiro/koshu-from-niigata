@@ -28,7 +28,7 @@ convert_loop () {
     for loop_csv in `convert_csv_list | grep -v -f convert-ignore.txt`; do
         loop_base=`basename $loop_csv .csv | tr _ -`
         loop_koshu=$loop_base.k
-        loop_judge=$convert_judge/$loop_base.judge
+        loop_judge=`convert_find_judge $loop_base.judge`
 
         if [ -e "$loop_judge" ]; then
             # convert
@@ -49,6 +49,10 @@ convert_loop () {
         fi
 
     done
+}
+
+convert_find_judge () {
+    find $convert_judge -name "$1"
 }
 
 
