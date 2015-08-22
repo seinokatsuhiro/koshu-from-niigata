@@ -61,7 +61,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 368  /path "opendata-gis/od-gis_kurashibosai/od-gis_okunaihinanjo.files/od_gis_82_okunaihinanjo.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 1572  /path "opendata-gis/od-gis_kurashibosai/od-gis_park.files/od_gis_59_park.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 255  /path "opendata-gis/od-gis_kurashibosai/od-gis_shieijutaku.files/od_gis_75_shieijutaku.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 39  /path "opendata-gis/od-gis_kurashibosai/od-gis_shiyakusho.files/od_gis_137_shiyakusho_etc.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 39  /path "opendata-gis/od-gis_kurashibosai/od-gis_shiyakusho.files/od_gis_137_shiyakusho_etc.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 39  /path "opendata-gis/od-gis_kurashibosai/od-gis_shobo.files/od_gis_81_shobo.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 22  /path "opendata-gis/od-gis_kurashibosai/od-gis_wtf.files/od_gis_101_wtf.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 49  /path "opendata-tetsuduki/od-juki_syoumei_mado.files/od-juki_syoumei_mado.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  25
-**    skip     54
+**    convert  26
+**    skip     53
 **    合計     79
 **
