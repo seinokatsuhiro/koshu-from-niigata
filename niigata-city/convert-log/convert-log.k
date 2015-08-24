@@ -22,9 +22,9 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2068  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten.files/od_gis_194_gaiku_takakuten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 1998  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten_np.files/od_gis_195_gaiku_takakuten_setten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 27  /path "opendata-gis/od-gis_dourosuido/od-gis_waterworksins.files/od_gis_102_waterworksinstitution.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_bus_hakusan.files/od_gis_79_junkanbus_hakusan.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_bus_hakusan.files/od_gis_79_junkanbus_hakusan.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 107  /path "opendata-gis/od-gis_kankobunspo/od-gis_greenandblue.files/od_gis_121_greenandbluetourism.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_inuyashago.files/od_gis_78_junkanbus_inuyasha.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_inuyashago.files/od_gis_78_junkanbus_inuyasha.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 744  /path "opendata-gis/od-gis_kankobunspo/od-gis_iseki.files/od_gis_113_iseki.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 25  /path "opendata-gis/od-gis_kankobunspo/od-gis_onseninst.files/od_gis_80_onseninstitution.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 81  /path "opendata-gis/od-gis_kankobunspo/od-gis_pkbicycles.files/od_gis_77_pkbicycles.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  26
-**    skip     53
+**    convert  28
+**    skip     51
 **    合計     79
 **
