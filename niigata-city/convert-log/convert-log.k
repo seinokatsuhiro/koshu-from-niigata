@@ -14,11 +14,11 @@
 
 |-- CONVERT-LOG  /process 'skip  /csv-lines 65  /path "opendata-gis/od-gis_dourosuido/od-gis_gesuido.files/od_gis_103_gesuido.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 6893  /path "opendata-gis/od-gis_dourosuido/od-gis_hojoten.files/od_gis_196_hojoten.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 387  /path "opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.files/od_gis_258_kendo_hashi.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 129  /path "opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.files/od_gis_257_kokudo_hashi.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 387  /path "opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.files/od_gis_258_kendo_hashi.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 129  /path "opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.files/od_gis_257_kokudo_hashi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 304  /path "opendata-gis/od-gis_dourosuido/od-gis_sankakuten.files/od_gis_192_gaiku_sankakuten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 129  /path "opendata-gis/od-gis_dourosuido/od-gis_sankakuten_np.files/od_gis_193_gaiku_sankakuten_setten.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 3567  /path "opendata-gis/od-gis_dourosuido/od-gis_shido_hashi.files/od_gis_259_shido_hashi.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 3567  /path "opendata-gis/od-gis_dourosuido/od-gis_shido_hashi.files/od_gis_259_shido_hashi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2068  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten.files/od_gis_194_gaiku_takakuten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 1998  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten_np.files/od_gis_195_gaiku_takakuten_setten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 27  /path "opendata-gis/od-gis_dourosuido/od-gis_waterworksins.files/od_gis_102_waterworksinstitution.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  28
-**    skip     51
+**    convert  31
+**    skip     48
 **    合計     79
 **
