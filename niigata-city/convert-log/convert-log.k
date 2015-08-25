@@ -46,7 +46,7 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 47  /path "opendata-gis/od-gis_kosodate/od-gis_community.files/od_gis_98_communitycenter.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 62  /path "opendata-gis/od-gis_kosodate/od-gis_communitycent.files/od_gis_100_communitycenter_etc.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 132  /path "opendata-gis/od-gis_kosodate/od-gis_himawari.files/od_gis_57_himawari.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 19  /path "opendata-gis/od-gis_kosodate/od-gis_jidocenter.files/od_gis_58_jidocenter.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kosodate/od-gis_jidocenter.files/od_gis_58_jidocenter.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 46  /path "opendata-gis/od-gis_kosodate/od-gis_library.files/od_gis_94_library.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 26  /path "opendata-gis/od-gis_kosodate/od-gis_shiminkaikan.files/od_gis_99_shiminkaikan.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 116  /path "opendata-gis/od-gis_kosodate/od-gis_shogakko.files/od_gis_85_shogakko.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  34
-**    skip     45
+**    convert  35
+**    skip     44
 **    合計     79
 **
