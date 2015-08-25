@@ -34,7 +34,7 @@ md_list () {
     echo "### $2"
     echo
     echo "| 種類 | ファイル | 項目数 | データ数 |"
-    echo "|------|----------|--------|----------|"
+    echo "|------|----------|-------:|---------:|"
     for j in `find_judge $1`; do
         b=`basename $j .judge`
         k=`echo $j | change_dir | change_ext`
