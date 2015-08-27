@@ -13,7 +13,7 @@
 === rel
 
 |-- CONVERT-LOG  /process 'convert  /csv-lines 65  /path "opendata-gis/od-gis_dourosuido/od-gis_gesuido.files/od_gis_103_gesuido.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 6893  /path "opendata-gis/od-gis_dourosuido/od-gis_hojoten.files/od_gis_196_hojoten.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 6893  /path "opendata-gis/od-gis_dourosuido/od-gis_hojoten.files/od_gis_196_hojoten.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 387  /path "opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.files/od_gis_258_kendo_hashi.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 129  /path "opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.files/od_gis_257_kokudo_hashi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 304  /path "opendata-gis/od-gis_dourosuido/od-gis_sankakuten.files/od_gis_192_gaiku_sankakuten.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  41
-**    skip     38
+**    convert  42
+**    skip     37
 **    合計     79
 **
