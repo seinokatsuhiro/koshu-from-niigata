@@ -35,22 +35,22 @@
 |-- CONVERT-LOG  /process 'skip  /csv-lines 397  /path "opendata-gis/od-gis_kenkofukushi/od-gis_aed.files/od_gis_151_aed.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2  /path "opendata-gis/od-gis_kenkofukushi/od-gis_eiseikankyo.files/od_gis_110_eiseikankyo.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 125  /path "opendata-gis/od-gis_kenkofukushi/od-gis_forshogaisha.files/od_gis_106_forshogaishashisetsu.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 223  /path "opendata-gis/od-gis_kenkofukushi/od-gis_hoikuen.files/od_gis_107_hoikuen.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 223  /path "opendata-gis/od-gis_kenkofukushi/od-gis_hoikuen.files/od_gis_107_hoikuen.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 26  /path "opendata-gis/od-gis_kenkofukushi/od-gis_hokenfukushi.files/od_gis_108_hokenfukushi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 5  /path "opendata-gis/od-gis_kenkofukushi/od-gis_hokenjo.files/od_gis_109_hokenjo.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 199  /path "opendata-gis/od-gis_kenkofukushi/od-gis_kenko_ben.files/od_gis_190_kenkodukuri_bento.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 226  /path "opendata-gis/od-gis_kenkofukushi/od-gis_kenko_in.files/od_gis_189_kenkodukuri_inshoku.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 18  /path "opendata-gis/od-gis_kenkofukushi/od-gis_kenko_kyu.files/od_gis_553_kenkodukuri_kyushoku.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2  /path "opendata-gis/od-gis_kenkofukushi/od-gis_shokuniku.files/od_gis_181_shokunikukensa.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 63  /path "opendata-gis/od-gis_kosodate/od-gis_chugakko.files/od_gis_86_chugakko.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 63  /path "opendata-gis/od-gis_kosodate/od-gis_chugakko.files/od_gis_86_chugakko.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 47  /path "opendata-gis/od-gis_kosodate/od-gis_community.files/od_gis_98_communitycenter.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 62  /path "opendata-gis/od-gis_kosodate/od-gis_communitycent.files/od_gis_100_communitycenter_etc.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 132  /path "opendata-gis/od-gis_kosodate/od-gis_himawari.files/od_gis_57_himawari.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kosodate/od-gis_jidocenter.files/od_gis_58_jidocenter.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 46  /path "opendata-gis/od-gis_kosodate/od-gis_library.files/od_gis_94_library.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 26  /path "opendata-gis/od-gis_kosodate/od-gis_shiminkaikan.files/od_gis_99_shiminkaikan.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 116  /path "opendata-gis/od-gis_kosodate/od-gis_shogakko.files/od_gis_85_shogakko.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 54  /path "opendata-gis/od-gis_kosodate/od-gis_yochien.files/od_gis_84_yochien.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 116  /path "opendata-gis/od-gis_kosodate/od-gis_shogakko.files/od_gis_85_shogakko.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 54  /path "opendata-gis/od-gis_kosodate/od-gis_yochien.files/od_gis_84_yochien.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 24  /path "opendata-gis/od-gis_kurashibosai/od-gis_asaichi.files/od_gis_114_asaichi.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 154  /path "opendata-gis/od-gis_kurashibosai/od-gis_chisan_inshok.files/od_gis_153_chisan_inshoku.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 70  /path "opendata-gis/od-gis_kurashibosai/od-gis_chisan_kouri.files/od_gis_152_chisan_kouri.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  35
-**    skip     44
+**    convert  39
+**    skip     40
 **    合計     79
 **
