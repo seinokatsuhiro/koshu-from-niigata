@@ -12,7 +12,7 @@
 
 === rel
 
-|-- CONVERT-LOG  /process 'skip  /csv-lines 65  /path "opendata-gis/od-gis_dourosuido/od-gis_gesuido.files/od_gis_103_gesuido.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 65  /path "opendata-gis/od-gis_dourosuido/od-gis_gesuido.files/od_gis_103_gesuido.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 6893  /path "opendata-gis/od-gis_dourosuido/od-gis_hojoten.files/od_gis_196_hojoten.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 387  /path "opendata-gis/od-gis_dourosuido/od-gis_kendo_hashi.files/od_gis_258_kendo_hashi.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 129  /path "opendata-gis/od-gis_dourosuido/od-gis_kokudo_hashi.files/od_gis_257_kokudo_hashi.csv"
@@ -21,7 +21,7 @@
 |-- CONVERT-LOG  /process 'convert  /csv-lines 3567  /path "opendata-gis/od-gis_dourosuido/od-gis_shido_hashi.files/od_gis_259_shido_hashi.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 2068  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten.files/od_gis_194_gaiku_takakuten.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 1998  /path "opendata-gis/od-gis_dourosuido/od-gis_takakuten_np.files/od_gis_195_gaiku_takakuten_setten.csv"
-|-- CONVERT-LOG  /process 'skip  /csv-lines 27  /path "opendata-gis/od-gis_dourosuido/od-gis_waterworksins.files/od_gis_102_waterworksinstitution.csv"
+|-- CONVERT-LOG  /process 'convert  /csv-lines 27  /path "opendata-gis/od-gis_dourosuido/od-gis_waterworksins.files/od_gis_102_waterworksinstitution.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_bus_hakusan.files/od_gis_79_junkanbus_hakusan.csv"
 |-- CONVERT-LOG  /process 'skip  /csv-lines 107  /path "opendata-gis/od-gis_kankobunspo/od-gis_greenandblue.files/od_gis_121_greenandbluetourism.csv"
 |-- CONVERT-LOG  /process 'convert  /csv-lines 19  /path "opendata-gis/od-gis_kankobunspo/od-gis_inuyashago.files/od_gis_78_junkanbus_inuyasha.csv"
@@ -94,7 +94,7 @@
 
 **
 **  件数
-**    convert  39
-**    skip     40
+**    convert  41
+**    skip     38
 **    合計     79
 **
