@@ -13,12 +13,59 @@
 
 module Main (main) where
 
-import qualified System.Console.GetOpt          as Opt
-import qualified System.Environment             as Sys
-import qualified Text.CSV                       as CSV
-import qualified Koshucode.Baala.Base           as K
-import qualified Koshucode.Baala.Core           as K
-import qualified Koshucode.Baala.Type.Vanilla   as K
+import qualified SimpleOption                    as Opt
+import qualified Text.CSV                        as CSV
+import qualified Koshucode.Baala.Base            as K
+import qualified Koshucode.Baala.Core            as K
+import qualified Koshucode.Baala.Type.Vanilla    as K
+
+import qualified Data.Version                    as Ver
+import qualified Paths_koshu_open_data_converter as Ver
+
+
+-- --------------------------------------------  Main
+
+versionString :: String
+versionString = "koshu-from-csv-" ++ Ver.showVersion Ver.version
+
+usageHeader :: [String]
+usageHeader =
+    [ "DESCRIPTION"
+    , "  Convert CSV to Koshucode"
+    , ""
+    , "USAGE"
+    , "  koshu-csv-file [OPTION] < FILE.csv"
+    , "    * Convert to |-- CSV /1 ... /2 ..."
+    , "  koshu-csv-file PAT /N ... [OPTION] < FILE.csv"
+    , "    * Convert to |-- PAT /N ..."
+    , ""
+    ]
+
+options :: [Opt.StringOptionDescr]
+options =
+    [ Opt.help
+    , Opt.version
+    , Opt.flag "1" ["omit-first"]         "Omit first line"
+    , Opt.flag "n" ["number"]             "Add numbering term"
+    , Opt.req  ""  ["input"]   "FILE"     "CSV file"
+    , Opt.req  ""  ["header"]  "FILE"     "Include header file"
+    , Opt.req  ""  ["judge"]   "FILE"     "Judgement file"
+    , Opt.req  ""  ["license"] "FILE"     "Include license file"
+    , Opt.flag ""  ["trim", "trim-both"]  "Trim spaces left and right"
+    , Opt.flag ""  ["trim-left"]          "Trim spaces left side"
+    , Opt.flag ""  ["trim-right"]         "Trim spaces right side"
+    ]
+
+main :: IO ()
+main = do cmd <- Opt.parseCommand options
+          p   <- initParam cmd
+          mainParam p
+
+mainParam :: Param -> IO ()
+mainParam p@Param { paramHelp = help, paramVersion = version }
+     | help       = Opt.usage usageHeader options
+     | version    = putStrLn versionString
+     | otherwise  = edit (fromCSV p) $ paramInput p
 
 
 -- --------------------------------------------  Param
@@ -27,38 +74,47 @@ data Param = Param
     { paramOmitFirst  :: Bool
     , paramNumber     :: Bool
     , paramTrim       :: (Bool, Bool)
-    , paramInput       :: [FilePath]
+    , paramInput      :: [FilePath]
     , paramHeaders    :: [String]
     , paramLicenses   :: [String]
     , paramJudgeType  :: JudgeType
+
+    , paramHelp       :: Bool
+    , paramVersion    :: Bool
     } deriving (Show, Eq, Ord)
 
-initParam :: [Option] -> [String] -> IO Param
-initParam opts args =
+initParam :: Opt.StringResult -> IO Param
+initParam (Left errs) = error $ unwords errs
+initParam (Right (opts, args)) =
     do K.useUtf8 K.stdout
-       hs <- readFileFor optHeader  opts
-       js <- readFileFor optJudge   opts
-       ls <- readFileFor optLicense opts
+       hs <- readFiles $ getReq "header"
+       js <- readFiles $ getReq "judge"
+       ls <- readFiles $ getReq "license"
        let as = K.omit null $ map K.trimBoth $ args ++ js
-       return $ Param { paramOmitFirst  = OptOmitFirst `elem` opts
-                      , paramNumber     = OptNumber    `elem` opts
+       return $ Param { paramOmitFirst  = getFlag "omit-first"
+                      , paramNumber     = getFlag "number"
                       , paramTrim       = trim
-                      , paramInput       = K.catMaybes $ map optInput opts
+                      , paramInput      = getReq "input"
                       , paramHeaders    = hs
                       , paramLicenses   = ls
-                      , paramJudgeType  = parseJudgeType as }
-    where
-      trim = case K.unique $ K.catMaybes $ map optTrim opts of
-               [lr] -> lr
-               []   -> (False, False)
-               _    -> error "Ambiguous trimming"
+                      , paramJudgeType  = parseJudgeType as
 
-readFileFor :: (Option -> Maybe String) -> [Option] -> IO [String]
-readFileFor select opts =
-    case K.mapMaybe select opts of
-      []     -> return []
-      files  -> do contents <- mapM readFile files
-                   return $ concatMap lines contents
+                      , paramHelp       = getFlag "help"
+                      , paramVersion    = getFlag "version" }
+    where
+      getFlag  = Opt.getFlag opts
+      getReq   = Opt.getReq  opts
+
+      trim | getFlag "trim"       = (True, True)
+           | getFlag "trim-both"  = (True, True)
+           | getFlag "trim-left"  = (True, False)
+           | getFlag "trim-right" = (False, True)
+           | otherwise            = (False, False)
+
+readFiles :: [FilePath] -> IO [String]
+readFiles paths =
+    do contents <- mapM readFile paths
+       return $ concatMap lines contents
 
 parseJudgeType :: [String] -> JudgeType
 parseJudgeType [] = ("CSV", map show $ ints 1)
@@ -68,66 +124,10 @@ parseJudgeType (pat : ns) = (pat, map name ns) where
     name n         = error $ "Not a term: " ++ n
 
 
--- --------------------------------------------  Option
-
-data Option
-    = OptHelp                   -- ^ Show help
-    | OptVersion                -- ^ Show version number
-    | OptOmitFirst              -- ^ Omit first line from CSV daat
-    | OptNumber                 -- ^ Add numbering term
-    | OptInput   String         -- ^ CSV file
-    | OptHeader  String         -- ^ Header file
-    | OptJudge   String         -- ^ Judgement file
-    | OptLicense String         -- ^ License file
-    | OptTrim    Bool Bool      -- ^ Triming spaces left or right
-      deriving (Show, Eq, Ord)
-
-optTrim :: Option -> Maybe (Bool, Bool)
-optTrim (OptTrim left right) = Just (left, right)
-optTrim _                    = Nothing
-
-optInput :: Option -> Maybe String
-optInput (OptInput s)     = Just s
-optInput (_)              = Nothing
-
-optHeader :: Option -> Maybe String
-optHeader (OptHeader s)   = Just s
-optHeader (_)             = Nothing
-
-optJudge :: Option -> Maybe String
-optJudge (OptJudge s)     = Just s
-optJudge (_)              = Nothing
-
-optLicense :: Option -> Maybe String
-optLicense (OptLicense s) = Just s
-optLicense (_)            = Nothing
-
-option :: [Opt.OptDescr Option]
-option =
-    [ Opt.Option "1" ["omit-first"] (Opt.NoArg OptOmitFirst)       "Omit first line"
-    , Opt.Option "n" ["number"]     (Opt.NoArg OptNumber)          "Add numbering term"
-    , Opt.Option ""  ["input"]      (Opt.ReqArg OptInput   "FILE") "CSV file"
-    , Opt.Option ""  ["header"]     (Opt.ReqArg OptHeader  "FILE") "Include header file"
-    , Opt.Option ""  ["judge"]      (Opt.ReqArg OptJudge   "FILE") "Judgement file"
-    , Opt.Option ""  ["license"]    (Opt.ReqArg OptLicense "FILE") "Include license file"
-    , Opt.Option ""  ["trim", "trim-both"]
-                                    (Opt.NoArg $ OptTrim True True) "Trim spaces left and right"
-    , Opt.Option ""  ["trim-left"]  (Opt.NoArg $ OptTrim True False) "Trim spaces left side"
-    , Opt.Option ""  ["trim-right"] (Opt.NoArg $ OptTrim False True) "Trim spaces right side" ]
-
-
--- --------------------------------------------  Main
+-- --------------------------------------------  Edit
 
 type NumRecord = (Int, CSV.Record)
 type JudgeType = (K.JudgePat, [K.TermName])
-
-main :: IO ()
-main = do args <- Sys.getArgs
-          case Opt.getOpt Opt.Permute option args of
-            (opts, args', []) 
-                -> do p <- initParam opts args'
-                      edit (fromCSV p) $ paramInput p
-            (_, _, errs) -> error $ show errs
 
 edit :: K.Map String -> [FilePath] -> IO ()
 edit f [] = interact f
@@ -164,14 +164,15 @@ omitFirst omit csv
 
 appendHeader :: [String] -> [String] ->  K.Map [String]
 appendHeader header license body = body' where
-    body'     = ["** -*- koshu -*-"] ++ header' ++ [""] ++ shorten license' ++ body
-    header'   = map K.commentLine $ concatMap ls header
-    ls h      = "" : lines h
+    body'     = ["** -*- koshu -*-"] ++ header' ++ [""] ++ license' ++ body
     pad s     = "  " ++ s
+    header'   | null header  = []
+              | otherwise    = map K.commentLine $ "" : (shorten header)
     license'  | null license = []
-              | otherwise    = ["=== license", ""]
-                               ++ map pad license
-                               ++ ["", "=== rel", ""]
+              | otherwise    = shorten $
+                                 ["=== license", ""]
+                                 ++ map pad license
+                                 ++ ["", "=== rel", ""]
 
 shorten :: K.Map [String]
 shorten (x1 : x2 : xs)
