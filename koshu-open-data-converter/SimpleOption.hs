@@ -10,9 +10,10 @@ module SimpleOption
    -- * Processing
    ParseResult, StringResult,
    parse, parseCommand,
-   getFlag,
+   getFlag, getOpt, getReq,
  ) where
 
+import qualified Data.Maybe            as Maybe
 import qualified System.Console.GetOpt as Opt
 import qualified System.Environment    as Env
 
@@ -67,10 +68,24 @@ parseCommand opts =
     do args <- Env.getArgs
        return $ parse opts args
 
-getFlag :: [StringOption] -> String -> Bool
+getFlag :: (Eq a) => [SimpleOption a] -> a -> Bool
 getFlag opts name = or $ map (getFlag1 name) opts
 
-getFlag1 :: String -> StringOption -> Bool
-getFlag1 name (SimpleFlag n) = n == name
-getFlag1 _ _                 = False
+getOpt :: (Eq a) => [SimpleOption a] -> a -> [String]
+getOpt opts name = getOpt1 name `Maybe.mapMaybe` opts
+
+getReq :: (Eq a) => [SimpleOption a] -> a -> [String]
+getReq opts name = getReq1 name `Maybe.mapMaybe` opts
+
+getFlag1 :: (Eq a) => a -> SimpleOption a -> Bool
+getFlag1 name (SimpleFlag n) = (n == name)
+getFlag1 _ _ = False
+
+getOpt1 :: (Eq a) => a -> SimpleOption a -> Maybe String
+getOpt1 name (SimpleOpt n (Just arg)) | (n == name) = Just arg
+getOpt1 _ _ = Nothing
+
+getReq1 :: (Eq a) => a -> SimpleOption a -> Maybe String
+getReq1 name (SimpleReq n arg) | (n == name) = Just arg
+getReq1 _ _ = Nothing
 
