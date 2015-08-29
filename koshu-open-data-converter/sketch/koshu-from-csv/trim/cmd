@@ -1,0 +1,5 @@
+koshu-from-csv --input trim.csv
+koshu-from-csv --input trim.csv --trim
+koshu-from-csv --input trim.csv --trim-both
+koshu-from-csv --input trim.csv --trim-left
+koshu-from-csv --input trim.csv --trim-right
