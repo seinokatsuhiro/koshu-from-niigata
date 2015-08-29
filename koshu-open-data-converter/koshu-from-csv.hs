@@ -18,15 +18,13 @@ import qualified Text.CSV                        as CSV
 import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Core            as K
 import qualified Koshucode.Baala.Type.Vanilla    as K
-
-import qualified Data.Version                    as Ver
 import qualified Paths_koshu_open_data_converter as Ver
 
 
 -- --------------------------------------------  Main
 
 versionString :: String
-versionString = "koshu-from-csv-" ++ Ver.showVersion Ver.version
+versionString = "koshu-from-csv-" ++ Opt.showVersion Ver.version
 
 usageHeader :: [String]
 usageHeader =

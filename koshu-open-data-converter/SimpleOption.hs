@@ -11,9 +11,11 @@ module SimpleOption
    ParseResult, StringResult,
    parse, parseCommand,
    getFlag, getOpt, getReq,
+   Ver.showVersion,
  ) where
 
 import qualified Data.Maybe            as Maybe
+import qualified Data.Version          as Ver
 import qualified System.Console.GetOpt as Opt
 import qualified System.Environment    as Env
 

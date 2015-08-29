@@ -21,12 +21,10 @@ import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Core            as K
 import qualified Koshucode.Baala.Type.Vanilla    as K
 import qualified SimpleOption                    as Opt
-
-import qualified Data.Version                    as Ver
 import qualified Paths_koshu_open_data_converter as Ver
 
 versionString :: String
-versionString = "koshu-file-" ++ Ver.showVersion Ver.version
+versionString = "koshu-file-" ++ Opt.showVersion Ver.version
 
 
 -- --------------------------------------------  Parameter
