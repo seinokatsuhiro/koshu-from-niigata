@@ -1,0 +1,6 @@
+koshu-from-csv ABC /a /b /c --input 123.csv
+koshu-from-csv --judge abc.judge --input 123.csv
+koshu-from-csv ABC /a /b /c --input 123.csv --number
+koshu-from-csv ABC /a /b /c --input 123h.csv --omit-first
+koshu-from-csv ABC /a /b /c --input 123.csv --license DUMMY
+koshu-from-csv ABC /a /b /c --input 123.csv --header DUMMY
