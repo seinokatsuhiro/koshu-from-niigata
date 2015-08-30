@@ -20,7 +20,7 @@ import qualified System.Directory                as Dir
 import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Core            as K
 import qualified Koshucode.Baala.Type.Vanilla    as K
-import qualified SimpleOption                    as Opt
+import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
 import qualified Paths_koshu_open_data_converter as Ver
 
 versionString :: String
@@ -47,7 +47,7 @@ data Param = Param
     , paramVersion   :: Bool           -- Show version
     } deriving (Show, Eq, Ord)
 
-initParam :: Opt.StringResult -> IO Param
+initParam :: Opt.ParseResult -> IO Param
 initParam (Left errs) = error $ unwords errs
 initParam (Right (opts, args)) =
     do zone   <- Time.getCurrentTimeZone
@@ -94,7 +94,7 @@ usageHeader =
     , ""
     ]
 
-options :: [Opt.StringOptionDescr]
+options :: Opt.SimpleOptions
 options =
     [ Opt.help
     , Opt.version

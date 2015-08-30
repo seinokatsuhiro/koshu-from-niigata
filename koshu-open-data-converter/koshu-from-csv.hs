@@ -13,11 +13,11 @@
 
 module Main (main) where
 
-import qualified SimpleOption                    as Opt
 import qualified Text.CSV                        as CSV
 import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Core            as K
 import qualified Koshucode.Baala.Type.Vanilla    as K
+import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
 import qualified Paths_koshu_open_data_converter as Ver
 
 
@@ -39,7 +39,7 @@ usageHeader =
     , ""
     ]
 
-options :: [Opt.StringOptionDescr]
+options :: Opt.SimpleOptions
 options =
     [ Opt.help
     , Opt.version
@@ -81,7 +81,7 @@ data Param = Param
     , paramVersion    :: Bool
     } deriving (Show, Eq, Ord)
 
-initParam :: Opt.StringResult -> IO Param
+initParam :: Opt.ParseResult -> IO Param
 initParam (Left errs) = error $ unwords errs
 initParam (Right (opts, args)) =
     do K.useUtf8 K.stdout

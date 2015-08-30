@@ -14,17 +14,18 @@ cabal-version:       >=1.10
 
 executable koshu-file
   main-is:             koshu-file.hs
-  other-modules:       SimpleOption
+  -- other-modules:
   -- other-extensions:    
   build-depends:
-         base                     == 4.*
-       , directory                == 1.*
-       , filepath                 == 1.*
-       , time                     == 1.*
-       , unix-compat              == 0.*
-       , koshucode-baala-base     == 0.*
-       , koshucode-baala-core     == 0.*
-       , koshucode-baala-content  == 0.*
+         base                        == 4.*
+       , directory                   == 1.*
+       , filepath                    == 1.*
+       , time                        == 1.*
+       , unix-compat                 == 0.*
+       , koshucode-baala-base        == 0.*
+       , koshucode-baala-core        == 0.*
+       , koshucode-baala-content     == 0.*
+       , koshucode-baala-calculator  == 0.*
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
@@ -33,11 +34,12 @@ executable koshu-from-csv
   -- other-modules:       
   -- other-extensions:    
   build-depends:
-         base                     == 4.*
-       , csv                      == 0.*
-       , koshucode-baala-base     == 0.*
-       , koshucode-baala-core     == 0.*
-       , koshucode-baala-content  == 0.*
+         base                        == 4.*
+       , csv                         == 0.*
+       , koshucode-baala-base        == 0.*
+       , koshucode-baala-core        == 0.*
+       , koshucode-baala-content     == 0.*
+       , koshucode-baala-calculator  == 0.*
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
@@ -46,13 +48,13 @@ executable niigata-city-meta-data
   -- other-modules:       
   -- other-extensions:    
   build-depends:
-         base                     == 4.*
-       , bytestring               == 0.*
-       , filepath                 == 1.*
-       , text                     == 1.*
-       , xmlhtml                  == 0.*
-       , koshucode-baala-base     == 0.*
-       , koshucode-baala-core     == 0.*
-       , koshucode-baala-content  == 0.*
+         base                        == 4.*
+       , bytestring                  == 0.*
+       , filepath                    == 1.*
+       , text                        == 1.*
+       , xmlhtml                     == 0.*
+       , koshucode-baala-base        == 0.*
+       , koshucode-baala-core        == 0.*
+       , koshucode-baala-content     == 0.*
   -- hs-source-dirs:      
   default-language:    Haskell2010
