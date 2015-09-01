@@ -1,0 +1,29 @@
+{ "type": "FeatureCollection"
+, "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}}
+, "features": [
+  {"geometry":{"coordinates":["139.0276536","37.92365694"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市水族館「マリンピア日本海」"}}
+, {"geometry":{"coordinates":["139.0365668","37.92562781"],"type":"Point"},"type":"Feature","properties":{"name":"砂丘館"}}
+, {"geometry":{"coordinates":["139.0379648","37.91399428"],"type":"Point"},"type":"Feature","properties":{"name":"白山公園駐車場"}}
+, {"geometry":{"coordinates":["139.0396424","37.92050396"],"type":"Point"},"type":"Feature","properties":{"name":"アパホテル新潟東中通"}}
+, {"geometry":{"coordinates":["139.0406459","37.91460721"],"type":"Point"},"type":"Feature","properties":{"name":"新潟県政記念館"}}
+, {"geometry":{"coordinates":["139.0410435","37.91819902"],"type":"Point"},"type":"Feature","properties":{"name":"アルモにしぼり"}}
+, {"geometry":{"coordinates":["139.0417339","37.92825944"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市美術館"}}
+, {"geometry":{"coordinates":["139.0428017","37.92002964"],"type":"Point"},"type":"Feature","properties":{"name":"ツインパーク西堀駐車場"}}
+, {"geometry":{"coordinates":["139.0457697","37.92292585"],"type":"Point"},"type":"Feature","properties":{"name":"東堀パーク６００"}}
+, {"geometry":{"coordinates":["139.0458354","37.92041296"],"type":"Point"},"type":"Feature","properties":{"name":"アルモひがしぼり"}}
+, {"geometry":{"coordinates":["139.0470178","37.92507278"],"type":"Point"},"type":"Feature","properties":{"name":"タキザワガレージ東堀"}}
+, {"geometry":{"coordinates":["139.0511019","37.92004386"],"type":"Point"},"type":"Feature","properties":{"name":"ホテルオークラ新潟"}}
+, {"geometry":{"coordinates":["139.0524535","37.92152142"],"type":"Point"},"type":"Feature","properties":{"name":"新潟グランドホテル"}}
+, {"geometry":{"coordinates":["139.0560996","37.91614515"],"type":"Point"},"type":"Feature","properties":{"name":"万代シルバーホテル"}}
+, {"geometry":{"coordinates":["139.0575817","37.92997557"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市歴史博物館「みなとぴあ」"}}
+, {"geometry":{"coordinates":["139.0587392","37.91364285"],"type":"Point"},"type":"Feature","properties":{"name":"ホテルカワイ"}}
+, {"geometry":{"coordinates":["139.0591686","37.91292306"],"type":"Point"},"type":"Feature","properties":{"name":"ニイガタステーションホテル"}}
+, {"geometry":{"coordinates":["139.0594833","37.91275704"],"type":"Point"},"type":"Feature","properties":{"name":"石宮公園地下自転車駐車場"}}
+, {"geometry":{"coordinates":["139.0595265","37.92508145"],"type":"Point"},"type":"Feature","properties":{"name":"ホテル日航新潟"}}
+, {"geometry":{"coordinates":["139.059675","37.92591464"],"type":"Point"},"type":"Feature","properties":{"name":"朱鷺メッセ"}}
+, {"geometry":{"coordinates":["139.0598372","37.91320118"],"type":"Point"},"type":"Feature","properties":{"name":"新潟東急イン"}}
+, {"geometry":{"coordinates":["139.0607703","37.91283552"],"type":"Point"},"type":"Feature","properties":{"name":"新潟駅万代口観光案内センター"}}
+, {"geometry":{"coordinates":["139.061992","37.92982024"],"type":"Point"},"type":"Feature","properties":{"name":"佐渡汽船"}}
+, {"geometry":{"coordinates":["139.064397","37.91629351"],"type":"Point"},"type":"Feature","properties":{"name":"ドーミーイン新潟"}}
+, {"geometry":{"coordinates":["139.0698337","37.91732538"],"type":"Point"},"type":"Feature","properties":{"name":"峰村商店"}}
+]}
