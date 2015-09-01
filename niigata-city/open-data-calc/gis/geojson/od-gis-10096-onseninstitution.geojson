@@ -1,0 +1,28 @@
+{ "type": "FeatureCollection"
+, "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}}
+, "features": [
+  {"geometry":{"coordinates":["138.7892759","37.72210123"],"type":"Point"},"type":"Feature","properties":{"name":"旅館　丸一"}}
+, {"geometry":{"coordinates":["138.7908097","37.72134886"],"type":"Point"},"type":"Feature","properties":{"name":"海華亭　かわい"}}
+, {"geometry":{"coordinates":["138.8319559","37.75983744"],"type":"Point"},"type":"Feature","properties":{"name":"じょんのび館"}}
+, {"geometry":{"coordinates":["138.8365725","37.73531557"],"type":"Point"},"type":"Feature","properties":{"name":"著莪の里　ゆめや"}}
+, {"geometry":{"coordinates":["138.8368913","37.731117"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市岩室健康増進センター　よりなれ"}}
+, {"geometry":{"coordinates":["138.8373341","37.73995509"],"type":"Point"},"type":"Feature","properties":{"name":"旅亭松葉屋"}}
+, {"geometry":{"coordinates":["138.837374","37.72802779"],"type":"Point"},"type":"Feature","properties":{"name":"多宝温泉　だいろの湯"}}
+, {"geometry":{"coordinates":["138.8376656","37.74148612"],"type":"Point"},"type":"Feature","properties":{"name":"ゆもとや"}}
+, {"geometry":{"coordinates":["138.8378658","37.73631132"],"type":"Point"},"type":"Feature","properties":{"name":"ホテル富士屋"}}
+, {"geometry":{"coordinates":["138.8380836","37.73733331"],"type":"Point"},"type":"Feature","properties":{"name":"高志の宿　高島屋"}}
+, {"geometry":{"coordinates":["138.8381751","37.73701957"],"type":"Point"},"type":"Feature","properties":{"name":"小さなお宿小松屋"}}
+, {"geometry":{"coordinates":["138.8385296","37.73622364"],"type":"Point"},"type":"Feature","properties":{"name":"めんめん亭　わたや"}}
+, {"geometry":{"coordinates":["138.8385918","37.73755765"],"type":"Point"},"type":"Feature","properties":{"name":"割烹旅館松屋"}}
+, {"geometry":{"coordinates":["138.8389881","37.74161919"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市岩室観光施設　いわむろや（足湯）"}}
+, {"geometry":{"coordinates":["138.8395892","37.73870552"],"type":"Point"},"type":"Feature","properties":{"name":"浜松屋"}}
+, {"geometry":{"coordinates":["138.8398538","37.73809466"],"type":"Point"},"type":"Feature","properties":{"name":"ほてる大橋館の湯"}}
+, {"geometry":{"coordinates":["138.8471757","37.80325586"],"type":"Point"},"type":"Feature","properties":{"name":"カーブドッチ・ヴィネスパ"}}
+, {"geometry":{"coordinates":["138.985639","37.85766765"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市老人福祉センター　黒埼荘"}}
+, {"geometry":{"coordinates":["139.0353781","37.78896104"],"type":"Point"},"type":"Feature","properties":{"name":"白根温泉　関根旅館"}}
+, {"geometry":{"coordinates":["139.0645742","37.91624689"],"type":"Point"},"type":"Feature","properties":{"name":"ドーミーイン新潟（運搬による利用）"}}
+, {"geometry":{"coordinates":["139.0775887","37.87682403"],"type":"Point"},"type":"Feature","properties":{"name":"ホテルビジネスイン新潟南（運搬による利用）"}}
+, {"geometry":{"coordinates":["139.0883117","37.73312058"],"type":"Point"},"type":"Feature","properties":{"name":"新潟市小須戸温泉健康センター　花の湯館"}}
+, {"geometry":{"coordinates":["139.1289178","37.79480405"],"type":"Point"},"type":"Feature","properties":{"name":"新津温泉"}}
+, {"geometry":{"coordinates":["139.1440163","37.78692896"],"type":"Point"},"type":"Feature","properties":{"name":"秋葉温泉花水"}}
+]}
