@@ -19,6 +19,7 @@ import qualified System.FilePath                as Sys
 import qualified Text.XmlHtml                   as X
 import qualified Koshucode.Baala.Base           as K
 import qualified Koshucode.Baala.Core           as K
+import qualified Koshucode.Baala.Writer         as K
 import qualified Koshucode.Baala.Type.Vanilla   as K
 
 

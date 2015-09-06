@@ -61,7 +61,7 @@ main = do cmd <- Opt.parseCommand options
 
 mainParam :: Param -> IO ()
 mainParam p@Param { paramHelp = help, paramVersion = version }
-     | help       = Opt.usage usageHeader options
+     | help       = Opt.printHelp usageHeader options
      | version    = putStrLn versionString
      | otherwise  = edit (fromCSV p) $ paramInput p
 

@@ -118,7 +118,7 @@ main = do cmd  <- Opt.parseCommand options
 
 body :: Param -> IO ()
 body pa@Param { paramHelp = help, paramVersion = version }
-    | help       = Opt.usage usageHeader options
+    | help       = Opt.printHelp usageHeader options
     | version    = putStrLn versionString
     | otherwise  = do putStrLn "-*- koshu -*-"
                       let unk = map Unknown $ paramStart pa

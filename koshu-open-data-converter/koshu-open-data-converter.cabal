@@ -56,5 +56,6 @@ executable niigata-city-meta-data
        , koshucode-baala-base        == 0.*
        , koshucode-baala-core        == 0.*
        , koshucode-baala-content     == 0.*
-  -- hs-source-dirs:      
+       , koshucode-baala-writer      == 0.*
+  -- hs-source-dirs:
   default-language:    Haskell2010
