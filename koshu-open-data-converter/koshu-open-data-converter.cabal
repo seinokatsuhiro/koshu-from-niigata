@@ -22,10 +22,12 @@ executable koshu-file
        , filepath                    == 1.*
        , time                        == 1.*
        , unix-compat                 == 0.*
-       , koshucode-baala-base        == 0.*
-       , koshucode-baala-core        == 0.*
-       , koshucode-baala-content     == 0.*
-       , koshucode-baala-calculator  == 0.*
+       , koshucode-baala-base        >= 0.123
+       , koshucode-baala-data        >= 0.123
+       , koshucode-baala-core        >= 0.123
+       , koshucode-baala-content     >= 0.123
+       , koshucode-baala-writer      >= 0.123
+       , koshucode-baala-calculator  >= 0.123
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
@@ -36,10 +38,12 @@ executable koshu-from-csv
   build-depends:
          base                        == 4.*
        , csv                         == 0.*
-       , koshucode-baala-base        == 0.*
-       , koshucode-baala-core        == 0.*
-       , koshucode-baala-content     == 0.*
-       , koshucode-baala-calculator  == 0.*
+       , koshucode-baala-base        >= 0.123
+       , koshucode-baala-data        >= 0.123
+       , koshucode-baala-core        >= 0.123
+       , koshucode-baala-content     >= 0.123
+       , koshucode-baala-writer      >= 0.123
+       , koshucode-baala-calculator  >= 0.123
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
@@ -53,9 +57,10 @@ executable niigata-city-meta-data
        , filepath                    == 1.*
        , text                        == 1.*
        , xmlhtml                     == 0.*
-       , koshucode-baala-base        == 0.*
-       , koshucode-baala-core        == 0.*
-       , koshucode-baala-content     == 0.*
-       , koshucode-baala-writer      == 0.*
+       , koshucode-baala-base        >= 0.123
+       , koshucode-baala-data        >= 0.123
+       , koshucode-baala-core        >= 0.123
+       , koshucode-baala-content     >= 0.123
+       , koshucode-baala-writer      >= 0.123
   -- hs-source-dirs:
   default-language:    Haskell2010

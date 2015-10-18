@@ -18,7 +18,7 @@ import qualified System.PosixCompat.Files        as Posix
 import qualified System.FilePath                 as Dir
 import qualified System.Directory                as Dir
 import qualified Koshucode.Baala.Base            as K
-import qualified Koshucode.Baala.Core            as K
+import qualified Koshucode.Baala.Data            as K
 import qualified Koshucode.Baala.Type.Vanilla    as K
 import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
 import qualified Paths_koshu_open_data_converter as Ver
