@@ -19,7 +19,7 @@ import qualified System.FilePath                 as Dir
 import qualified System.Directory                as Dir
 import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Data            as K
-import qualified Koshucode.Baala.Type.Vanilla    as K
+import qualified Koshucode.Baala.Core            as K
 import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
 import qualified Paths_koshu_open_data_converter as Ver
 
@@ -207,7 +207,7 @@ judgeDir pa path n time = K.affirm "DIR" xs where
          , K.term "count" $ K.pInt n
          , K.term "path"  $ K.pText path ]
 
-pIntegral :: (Integral n) => n -> K.VContent
+pIntegral :: (Integral n) => n -> K.BaalaC
 pIntegral = K.pInteger . fromIntegral
 
 
@@ -267,7 +267,7 @@ dirFiles path =
 
 -- --------------------------------------------  Timestamp
 
-timeFrom :: Param -> Posix.CTime -> K.VContent
+timeFrom :: Param -> Posix.CTime -> K.BaalaC
 timeFrom pa (Posix.CTime time) = tc where
     zone = Just $ 60 * (Time.timeZoneMinutes $ paramTimeZone pa)
     tc = case timeFromUnix time zone of

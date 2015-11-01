@@ -19,8 +19,8 @@ import qualified System.FilePath                as Sys
 import qualified Text.XmlHtml                   as X
 import qualified Koshucode.Baala.Base           as K
 import qualified Koshucode.Baala.Data           as K
+import qualified Koshucode.Baala.Core           as K
 import qualified Koshucode.Baala.Writer         as K
-import qualified Koshucode.Baala.Type.Vanilla   as K
 
 
 -- --------------------------------------------  Main
@@ -44,7 +44,7 @@ metaIO path =
 
 about :: FilePath -> K.AboutC
 about path = K.About xs where
-    xs :: [K.Term K.VContent]
+    xs :: [K.Term K.BaalaC]
     xs = [ K.term "data" $ K.pText $ Sys.takeBaseName path ]
 
 judgeMeta :: MetaDatum -> K.JudgeC

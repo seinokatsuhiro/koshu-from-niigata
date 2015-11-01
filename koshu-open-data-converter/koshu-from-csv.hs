@@ -17,7 +17,6 @@ import qualified Text.CSV                        as CSV
 import qualified Koshucode.Baala.Base            as K
 import qualified Koshucode.Baala.Data            as K
 import qualified Koshucode.Baala.Core            as K
-import qualified Koshucode.Baala.Type.Vanilla    as K
 import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
 import qualified Paths_koshu_open_data_converter as Ver
 
