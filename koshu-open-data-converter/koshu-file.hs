@@ -17,14 +17,12 @@ import qualified System.Posix.Types              as Posix
 import qualified System.PosixCompat.Files        as Posix
 import qualified System.FilePath                 as Dir
 import qualified System.Directory                as Dir
-import qualified Koshucode.Baala.Base            as K
-import qualified Koshucode.Baala.Data            as K
-import qualified Koshucode.Baala.Core            as K
-import qualified Koshucode.Baala.Toolkit.Library.SimpleOption  as Opt
+import qualified Koshucode.Baala.DataPlus        as K
+import qualified Koshucode.Baala.System          as Z
 import qualified Paths_koshu_open_data_converter as Ver
 
 versionString :: String
-versionString = "koshu-file-" ++ Opt.showVersion Ver.version
+versionString = "koshu-file-" ++ Z.showVersion Ver.version
 
 
 -- --------------------------------------------  Parameter
@@ -47,7 +45,7 @@ data Param = Param
     , paramVersion   :: Bool           -- Show version
     } deriving (Show, Eq, Ord)
 
-initParam :: Opt.ParseResult -> IO Param
+initParam :: Z.Parsed -> IO Param
 initParam (Left errs) = error $ unwords errs
 initParam (Right (opts, args)) =
     do zone   <- Time.getCurrentTimeZone
@@ -70,8 +68,8 @@ initParam (Right (opts, args)) =
                       , paramHelp     = getFlag "help"
                       , paramVersion  = getFlag "version" }
     where
-      getFlag  = Opt.getFlag opts
-      getReq   = Opt.getReq  opts
+      getFlag  = Z.getFlag opts
+      getReq   = Z.getReq  opts
 
       file'  | noFileDir  = True
              | otherwise  = file
@@ -94,31 +92,31 @@ usageHeader =
     , ""
     ]
 
-options :: Opt.SimpleOptions
+options :: [Z.Option]
 options =
-    [ Opt.help
-    , Opt.version
-    , Opt.flag ""  ["file"]            "List files"
-    , Opt.flag ""  ["dir"]             "List directories"
-    , Opt.flag "r" ["rec"]             "List recursively"
-    , Opt.flag ""  ["add-base"]        "Add /base term for basename"
-    , Opt.flag ""  ["add-ext"]         "Add /ext term for extension"
-    , Opt.flag ""  ["add-dirs"]        "Add /dirs term for directory list"
-    , Opt.flag ""  ["cut-path"]        "Cut /path term"
-    , Opt.req  ""  ["keep-ext"] "EXT"  "Keep given extension"
+    [ Z.help
+    , Z.version
+    , Z.flag ""  ["file"]            "List files"
+    , Z.flag ""  ["dir"]             "List directories"
+    , Z.flag "r" ["rec"]             "List recursively"
+    , Z.flag ""  ["add-base"]        "Add /base term for basename"
+    , Z.flag ""  ["add-ext"]         "Add /ext term for extension"
+    , Z.flag ""  ["add-dirs"]        "Add /dirs term for directory list"
+    , Z.flag ""  ["cut-path"]        "Cut /path term"
+    , Z.req  ""  ["keep-ext"] "EXT"  "Keep given extension"
     ]
 
 
 -- --------------------------------------------  main
 
 main :: IO ()
-main = do cmd  <- Opt.parseCommand options
+main = do cmd  <- Z.parseCommand options
           pa   <- initParam cmd
           body pa
 
 body :: Param -> IO ()
 body pa@Param { paramHelp = help, paramVersion = version }
-    | help       = Opt.printHelp usageHeader options
+    | help       = Z.printHelp usageHeader options
     | version    = putStrLn versionString
     | otherwise  = do putStrLn "-*- koshu -*-"
                       let unk = map Unknown $ paramStart pa
@@ -135,7 +133,8 @@ body pa@Param { paramHelp = help, paramVersion = version }
       step :: Int -> FileDir -> [FileDir] -> IO ()
       step n p ps = do K.when (n `mod` 10 == 0) $ putStrLn ""
                        j <- judgeIO pa p
-                       K.putJudge j
+                       --K.putJudge j
+                       K.putMix K.noBreak $ K.mixPlainEncode j
                        loop (n + 1) ps
 
       trailer :: Int -> IO ()
@@ -207,7 +206,7 @@ judgeDir pa path n time = K.affirm "DIR" xs where
          , K.term "count" $ K.pInt n
          , K.term "path"  $ K.pText path ]
 
-pIntegral :: (Integral n) => n -> K.BaalaC
+pIntegral :: (Integral n) => n -> K.Content
 pIntegral = K.pInteger . fromIntegral
 
 
@@ -267,7 +266,7 @@ dirFiles path =
 
 -- --------------------------------------------  Timestamp
 
-timeFrom :: Param -> Posix.CTime -> K.BaalaC
+timeFrom :: Param -> Posix.CTime -> K.Content
 timeFrom pa (Posix.CTime time) = tc where
     zone = Just $ 60 * (Time.timeZoneMinutes $ paramTimeZone pa)
     tc = case timeFromUnix time zone of

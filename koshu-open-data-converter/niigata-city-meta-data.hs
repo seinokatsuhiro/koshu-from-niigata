@@ -17,8 +17,9 @@ import qualified Data.Text                      as T
 import qualified System.Environment             as Sys
 import qualified System.FilePath                as Sys
 import qualified Text.XmlHtml                   as X
-import qualified Koshucode.Baala.Base           as K
-import qualified Koshucode.Baala.Data           as K
+
+import Koshucode.Baala.DataPlus ((&))
+import qualified Koshucode.Baala.DataPlus       as K
 import qualified Koshucode.Baala.Core           as K
 import qualified Koshucode.Baala.Writer         as K
 
@@ -35,7 +36,7 @@ metaIO path =
     do bs <- B.readFile path
        case X.parseHTML path bs of
          Left  msg -> error msg
-         Right doc -> do let a = K.writeStringWith K.shortEmpty $ about path
+         Right doc -> do let a = K.mixToFlatString $ K.mixPlainEncode $ about path
                              html = X.docContent doc
                              meta = map judgeMeta $ concatMap select html
                              term = map judgeTerm $ concatMap selectTerm html
@@ -44,19 +45,19 @@ metaIO path =
 
 about :: FilePath -> K.AboutC
 about path = K.About xs where
-    xs :: [K.Term K.BaalaC]
-    xs = [ K.term "data" $ K.pText $ Sys.takeBaseName path ]
+    xs :: [K.TermC]
+    xs = [ "data" & K.pText $ Sys.takeBaseName path ]
 
 judgeMeta :: MetaDatum -> K.JudgeC
 judgeMeta (n, c) = K.affirm "META" xs where
-    xs = [ K.term "name"    $ K.pText n
-         , K.term "content" $ K.pMaybeText c ]
+    xs = [ "name"    & K.pText n
+         , "content" & K.pMaybeText c ]
 
 judgeTerm :: (String, String, String) -> K.JudgeC
 judgeTerm (name, typ, note) = K.affirm "TERM" xs where
-    xs = [ K.term "name" $ K.pMaybeText name
-         , K.term "type" $ K.pMaybeText typ
-         , K.term "note" $ K.pMaybeText note ]
+    xs = [ "name" & K.pMaybeText name
+         , "type" & K.pMaybeText typ
+         , "note" & K.pMaybeText note ]
 
 
 -- --------------------------------------------  Select
